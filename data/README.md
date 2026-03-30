@@ -1,34 +1,34 @@
 # Localization Data
 
-Place the Stellaris localization folder here to enable human-readable name resolution.
+Place the Stellaris English localization files here to enable human-readable name resolution.
 
 ## Setup
 
-Copy the `localisation` folder from your Stellaris installation:
+Copy the `english` folder from your Stellaris installation:
 
 **Steam (Windows):**
 ```
-C:\Program Files (x86)\Steam\steamapps\common\Stellaris\localisation\
+C:\Program Files (x86)\Steam\steamapps\common\Stellaris\localisation\english\
 ```
 
 **Steam (Linux):**
 ```
-~/.steam/steam/steamapps/common/Stellaris/localisation/
+~/.steam/steam/steamapps/common/Stellaris/localisation/english/
 ```
 
 **Steam (macOS):**
 ```
-~/Library/Application Support/Steam/steamapps/common/Stellaris/localisation/
+~/Library/Application Support/Steam/steamapps/common/Stellaris/localisation/english/
 ```
 
 Into this directory:
 ```
-data/localisation/
+data/english/
 ```
 
 ## What it does
 
-The game save files use internal keys like `SPEC_Bebaki` or `NAME_Aureyon` instead of display names. These keys are resolved using YAML localization files (e.g. `english/name_lists_l_english.yml`).
+The game save files use internal keys like `SPEC_Bebaki` or `NAME_Aureyon` instead of display names. These keys are resolved using YAML localization files (e.g. `name_lists_l_english.yml`).
 
 Without these files, the MCP displays raw keys. With them, it can show proper in-game names.
 
