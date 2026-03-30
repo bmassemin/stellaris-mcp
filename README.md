@@ -39,11 +39,18 @@ go build -o bin/stellaris-mcp ./cmd/stellaris-mcp
 GOOS=windows GOARCH=amd64 go build -o bin/stellaris-mcp.exe ./cmd/stellaris-mcp
 ```
 
+### Usage
+
+```
+stellaris-mcp <save-games-directory> [localization-directory]
+```
+
+- **save-games-directory** (required): root folder containing your Stellaris saves. The server recursively walks all subdirectories and picks the most recently modified `.sav` file.
+- **localization-directory** (optional): path to the `english` localization folder from your Stellaris installation. Enables real in-game names (e.g. "Energy Credits" instead of "energy"). Without it, the server falls back to formatted key names.
+
 ### Claude Desktop Configuration
 
 Add to `claude_desktop_config.json`:
-
-The save games directory is passed as a required CLI argument. The server recursively walks all subdirectories and picks the most recently modified `.sav` file.
 
 **Windows** (`%APPDATA%\Claude\claude_desktop_config.json`):
 
@@ -52,7 +59,10 @@ The save games directory is passed as a required CLI argument. The server recurs
   "mcpServers": {
     "stellaris": {
       "command": "C:\\path\\to\\stellaris-mcp.exe",
-      "args": ["C:\\Users\\YourName\\Documents\\Paradox Interactive\\Stellaris\\save games"]
+      "args": [
+        "C:\\Users\\YourName\\Documents\\Paradox Interactive\\Stellaris\\save games",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Stellaris\\localisation\\english"
+      ]
     }
   }
 }
@@ -65,7 +75,10 @@ The save games directory is passed as a required CLI argument. The server recurs
   "mcpServers": {
     "stellaris": {
       "command": "/path/to/stellaris-mcp",
-      "args": ["/home/user/.local/share/Paradox Interactive/Stellaris/save games"]
+      "args": [
+        "/home/user/.local/share/Paradox Interactive/Stellaris/save games",
+        "/home/user/.steam/steam/steamapps/common/Stellaris/localisation/english"
+      ]
     }
   }
 }

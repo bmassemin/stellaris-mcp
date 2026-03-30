@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"os"
-	"path/filepath"
 
 	"github.com/bmassemin/stellaris-mcp/internal/gamestate"
 	"github.com/bmassemin/stellaris-mcp/internal/tools"
@@ -12,19 +11,15 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Fprintln(os.Stderr, "usage: stellaris-mcp <save-games-directory>")
+		fmt.Fprintln(os.Stderr, "usage: stellaris-mcp <save-games-directory> [localization-directory]")
 		os.Exit(1)
 	}
 	saveDir := os.Args[1]
 
-	// Load localization files from data/english/ next to the binary,
-	// or from the working directory.
-	exe, _ := os.Executable()
-	dataDir := filepath.Join(filepath.Dir(exe), "data", "english")
-	if _, err := os.Stat(dataDir); err != nil {
-		dataDir = filepath.Join("data", "english")
+	loc := gamestate.NewLocalizer("")
+	if len(os.Args) >= 3 {
+		loc = gamestate.NewLocalizer(os.Args[2])
 	}
-	loc := gamestate.NewLocalizer(dataDir)
 	if n := loc.Loaded(); n > 0 {
 		fmt.Fprintf(os.Stderr, "stellaris-mcp: loaded %d localization entries\n", n)
 	}
