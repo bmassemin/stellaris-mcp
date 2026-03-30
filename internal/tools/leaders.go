@@ -1,0 +1,149 @@
+package tools
+
+import (
+	"context"
+	"fmt"
+	"sort"
+	"strings"
+
+	"github.com/bmassemin/stellaris-mcp/internal/gamestate"
+	"github.com/mark3labs/mcp-go/mcp"
+	"github.com/mark3labs/mcp-go/server"
+)
+
+func registerLeaders(s *server.MCPServer) {
+	s.AddTool(
+		mcp.NewTool("get_leaders",
+			mcp.WithDescription("List leaders with class, assignment, level, traits. Pass leader_id for full detail."),
+			mcp.WithNumber("country_id", mcp.Description("Country ID (default 0 = player)"), mcp.DefaultNumber(0)),
+			mcp.WithNumber("leader_id", mcp.Description("Leader ID for detailed view (omit for summary)"), mcp.DefaultNumber(-1)),
+		),
+		handleLeaders,
+	)
+}
+
+func handleLeaders(_ context.Context, req mcp.CallToolRequest) (*mcp.CallToolResult, error) {
+	gs, err := loadLatestSave()
+	if err != nil {
+		return toolError(err), nil
+	}
+
+	leaderID := int(req.GetFloat("leader_id", -1))
+	if leaderID >= 0 {
+		return leaderDetail(gs, leaderID)
+	}
+
+	countryID, c, err := getCountry(gs, req)
+	if err != nil {
+		return toolError(err), nil
+	}
+	return leaderSummary(gs, countryID, c)
+}
+
+func leaderSummary(gs *gamestate.GameState, countryID int, c *gamestate.Country) (*mcp.CallToolResult, error) {
+	type entry struct {
+		id int
+		l  gamestate.Leader
+	}
+	var leaders []entry
+	for id, l := range gs.Leaders {
+		if l.Country == countryID {
+			leaders = append(leaders, entry{id, l})
+		}
+	}
+	sort.Slice(leaders, func(i, j int) bool { return leaders[i].l.Class < leaders[j].l.Class })
+
+	var b strings.Builder
+	fmt.Fprintf(&b, "=== Leaders (%s) — %d leaders ===\n", c.Adjective.Display(), len(leaders))
+	fmt.Fprintf(&b, "Use get_leaders with leader_id for full detail.\n\n")
+
+	fmt.Fprintf(&b, "%-12s %-25s %-12s %3s %3s %-20s %s\n",
+		"ID", "Name", "Class", "Lvl", "Age", "Assignment", "Traits")
+	fmt.Fprintf(&b, "%s\n", strings.Repeat("-", 110))
+
+	for _, e := range leaders {
+		assignment := resolveAssignment(gs, e.l)
+		traits := strings.Join(e.l.Traits, ", ")
+		if traits == "" {
+			traits = "-"
+		}
+		fmt.Fprintf(&b, "%-12d %-25s %-12s %3d %3d %-20s %s\n",
+			e.id,
+			truncate(e.l.Name.FullNames.Display(), 25),
+			e.l.Class,
+			e.l.Level,
+			e.l.Age,
+			truncate(assignment, 20),
+			traits,
+		)
+	}
+
+	if len(leaders) == 0 {
+		fmt.Fprintf(&b, "No leaders.\n")
+	}
+
+	return mcp.NewToolResultText(b.String()), nil
+}
+
+func leaderDetail(gs *gamestate.GameState, leaderID int) (*mcp.CallToolResult, error) {
+	l, ok := gs.Leaders[leaderID]
+	if !ok {
+		return toolError(fmt.Errorf("leader %d not found", leaderID)), nil
+	}
+
+	var b strings.Builder
+	fmt.Fprintf(&b, "=== Leader %d: %s ===\n", leaderID, l.Name.FullNames.Display())
+	fmt.Fprintf(&b, "Class: %s\n", l.Class)
+	fmt.Fprintf(&b, "Tier: %s\n", l.Tier)
+	fmt.Fprintf(&b, "Level: %d (bonus: %d)\n", l.Level, l.BonusSkillLevel)
+	fmt.Fprintf(&b, "Experience: %.1f\n", l.Experience)
+	fmt.Fprintf(&b, "Age: %d\n", l.Age)
+	fmt.Fprintf(&b, "Gender: %s\n", l.Gender)
+	fmt.Fprintf(&b, "Ethic: %s\n", l.Ethic)
+	fmt.Fprintf(&b, "Job: %s\n", l.Job)
+	fmt.Fprintf(&b, "Recruited: %s\n", l.RecruitmentDate)
+
+	fmt.Fprintf(&b, "\nAssignment: %s\n", resolveAssignment(gs, l))
+
+	if l.Location.Type != "" {
+		fmt.Fprintf(&b, "Location: %s (id=%d)\n", l.Location.Type, l.Location.ID)
+	}
+	if l.CouncilLocation.Type != "" {
+		fmt.Fprintf(&b, "Council: %s (id=%d, position=%d)\n",
+			l.CouncilLocation.Type, l.CouncilLocation.ID, l.CouncilLocation.Position)
+	}
+
+	fmt.Fprintf(&b, "\nTraits:\n")
+	if len(l.Traits) == 0 {
+		fmt.Fprintf(&b, "  (none)\n")
+	}
+	for _, t := range l.Traits {
+		fmt.Fprintf(&b, "  - %s\n", t)
+	}
+
+	return mcp.NewToolResultText(b.String()), nil
+}
+
+func resolveAssignment(gs *gamestate.GameState, l gamestate.Leader) string {
+	// Council position
+	if l.CouncilLocation.Type == "council_position" {
+		return fmt.Sprintf("Council #%d", l.CouncilLocation.ID)
+	}
+	// Fleet/ship assignment
+	if l.Location.Type == "ship" {
+		if fleet, ok := gs.Fleet[l.Location.ID]; ok {
+			return fmt.Sprintf("Fleet: %s", fleet.Name.Display())
+		}
+		return fmt.Sprintf("Ship %d", l.Location.ID)
+	}
+	// Governor
+	if l.Location.Type == "planet" {
+		if p, ok := gs.Planets.Planet[l.Location.ID]; ok {
+			return fmt.Sprintf("Governor: %s", p.Name.Display())
+		}
+	}
+	if l.Job != "" {
+		return l.Job
+	}
+	return "Unassigned"
+}
