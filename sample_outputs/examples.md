@@ -395,131 +395,131 @@ Use get_fleet_power with fleet_id for ship details.
 
 ID       Name                           Class                        Power Ships
 --------------------------------------------------------------------------------
-0        SPEC_Bebaki_system             shipclass_starbase (station)   1167.6     1
-1        HUM1_SHIP_MendracktheCunning   shipclass_science_ship (civilian)      0.0     1
-2        HUM1_SHIP_JesslurtheSteadfast  shipclass_constructor (civilian)      0.0     1
-3        HUM1_FLEET_GalathorsArmada     shipclass_military          5371.6    14
-260      SPEC_Bebaki_system             shipclass_mining_station (station)      0.0     1
-261      HUM1_PLANET_YltarsBulwark      shipclass_mining_station (station)      0.0     1
-262      HUM1_PLANET_OdrankasHolding    shipclass_mining_station (station)      0.0     1
-263      HUM1_PLANET_MadragonsStrongho… shipclass_mining_station (station)      0.0     1
-264      HUM1_PLANET_TetlarsPalace      shipclass_research_station (station)      0.0     1
-341      HUM1_PLANET_GarbanogsDwelling  shipclass_research_station (station)      0.0     1
-353      HUM1_PLANET_KortolsStation     shipclass_mining_station (station)      0.0     1
-374      Zabeen                         shipclass_starbase (station)   6122.0     7
-394      Zabeen                         shipclass_mining_station (station)      0.0     1
-407      Mius                           shipclass_mining_station (station)      0.0     1
-422      Wetij                          shipclass_starbase (station)    347.9     1
-452      Satrinias                      shipclass_starbase (station)    347.9     1
-470      Satrinias                      shipclass_mining_station (station)      0.0     1
-498      Wetij V                        shipclass_mining_station (station)      0.0     1
-508      AR-2- 981                      shipclass_mining_station (station)      0.0     1
-517      VIR- 63089                     shipclass_mining_station (station)      0.0     1
-546      NAME_Deneb                     shipclass_starbase (station)    347.9     1
-563      Chibblar                       shipclass_starbase (station)    347.9     1
-580      Algol                          shipclass_starbase (station)    347.9     1
-592      Algol II                       shipclass_mining_station (station)      0.0     1
-599      Algol                          shipclass_research_station (station)      0.0     1
-615      Chibblar IV                    shipclass_mining_station (station)      0.0     1
-623      Chibblar                       shipclass_mining_station (station)      0.0     1
-642      NAME_Deneb VI                  shipclass_research_station (station)      0.0     1
-653      NAME_Deneb IV                  shipclass_mining_station (station)      0.0     1
-665      NAME_Deneb III                 shipclass_mining_station (station)      0.0     1
-675      NAME_Deneb II a                shipclass_mining_station (station)      0.0     1
-682      NAME_Deneb II                  shipclass_research_station (station)      0.0     1
-690      NAME_LR-2129                   shipclass_mining_station (station)      0.0     1
-697      NAME_Deneb I                   shipclass_mining_station (station)      0.0     1
-703      NAME_Deneb                     shipclass_mining_station (station)      0.0     1
-721      Astinda                        shipclass_starbase (station)    347.9     1
-732      Gothra                         shipclass_starbase (station)    347.9     1
-739      Gothra V                       shipclass_mining_station (station)      0.0     1
-743      Gothra                         shipclass_mining_station (station)      0.0     1
-753      IU11- 1138                     shipclass_mining_station (station)      0.0     1
-762      Astinda                        shipclass_research_station (station)      0.0     1
-819      Jabbah                         shipclass_starbase (station)    347.9     1
-836      Higashik-Ata                   shipclass_research_station (station)      0.0     1
-846      Jabbah II                      shipclass_mining_station (station)      0.0     1
-860      Jabbah                         shipclass_mining_station (station)      0.0     1
-898      Epsilon_Indi                   shipclass_starbase (station)    347.9     1
-916      Adranell                       shipclass_starbase (station)    347.9     1
-923      Cezuetov                       shipclass_starbase (station)    347.9     1
-950      Lane                           shipclass_starbase (station)    347.9     1
-960      Beta_Hydri                     shipclass_starbase (station)    347.9     1
-965      Kathea                         shipclass_starbase (station)    347.9     1
-970      Boro_Baba                      shipclass_starbase (station)    347.9     1
-984      Boro_Baba                      shipclass_research_station (station)      0.0     1
-993      Kathea V                       shipclass_mining_station (station)      0.0     1
-1020     Beta_Hydri VI a                shipclass_mining_station (station)      0.0     1
-1026     32-PX- 915                     shipclass_research_station (station)      0.0     1
-1033     Beta_Hydri                     shipclass_mining_station (station)      0.0     1
-1043     18- AT                         shipclass_mining_station (station)      0.0     1
-1052     ONA- XI2                       shipclass_mining_station (station)      0.0     1
-1055     Lane                           shipclass_research_station (station)      0.0     1
-1064     Cezuetov                       shipclass_mining_station (station)      0.0     1
-1073     Sawomia                        shipclass_research_station (station)      0.0     1
-1079     Adranell III a                 shipclass_research_station (station)      0.0     1
-1088     Adranell II d                  shipclass_mining_station (station)      0.0     1
-1097     Adranell                       shipclass_mining_station (station)      0.0     1
-1124     Epsilon_Indi III               shipclass_mining_station (station)      0.0     1
-1136     Epsilon_Indi                   shipclass_mining_station (station)      0.0     1
-1162     Ruqlar                         shipclass_starbase (station)    347.9     1
-1196     Joinum VII                     shipclass_mining_station (station)      0.0     1
-1218     B12- 487                       shipclass_mining_station (station)      0.0     1
-1236     XC- 0909                       shipclass_mining_station (station)      0.0     1
-1239     Subra III                      shipclass_mining_station (station)      0.0     1
-1242     HL- XI2                        shipclass_mining_station (station)      0.0     1
-1246     Subra                          shipclass_research_station (station)      0.0     1
-1265     Gothra I                       shipclass_mining_station (station)      0.0     1
-1270     JX4- Y2K                       shipclass_research_station (station)      0.0     1
-1294     NAME_Aureyon                   shipclass_starbase (station)    347.9     1
-1300     NAME_Aureyon                   shipclass_mining_station (station)      0.0     1
-1394     Intham VI                      shipclass_mining_station (station)      0.0     1
-1399     Intham II a                    shipclass_research_station (station)      0.0     1
-1406     Intham I a                     shipclass_mining_station (station)      0.0     1
-1408     Intham I                       shipclass_mining_station (station)      0.0     1
-1413     HL- 438                        shipclass_mining_station (station)      0.0     1
-1420     UT-9- 11-F                     shipclass_mining_station (station)      0.0     1
-1504     (unnamed)                      shipclass_research_station (station)      0.0     1
-16777223 Sawomia III                    shipclass_mining_station (station)      0.0     1
-16777239 HUM1_SHIP_KhutmatheGreat       shipclass_science_ship (civilian)      0.0     1
-16777271 Wetij                          shipclass_mining_station (station)      0.0     1
-16777286 Higashik-Ata                   shipclass_starbase (station)   2158.9     1
-16777632 Jabbah I                       shipclass_mining_station (station)      0.0     1
-16777665 Satrinias IV                   shipclass_mining_station (station)      0.0     1
-16777916 Sawomia                        shipclass_starbase (station)    347.9     1
-16777993 NAME_Stykkia                   shipclass_mining_station (station)      0.0     1
-16778174 Uxplorix                       shipclass_starbase (station)    347.9     1
-16778180 Kathea III a                   shipclass_research_station (station)      0.0     1
-16778182 Kathea VI                      shipclass_research_station (station)      0.0     1
-16778195 Boro_Baba II b                 shipclass_research_station (station)      0.0     1
-16778215 Joinum III a                   shipclass_research_station (station)      0.0     1
-16778222 Kathea                         shipclass_mining_station (station)      0.0     1
-16778374 Subra                          shipclass_starbase (station)   5321.6     6
-16778399 Joinum VI                      shipclass_mining_station (station)      0.0     1
-16778429 Zabeen III a                   shipclass_research_station (station)      0.0     1
-16778443 Subra I                        shipclass_mining_station (station)      0.0     1
-16778448 14-S- 1138                     shipclass_mining_station (station)      0.0     1
-16778471 Zabeen X                       shipclass_mining_station (station)      0.0     1
-16778497 NAME_Straeng                   shipclass_mining_station (station)      0.0     1
-16778555 Hixar                          shipclass_mining_station (station)      0.0     1
-16778558 Hixar                          shipclass_starbase (station)    347.9     1
-16778635 Intham                         shipclass_mining_station (station)      0.0     1
-33554783 HUM1_PLANET_KojoggsKeep        shipclass_mining_station (station)      0.0     1
-33554788 Satrinias VI                   shipclass_mining_station (station)      0.0     1
-33554821 Mius                           shipclass_starbase (station)    347.9     1
-33555052 Ruqlar                         shipclass_mining_station (station)      0.0     1
-33555223 NAME_Spjuuht                   shipclass_research_station (station)      0.0     1
-33555545 Intham                         shipclass_starbase (station)    347.9     1
-33555580 Joinum                         shipclass_starbase (station)    347.9     1
-33555657 R66- NY1K                      shipclass_mining_station (station)      0.0     1
-33555669 Uxplorix                       shipclass_mining_station (station)      0.0     1
-50332115 Boro_Baba II a                 shipclass_research_station (station)      0.0     1
-50332432 Kathea                         shipclass_mining_station (station)      0.0     1
-50332763 Joinum                         shipclass_mining_station (station)      0.0     1
-67109627 NAME_Snaara a                  shipclass_mining_station (station)      0.0     1
-67109900 Intham IV                      shipclass_mining_station (station)      0.0     1
-67110010 Joinum V a                     shipclass_mining_station (station)      0.0     1
-67110109 Mius V                         shipclass_research_station (station)      0.0     1
+0        SPEC_Bebaki_system             Starbase (station)          1167.6     1
+1        HUM1_SHIP_MendracktheCunning   Science Ship (civilian)        0.0     1
+2        HUM1_SHIP_JesslurtheSteadfast  Construction Ship (civilian)      0.0     1
+3        HUM1_FLEET_GalathorsArmada     Military Ship               5371.6    14
+260      SPEC_Bebaki_system             Mining Station (station)       0.0     1
+261      HUM1_PLANET_YltarsBulwark      Mining Station (station)       0.0     1
+262      HUM1_PLANET_OdrankasHolding    Mining Station (station)       0.0     1
+263      HUM1_PLANET_MadragonsStrongho… Mining Station (station)       0.0     1
+264      HUM1_PLANET_TetlarsPalace      Research Station (station)      0.0     1
+341      HUM1_PLANET_GarbanogsDwelling  Research Station (station)      0.0     1
+353      HUM1_PLANET_KortolsStation     Mining Station (station)       0.0     1
+374      Zabeen                         Starbase (station)          6122.0     7
+394      Zabeen                         Mining Station (station)       0.0     1
+407      Mius                           Mining Station (station)       0.0     1
+422      Wetij                          Starbase (station)           347.9     1
+452      Satrinias                      Starbase (station)           347.9     1
+470      Satrinias                      Mining Station (station)       0.0     1
+498      Wetij V                        Mining Station (station)       0.0     1
+508      AR-2- 981                      Mining Station (station)       0.0     1
+517      VIR- 63089                     Mining Station (station)       0.0     1
+546      NAME_Deneb                     Starbase (station)           347.9     1
+563      Chibblar                       Starbase (station)           347.9     1
+580      Algol                          Starbase (station)           347.9     1
+592      Algol II                       Mining Station (station)       0.0     1
+599      Algol                          Research Station (station)      0.0     1
+615      Chibblar IV                    Mining Station (station)       0.0     1
+623      Chibblar                       Mining Station (station)       0.0     1
+642      NAME_Deneb VI                  Research Station (station)      0.0     1
+653      NAME_Deneb IV                  Mining Station (station)       0.0     1
+665      NAME_Deneb III                 Mining Station (station)       0.0     1
+675      NAME_Deneb II a                Mining Station (station)       0.0     1
+682      NAME_Deneb II                  Research Station (station)      0.0     1
+690      NAME_LR-2129                   Mining Station (station)       0.0     1
+697      NAME_Deneb I                   Mining Station (station)       0.0     1
+703      NAME_Deneb                     Mining Station (station)       0.0     1
+721      Astinda                        Starbase (station)           347.9     1
+732      Gothra                         Starbase (station)           347.9     1
+739      Gothra V                       Mining Station (station)       0.0     1
+743      Gothra                         Mining Station (station)       0.0     1
+753      IU11- 1138                     Mining Station (station)       0.0     1
+762      Astinda                        Research Station (station)      0.0     1
+819      Jabbah                         Starbase (station)           347.9     1
+836      Higashik-Ata                   Research Station (station)      0.0     1
+846      Jabbah II                      Mining Station (station)       0.0     1
+860      Jabbah                         Mining Station (station)       0.0     1
+898      Epsilon_Indi                   Starbase (station)           347.9     1
+916      Adranell                       Starbase (station)           347.9     1
+923      Cezuetov                       Starbase (station)           347.9     1
+950      Lane                           Starbase (station)           347.9     1
+960      Beta_Hydri                     Starbase (station)           347.9     1
+965      Kathea                         Starbase (station)           347.9     1
+970      Boro_Baba                      Starbase (station)           347.9     1
+984      Boro_Baba                      Research Station (station)      0.0     1
+993      Kathea V                       Mining Station (station)       0.0     1
+1020     Beta_Hydri VI a                Mining Station (station)       0.0     1
+1026     32-PX- 915                     Research Station (station)      0.0     1
+1033     Beta_Hydri                     Mining Station (station)       0.0     1
+1043     18- AT                         Mining Station (station)       0.0     1
+1052     ONA- XI2                       Mining Station (station)       0.0     1
+1055     Lane                           Research Station (station)      0.0     1
+1064     Cezuetov                       Mining Station (station)       0.0     1
+1073     Sawomia                        Research Station (station)      0.0     1
+1079     Adranell III a                 Research Station (station)      0.0     1
+1088     Adranell II d                  Mining Station (station)       0.0     1
+1097     Adranell                       Mining Station (station)       0.0     1
+1124     Epsilon_Indi III               Mining Station (station)       0.0     1
+1136     Epsilon_Indi                   Mining Station (station)       0.0     1
+1162     Ruqlar                         Starbase (station)           347.9     1
+1196     Joinum VII                     Mining Station (station)       0.0     1
+1218     B12- 487                       Mining Station (station)       0.0     1
+1236     XC- 0909                       Mining Station (station)       0.0     1
+1239     Subra III                      Mining Station (station)       0.0     1
+1242     HL- XI2                        Mining Station (station)       0.0     1
+1246     Subra                          Research Station (station)      0.0     1
+1265     Gothra I                       Mining Station (station)       0.0     1
+1270     JX4- Y2K                       Research Station (station)      0.0     1
+1294     NAME_Aureyon                   Starbase (station)           347.9     1
+1300     NAME_Aureyon                   Mining Station (station)       0.0     1
+1394     Intham VI                      Mining Station (station)       0.0     1
+1399     Intham II a                    Research Station (station)      0.0     1
+1406     Intham I a                     Mining Station (station)       0.0     1
+1408     Intham I                       Mining Station (station)       0.0     1
+1413     HL- 438                        Mining Station (station)       0.0     1
+1420     UT-9- 11-F                     Mining Station (station)       0.0     1
+1504     (unnamed)                      Research Station (station)      0.0     1
+16777223 Sawomia III                    Mining Station (station)       0.0     1
+16777239 HUM1_SHIP_KhutmatheGreat       Science Ship (civilian)        0.0     1
+16777271 Wetij                          Mining Station (station)       0.0     1
+16777286 Higashik-Ata                   Starbase (station)          2158.9     1
+16777632 Jabbah I                       Mining Station (station)       0.0     1
+16777665 Satrinias IV                   Mining Station (station)       0.0     1
+16777916 Sawomia                        Starbase (station)           347.9     1
+16777993 NAME_Stykkia                   Mining Station (station)       0.0     1
+16778174 Uxplorix                       Starbase (station)           347.9     1
+16778180 Kathea III a                   Research Station (station)      0.0     1
+16778182 Kathea VI                      Research Station (station)      0.0     1
+16778195 Boro_Baba II b                 Research Station (station)      0.0     1
+16778215 Joinum III a                   Research Station (station)      0.0     1
+16778222 Kathea                         Mining Station (station)       0.0     1
+16778374 Subra                          Starbase (station)          5321.6     6
+16778399 Joinum VI                      Mining Station (station)       0.0     1
+16778429 Zabeen III a                   Research Station (station)      0.0     1
+16778443 Subra I                        Mining Station (station)       0.0     1
+16778448 14-S- 1138                     Mining Station (station)       0.0     1
+16778471 Zabeen X                       Mining Station (station)       0.0     1
+16778497 NAME_Straeng                   Mining Station (station)       0.0     1
+16778555 Hixar                          Mining Station (station)       0.0     1
+16778558 Hixar                          Starbase (station)           347.9     1
+16778635 Intham                         Mining Station (station)       0.0     1
+33554783 HUM1_PLANET_KojoggsKeep        Mining Station (station)       0.0     1
+33554788 Satrinias VI                   Mining Station (station)       0.0     1
+33554821 Mius                           Starbase (station)           347.9     1
+33555052 Ruqlar                         Mining Station (station)       0.0     1
+33555223 NAME_Spjuuht                   Research Station (station)      0.0     1
+33555545 Intham                         Starbase (station)           347.9     1
+33555580 Joinum                         Starbase (station)           347.9     1
+33555657 R66- NY1K                      Mining Station (station)       0.0     1
+33555669 Uxplorix                       Mining Station (station)       0.0     1
+50332115 Boro_Baba II a                 Research Station (station)      0.0     1
+50332432 Kathea                         Mining Station (station)       0.0     1
+50332763 Joinum                         Mining Station (station)       0.0     1
+67109627 NAME_Snaara a                  Mining Station (station)       0.0     1
+67109900 Intham IV                      Mining Station (station)       0.0     1
+67110010 Joinum V a                     Mining Station (station)       0.0     1
+67110109 Mius V                         Research Station (station)      0.0     1
 
 Military Fleet Power (excl. stations/civilian): 5371.6
 
@@ -554,159 +554,159 @@ Comparison with Known Empires:
 
 ```
 === Fleet 3: HUM1_FLEET_GalathorsArmada ===
-Class: shipclass_military
+Class: Military Ship
 Military Power: 5371.6
 Ships: 14
 
   --- Ship 33557229: HUM1_SHIP_UntabbtheGrim ---
-  Design: HUM1_CLASS_Daskall (destroyer)
+  Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: DESTROYER_BOW_M1S2
+  Section: Gunship Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - MISSILE_2 [SMALL_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Small Railgun [SMALL_GUN_01]
+    - Fusion Missiles [SMALL_GUN_02]
 
   --- Ship 3129: HUM1_SHIP_TakkramtheLawgiver ---
-  Design: HUM1_CLASS_Daskall (destroyer)
+  Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: DESTROYER_BOW_M1S2
+  Section: Gunship Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - MISSILE_2 [SMALL_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Small Railgun [SMALL_GUN_01]
+    - Fusion Missiles [SMALL_GUN_02]
 
   --- Ship 33556074: HUM1_SHIP_OthanatheBenign ---
-  Design: HUM1_CLASS_Daskall (destroyer)
+  Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: DESTROYER_BOW_M1S2
+  Section: Gunship Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - MISSILE_2 [SMALL_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Small Railgun [SMALL_GUN_01]
+    - Fusion Missiles [SMALL_GUN_02]
 
   --- Ship 16780210: HUM1_SHIP_JolkegtheAgile ---
-  Design: HUM1_CLASS_Daskall (destroyer)
+  Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: DESTROYER_BOW_M1S2
+  Section: Gunship Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - MISSILE_2 [SMALL_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Small Railgun [SMALL_GUN_01]
+    - Fusion Missiles [SMALL_GUN_02]
 
   --- Ship 16779346: HUM1_SHIP_DorlantheTyrant ---
-  Design: HUM1_CLASS_Daskall (destroyer)
+  Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: DESTROYER_BOW_M1S2
+  Section: Gunship Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - MISSILE_2 [SMALL_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Small Railgun [SMALL_GUN_01]
+    - Fusion Missiles [SMALL_GUN_02]
 
   --- Ship 16780487: HUM1_SHIP_BathartheAmicable ---
-  Design: HUM1_CLASS_Daskall (destroyer)
+  Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: DESTROYER_BOW_M1S2
+  Section: Gunship Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - MISSILE_2 [SMALL_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Small Railgun [SMALL_GUN_01]
+    - Fusion Missiles [SMALL_GUN_02]
 
   --- Ship 33557745: HUM1_SHIP_LahvontheImpudent ---
-  Design: HUM1_CLASS_Daskall (destroyer)
+  Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: DESTROYER_BOW_M1S2
+  Section: Gunship Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - MISSILE_2 [SMALL_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Small Railgun [SMALL_GUN_01]
+    - Fusion Missiles [SMALL_GUN_02]
 
   --- Ship 33557525: HUM1_SHIP_OssanatheFounder ---
-  Design: HUM1_CLASS_Salaas (corvette)
+  Design: HUM1_CLASS_Salaas (Corvette)
   Hull:   230 / 230
   Shield: 250 / 250
   Armor:  205 / 205
-  Section: CORVETTE_MID_S3
+  Section: Interceptor
   Weapons:
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_02]
-    - MISSILE_2 [SMALL_GUN_03]
+    - Small Railgun [SMALL_GUN_01]
+    - Small Railgun [SMALL_GUN_02]
+    - Fusion Missiles [SMALL_GUN_03]
 
   --- Ship 50334702: HUM1_SHIP_KhebbtheFierce ---
-  Design: HUM1_CLASS_Salaas (corvette)
+  Design: HUM1_CLASS_Salaas (Corvette)
   Hull:   230 / 230
   Shield: 250 / 250
   Armor:  205 / 205
-  Section: CORVETTE_MID_S3
+  Section: Interceptor
   Weapons:
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_02]
-    - MISSILE_2 [SMALL_GUN_03]
+    - Small Railgun [SMALL_GUN_01]
+    - Small Railgun [SMALL_GUN_02]
+    - Fusion Missiles [SMALL_GUN_03]
 
   --- Ship 33557513: HUM1_SHIP_BoroktheAffable ---
-  Design: HUM1_CLASS_Salaas (corvette)
+  Design: HUM1_CLASS_Salaas (Corvette)
   Hull:   230 / 230
   Shield: 250 / 250
   Armor:  205 / 205
-  Section: CORVETTE_MID_S3
+  Section: Interceptor
   Weapons:
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_01]
-    - SMALL_MASS_DRIVER_3 [SMALL_GUN_02]
-    - MISSILE_2 [SMALL_GUN_03]
+    - Small Railgun [SMALL_GUN_01]
+    - Small Railgun [SMALL_GUN_02]
+    - Fusion Missiles [SMALL_GUN_03]
 
   --- Ship 33557062: HUM1_SHIP_LethamtheDecisive ---
-  Design: HUM1_CLASS_Gasna (cruiser)
+  Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: CRUISER_BOW_M2
+  Section: Broadside Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Medium Railgun [MEDIUM_GUN_02]
 
   --- Ship 33557763: HUM1_SHIP_MuntattheYellow ---
-  Design: HUM1_CLASS_Gasna (cruiser)
+  Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: CRUISER_BOW_M2
+  Section: Broadside Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Medium Railgun [MEDIUM_GUN_02]
 
   --- Ship 67112198: HUM1_SHIP_GorontheShining ---
-  Design: HUM1_CLASS_Gasna (cruiser)
+  Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: CRUISER_BOW_M2
+  Section: Broadside Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Medium Railgun [MEDIUM_GUN_02]
 
   --- Ship 67109428: HUM1_SHIP_GaraltheLiberator ---
-  Design: HUM1_CLASS_Gasna (cruiser)
+  Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: CRUISER_BOW_M2
+  Section: Broadside Bow
   Weapons:
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_01]
-    - MEDIUM_MASS_DRIVER_3 [MEDIUM_GUN_02]
+    - Medium Railgun [MEDIUM_GUN_01]
+    - Medium Railgun [MEDIUM_GUN_02]
 ```
 
 ## get_planets (summary)
@@ -738,10 +738,10 @@ Amenities: 7214 (used: 7106, free: 108)
 Housing: 7800 (used: 6606, free: 1194)
 
 District Slots: 4 / 18 used
-  Agriculture District: 1
   City District: 1
   Generator District: 1
   Mining District: 1
+  Agriculture District: 1
 
 Districts Detail (4):
   City District (lvl 3) — slots: Research Enclave, Research Enclave
@@ -795,12 +795,12 @@ ID     Name                      Class              Size Surveyed Deposits
 -------------------------------------------------------------------------------------
 3579   Zedran III                Continental World    22      yes 11
 673    Pothria III               Continental World    20      yes 12
-2684   Mardom III                Tundra World         16      yes 12
 671    Pothria II                Arctic World         16      yes 14
+2684   Mardom III                Tundra World         16      yes 12
 4027   Atausnyria III            Alpine World         16      yes 15
-1014   Itraben I                 Gaia World           14      yes 9
 836    Dearum I                  Savanna World        14      yes 10
 1641   Rakaron III a             Desert World         14      yes 12
+1014   Itraben I                 Gaia World           14      yes 9
 4086   Pozuno II                 Gaia World           13      yes 11
 3603   Hadriccus III a           Tundra World         10      yes 9
 2647   Daranma III               Ocean World          22       no 13
@@ -819,27 +819,27 @@ Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
-150995515    HUM1_CHR_Linntyla         commander      5   0 principal_pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
-16777805     HUM1_CHR_Corrona          commander      1   0 special_operations_… Butcher, Resilient, Arrested Development
-184549931    INF1_CHA_Kaaftoza         commander      4   0 captain              General, $leader_trait_iron_fist$ II, Butcher
 33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
+16777808     HUM1_CHR_Monnobak         commander      1   0 ship_logistics_offi… Trickster, Resilient, Arrested Development
 16777511     HUM1_CHR_Limathar         commander      4   0 Council #20          Strategist, $trait_ruler_warlike$ II, Defense Engineer
 16777806     HUM1_CHR_Thalotha         commander      1   0 chief_navigator      Butcher, Resilient, Destructive
+184549931    INF1_CHA_Kaaftoza         commander      4   0 captain              General, $leader_trait_iron_fist$ II, Butcher
 16777807     HUM1_CHR_Darmug           commander      1   0 principal_pilot      Aggressive
-16777808     HUM1_CHR_Monnobak         commander      1   0 ship_logistics_offi… Trickster, Resilient, Arrested Development
-805306372    HUM1_CHR_Campramara       envoy          1  40 foundry              -
+16777805     HUM1_CHR_Corrona          commander      1   0 special_operations_… Butcher, Resilient, Arrested Development
+150995515    HUM1_CHR_Linntyla         commander      5   0 principal_pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
 805306371    HUM1_CHR_Monnobaki        envoy          1  37 enforcer             -
-33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Industrialist, Psychic, $leader_trait_forge_focus$ II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
-16777401     HUM1_CHR_Cognati          official       1   0 politician           Resilient
+805306372    HUM1_CHR_Campramara       envoy          1  40 foundry              -
 33554486     HUM1_CHR_Mikaba           official       2   0 miner                Adaptable
-301990461    HUM1_CHR_Monnobak         official       1   0 politician           Adaptable
+16777401     HUM1_CHR_Cognati          official       1   0 politician           Resilient
 33555010     HUM1_CHR_Tirrana          official       1   0 politician           Resilient
-50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
-16777801     HUM1_CHR_Sebakhir         scientist      2   0 roboticist           Expertise: Field Manipulation, Adaptable
+33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Industrialist, Psychic, $leader_trait_forge_focus$ II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
+301990461    HUM1_CHR_Monnobak         official       1   0 politician           Adaptable
 100663871    HUM1_CHR_Khebb            scientist      4   0 Council #45          Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
-16777804     HUM1_CHR_Listhima         scientist      2   0 technician           Expertise: Military Theory, Roamer
+50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
 16777803     HUM1_CHR_Esthonir         scientist      2   0 technician           Expertise: Propulsion, Spark of Genius
+16777801     HUM1_CHR_Sebakhir         scientist      2   0 roboticist           Expertise: Field Manipulation, Adaptable
 16777802     HUM1_CHR_Tirran           scientist      2   0 foundry              Expertise: Industry, Adaptable
+16777804     HUM1_CHR_Listhima         scientist      2   0 technician           Expertise: Military Theory, Roamer
 ```
 
 ## get_leaders (detail: leader_id=150995515)
