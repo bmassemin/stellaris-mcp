@@ -15,10 +15,10 @@ pong
 Game: mp_Bebakian League (version Cetus v4.3.2)
 
 Name: SPEC_Bebaki
-Government: gov_science_directorate (auth_oligarchic)
-Origin: origin_default
-Ethics: ethic_authoritarian, ethic_fanatic_materialist
-Civics: civic_technocracy, civic_crafters
+Government: Science Directorate (Oligarchic)
+Origin: Default
+Ethics: Authoritarian, Fanatic Materialist
+Civics: Technocracy, Crafters
 
 Power Ratings:
   Military: 176.6
@@ -42,47 +42,47 @@ Monthly Net Balance:
 === Research Status (SPEC_Bebaki) ===
 
 Current Research:
-  Physics: tech_administrative_ai (progress: 151.3)
-  Society: tech_planetary_unification (progress: 134.6)
-  Engineering: tech_powered_exoskeletons (progress: 134.6)
+  Physics: Administrative Ai (progress: 151.3)
+  Society: Planetary Unification (progress: 134.6)
+  Engineering: Powered Exoskeletons (progress: 134.6)
 
 Available Research Options:
-  Physics: tech_physics_1, tech_shields_2, tech_administrative_ai, tech_power_plant_2
-  Society: tech_genome_mapping, tech_doctrine_navy_size_1, tech_eco_simulation, tech_society_1, tech_planetary_unification
-  Engineering: tech_ship_armor_2, tech_powered_exoskeletons, tech_afterburners_1, tech_torpedoes_1
+  Physics: Physics 1, Shields 2, Administrative Ai, Power Plant 2
+  Society: Genome Mapping, Doctrine Navy Size 1, Eco Simulation, Society 1, Planetary Unification
+  Engineering: Ship Armor 2, Powered Exoskeletons, Afterburners 1, Torpedoes 1
 
 Completed Technologies (31):
-  - tech_solar_panel_network
-  - tech_space_exploration
-  - tech_corvettes
-  - tech_starbase_1
-  - tech_starbase_2
-  - tech_assault_armies
-  - tech_ship_armor_1
-  - tech_thrusters_1
-  - tech_space_defense_station_1
-  - tech_basic_industry
-  - tech_mechanized_mining
-  - tech_space_construction
-  - tech_mass_drivers_1
-  - tech_flak_batteries_1
-  - tech_missiles_1
-  - tech_basic_science_lab_1
-  - tech_fission_power
-  - tech_reactor_boosters_1
-  - tech_shields_1
-  - tech_power_plant_1
-  - tech_hyper_drive_1
-  - tech_lasers_1
-  - tech_pd_tracking_1
-  - tech_planetary_defenses
-  - tech_interplanetary_commerce
-  - tech_industrial_farming
-  - tech_hydroponics
-  - tech_colonization_1
-  - tech_basic_health
-  - tech_planetary_government
-  - tech_holo_entertainment
+  - Solar Panel Network
+  - Space Exploration
+  - Corvettes
+  - Starbase 1
+  - Starbase 2
+  - Assault Armies
+  - Ship Armor 1
+  - Thrusters 1
+  - Space Defense Station 1
+  - Basic Industry
+  - Mechanized Mining
+  - Space Construction
+  - Mass Drivers 1
+  - Flak Batteries 1
+  - Missiles 1
+  - Basic Science Lab 1
+  - Fission Power
+  - Reactor Boosters 1
+  - Shields 1
+  - Power Plant 1
+  - Hyper Drive 1
+  - Lasers 1
+  - Pd Tracking 1
+  - Planetary Defenses
+  - Interplanetary Commerce
+  - Industrial Farming
+  - Hydroponics
+  - Colonization 1
+  - Basic Health
+  - Planetary Government
+  - Holo Entertainment
 ```
 
 ## get_economy_breakdown
@@ -247,15 +247,15 @@ Use get_planets with planet_id for details.
 
 ID     Name                      Class            Size  Pops  Stab Design.      Districts
 --------------------------------------------------------------------------------------------------------------
-11     SPEC_Bebaki_planet        pc_continental     19  5219    71 col_capital  4/19 [city:1 energy:1 farming:1 mining:1]
+11     SPEC_Bebaki_planet        Continental        19  5219    71 col_capital  4/19 [City:1 Farming:1 Generator:1 Mining:1]
 ```
 
 ## get_planets (detail: planet_id=11)
 
 ```
 === Planet 11: SPEC_Bebaki_planet ===
-Class: pc_continental, Size: 19
-Designation: col_capital
+Class: Continental, Size: 19
+Designation: Capital
 Owner: 0, Controller: 0
 
 Population: 5219 pops
@@ -265,40 +265,40 @@ Amenities: 4656 (used: 3780, free: 876)
 Housing: 5600 (used: 5216, free: 384)
 
 District Slots: 4 / 19 used
-  district_city: 1
-  district_generator: 1
-  district_mining: 1
-  district_farming: 1
+  Generator: 1
+  Mining: 1
+  Farming: 1
+  City: 1
 
 Districts Detail (4):
-  district_city (lvl 3) — slots: zone_research_unity, zone_industrial
-    [zone_default] building_capital
-    [zone_default] building_precinct_house
-    [zone_research_unity] building_research_lab_1
-    [zone_industrial] building_factory_1
-  district_generator (lvl 3)
-  district_mining (lvl 2)
-  district_farming (lvl 4)
+  City (lvl 3) — slots: Research Unity, Industrial
+    [Default] Capital
+    [Default] Precinct House
+    [Research Unity] Research Lab 1
+    [Industrial] Factory 1
+  Generator (lvl 3)
+  Mining (lvl 2)
+  Farming (lvl 4)
 
 Planetary Features (10):
-  - d_hot_springs
-  - d_rushing_waterfalls
-  - d_tempestous_mountain
-  - d_veiny_cliffs
-  - d_prosperous_mesa
-  - d_rich_mountain
-  - d_rugged_woods
-  - d_fertile_lands
-  - d_rugged_woods
-  - d_black_soil
+  - Hot Springs
+  - Rushing Waterfalls
+  - Tempestous Mountain
+  - Veiny Cliffs
+  - Prosperous Mesa
+  - Rich Mountain
+  - Rugged Woods
+  - Fertile Lands
+  - Rugged Woods
+  - Black Soil
 
 Blockers (3):
-  - d_decrepit_dwellings
-  - d_failing_infrastructure -> d_prosperous_mesa
-  - d_failing_infrastructure -> d_prosperous_mesa
+  - Decrepit Dwellings
+  - Failing Infrastructure -> Prosperous Mesa
+  - Failing Infrastructure -> Prosperous Mesa
 
 Modifiers:
-  - prosp_uni_mod (7020 days remaining)
+  - Prosp Uni Mod (7020 days remaining)
 
 Monthly Production:
   alloys: 7.3, consumer_goods: 30.0, energy: 50.7, engineering_research: 8.7, food: 67.6, minerals: 22.5, physics_research: 8.1, society_research: 8.7, trade: 44.4, unity: 15.6
@@ -316,63 +316,63 @@ Use get_planets with planet_id for details.
 
 ID     Name                      Class              Size Surveyed Deposits
 -------------------------------------------------------------------------------------
-2107   Ispyria III               pc_desert            25      yes 14
-3224   Camthrin II               pc_continental       25      yes 12
-269    Uldor III                 pc_savannah          24      yes 10
-294    Istora III                pc_desert            23      yes 14
-3537   Rathadore III             pc_desert            23      yes 15
-3895   Hocry II                  pc_gaia              23      yes 13
-287    Perqim III                pc_alpine            23      yes 14
-2287   Tystra III                pc_tropical          22      yes 16
-2986   Zastea III                pc_arid              22      yes 12
-3063   Cowhig III                pc_tundra            22      yes 14
-778    Dossel I                  pc_desert            21      yes 15
-1776   Kodracca III              pc_arid              20      yes 12
-863    NAME_Unique_System_2_Pla… pc_relic             20      yes 5
-1211   Imoleto I                 pc_continental       20      yes 13
-3357   Irthius II                pc_tropical          20      yes 15
-580    Saidainope III            pc_alpine            20      yes 14
-261    Bailleulus III            pc_continental       20      yes 13
-2370   Areysak II                pc_continental       20      yes 14
-1024   Vrittaka II               pc_tropical          19      yes 13
-1829   NAME_wenkwort_prime       pc_gaia              19      yes 9
-228    Haedus III                pc_desert            18      yes 11
-2980   Atmir II                  pc_savannah          18      yes 12
-2952   Owhziea II                pc_ocean             18      yes 10
-3408   Ruinam II                 pc_tropical          18      yes 13
-152    Jhurope III               pc_arid              18      yes 13
-277    Taggallion III            pc_desert            18      yes 11
-396    Emara III                 pc_arid              18      yes 13
-3586   Ophele III                pc_desert            18      yes 12
-3274   Uproth II b               pc_arctic            17      yes 15
-1213   Imoleto III               pc_gaia              17      yes 9
-1805   Toiubos III               pc_arid              17      yes 11
-328    Theta_Scorpii II          pc_alpine            16      yes 14
-578    Saidainope II             pc_ocean             16      yes 13
-213    Dodonnam III              pc_desert            16      yes 12
-318    Alassia III               pc_desert            16      yes 8
-1031   Unur II                   pc_tropical          15      yes 13
-3620   Betria III                pc_savannah          14      yes 11
-3736   Avishek III a             pc_arctic            14      yes 13
-774    Ay'arolee III c           pc_alpine            14      yes 13
-2063   Uxfriri III               pc_arctic            14      yes 11
-251    Lazon I                   pc_desert            14      yes 9
-775    Ay'arolee III d           pc_desert            13      yes 11
-1257   NAME_HillosC              pc_tundra            13      yes 8
-189    Hydrobius II              pc_continental       13      yes 11
-2660   Seb III                   pc_tropical          13      yes 12
-244    Fomalhaut I               pc_tropical          13      yes 10
-1156   Aytoun III a              pc_tropical          13      yes 11
-3774   Sjoberg III a             pc_arid              13      yes 13
-3782   Sjoberg V a               pc_alpine            12      yes 11
-200    Terzam II                 pc_savannah          12      yes 11
-1806   Toiubos III a             pc_alpine            12      yes 8
-1212   Imoleto II                pc_continental       12      yes 11
-2709   Offe'ei III a             pc_arctic            11      yes 11
-1855   Fidhilam III a            pc_continental       11      yes 12
-1944   Bazzanac IV a             pc_arid              10      yes 7
-558    NAME_UbogleeltD b         pc_gaia               5      yes 5
-221    Iolam III                 pc_alpine            16       no 13
+3224   Camthrin II               Continental          25      yes 12
+2107   Ispyria III               Desert               25      yes 14
+269    Uldor III                 Savannah             24      yes 10
+294    Istora III                Desert               23      yes 14
+3537   Rathadore III             Desert               23      yes 15
+3895   Hocry II                  Gaia                 23      yes 13
+287    Perqim III                Alpine               23      yes 14
+3063   Cowhig III                Tundra               22      yes 14
+2986   Zastea III                Arid                 22      yes 12
+2287   Tystra III                Tropical             22      yes 16
+778    Dossel I                  Desert               21      yes 15
+863    NAME_Unique_System_2_Pla… Relic                20      yes 5
+261    Bailleulus III            Continental          20      yes 13
+2370   Areysak II                Continental          20      yes 14
+1776   Kodracca III              Arid                 20      yes 12
+580    Saidainope III            Alpine               20      yes 14
+1211   Imoleto I                 Continental          20      yes 13
+3357   Irthius II                Tropical             20      yes 15
+1024   Vrittaka II               Tropical             19      yes 13
+1829   NAME_wenkwort_prime       Gaia                 19      yes 9
+3408   Ruinam II                 Tropical             18      yes 13
+277    Taggallion III            Desert               18      yes 11
+2952   Owhziea II                Ocean                18      yes 10
+2980   Atmir II                  Savannah             18      yes 12
+3586   Ophele III                Desert               18      yes 12
+152    Jhurope III               Arid                 18      yes 13
+396    Emara III                 Arid                 18      yes 13
+228    Haedus III                Desert               18      yes 11
+1213   Imoleto III               Gaia                 17      yes 9
+1805   Toiubos III               Arid                 17      yes 11
+3274   Uproth II b               Arctic               17      yes 15
+318    Alassia III               Desert               16      yes 8
+213    Dodonnam III              Desert               16      yes 12
+328    Theta_Scorpii II          Alpine               16      yes 14
+578    Saidainope II             Ocean                16      yes 13
+1031   Unur II                   Tropical             15      yes 13
+251    Lazon I                   Desert               14      yes 9
+774    Ay'arolee III c           Alpine               14      yes 13
+2063   Uxfriri III               Arctic               14      yes 11
+3620   Betria III                Savannah             14      yes 11
+3736   Avishek III a             Arctic               14      yes 13
+1257   NAME_HillosC              Tundra               13      yes 8
+3774   Sjoberg III a             Arid                 13      yes 13
+775    Ay'arolee III d           Desert               13      yes 11
+244    Fomalhaut I               Tropical             13      yes 10
+1156   Aytoun III a              Tropical             13      yes 11
+189    Hydrobius II              Continental          13      yes 11
+2660   Seb III                   Tropical             13      yes 12
+1212   Imoleto II                Continental          12      yes 11
+3782   Sjoberg V a               Alpine               12      yes 11
+1806   Toiubos III a             Alpine               12      yes 8
+200    Terzam II                 Savannah             12      yes 11
+1855   Fidhilam III a            Continental          11      yes 12
+2709   Offe'ei III a             Arctic               11      yes 11
+1944   Bazzanac IV a             Arid                 10      yes 7
+558    NAME_UbogleeltD b         Gaia                  5      yes 5
+221    Iolam III                 Alpine               16       no 13
 ```
 
 ## get_leaders (summary)
@@ -383,22 +383,22 @@ Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
-120          HUM1_CHR_Jonnara          commander      1   0 farmer               leader_trait_trickster
-805306373    HUM1_CHR_Falatir          commander      1  38 Council #16777236    leader_trait_fleet_organizer
-121          HUM1_CHR_Darmull          commander      1   0 bureaucrat           leader_trait_adaptable
-119          HUM1_CHR_Jonnara          commander      1   0 politician           leader_trait_aggressive
-822083587    HUM1_CHR_Shibbala         envoy          1  33 politician           -
+119          HUM1_CHR_Jonnara          commander      1   0 politician           Aggressive
+121          HUM1_CHR_Darmull          commander      1   0 bureaucrat           Adaptable
+805306373    HUM1_CHR_Falatir          commander      1  38 Council #16777236    Fleet Organizer
+120          HUM1_CHR_Jonnara          commander      1   0 farmer               Trickster
 754974722    HUM1_CHR_Bemalona         envoy          1  34 bureaucrat           -
-117          HUM1_CHR_Corrona          official       1   0 engineer             trait_ruler_eye_for_talent
-118          HUM1_CHR_Campramara       official       1   0 miner                leader_trait_resilient
-126          HUM1_CHR_Karba            official       1  32 Council #16777238    leader_trait_politician
-116          HUM1_CHR_Haghonona        official       1   0 politician           leader_trait_adaptable
-124          HUM1_CHR_Kashnak          scientist      1   0 technician           leader_trait_expertise_propulsion, leader_trait_politician, leader_trait_army_veteran, leader_trait_destructive
-822083588    HUM1_CHR_Thaloth          scientist      1  36 Fleet: HUM1_SHIP_Un… leader_trait_expertise_biology, leader_trait_archaeologist
-122          HUM1_CHR_Jesslur          scientist      1   0 foundry              leader_trait_expertise_industry, leader_trait_spark_of_genius
-125          HUM1_CHR_Jesslur          scientist      1  40 Council #16777237    leader_trait_expertise_military_theory, leader_trait_architectural_interest
-123          HUM1_CHR_Haghonon         scientist      1   0 foundry              leader_trait_expertise_new_worlds, leader_trait_carefree
-520093696    HUM1_CHR_Thalotha         scientist      1  28 technician           leader_trait_expertise_particles, leader_trait_spark_of_genius
+822083587    HUM1_CHR_Shibbala         envoy          1  33 politician           -
+116          HUM1_CHR_Haghonona        official       1   0 politician           Adaptable
+118          HUM1_CHR_Campramara       official       1   0 miner                Resilient
+126          HUM1_CHR_Karba            official       1  32 Council #16777238    Politician
+117          HUM1_CHR_Corrona          official       1   0 engineer             Ruler Eye For Talent
+122          HUM1_CHR_Jesslur          scientist      1   0 foundry              Expertise Industry, Spark Of Genius
+822083588    HUM1_CHR_Thaloth          scientist      1  36 Fleet: HUM1_SHIP_Un… Expertise Biology, Archaeologist
+520093696    HUM1_CHR_Thalotha         scientist      1  28 technician           Expertise Particles, Spark Of Genius
+124          HUM1_CHR_Kashnak          scientist      1   0 technician           Expertise Propulsion, Politician, Army Veteran, Destructive
+123          HUM1_CHR_Haghonon         scientist      1   0 foundry              Expertise New Worlds, Carefree
+125          HUM1_CHR_Jesslur          scientist      1  40 Council #16777237    Expertise Military Theory, Architectural Interest
 ```
 
 ## get_leaders (detail: leader_id=805306373)
@@ -411,7 +411,7 @@ Level: 1 (bonus: 0)
 Experience: 69.0
 Age: 38
 Gender: male
-Ethic: ethic_materialist
+Ethic: Materialist
 Job: bureaucrat
 Recruited: 2200.01.01
 
@@ -420,7 +420,7 @@ Location: ship (id=3)
 Council: council_position (id=16777236, position=0)
 
 Traits:
-  - leader_trait_fleet_organizer
+  - Fleet Organizer
 ```
 
 ## get_traditions_ascension

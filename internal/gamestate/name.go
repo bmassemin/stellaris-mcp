@@ -84,3 +84,51 @@ func (n LocalizedName) Display() string {
 	}
 	return strings.Join(parts, " ")
 }
+
+// PrettyKey strips common Stellaris prefixes and formats as title case.
+// e.g. "ethic_fanatic_materialist" -> "Fanatic Materialist"
+func PrettyKey(key string) string {
+	// Special cases that need partial prefix retention
+	if strings.HasPrefix(key, "ethic_fanatic_") {
+		return "Fanatic " + titleCase(strings.ReplaceAll(key[len("ethic_fanatic_"):], "_", " "))
+	}
+
+	prefixes := []string{
+		"ethic_gestalt_", "ethic_",
+		"auth_", "gov_", "civic_", "origin_",
+		"leader_trait_", "trait_",
+		"tech_", "ap_",
+		"tradition_",
+		"building_", "district_", "zone_",
+		"d_", "pc_", "col_",
+		"shipclass_",
+	}
+	s := key
+	for _, p := range prefixes {
+		if strings.HasPrefix(s, p) {
+			s = s[len(p):]
+			break
+		}
+	}
+	s = strings.ReplaceAll(s, "_", " ")
+	return titleCase(s)
+}
+
+func titleCase(s string) string {
+	words := strings.Fields(s)
+	for i, w := range words {
+		if len(w) > 0 {
+			words[i] = strings.ToUpper(w[:1]) + w[1:]
+		}
+	}
+	return strings.Join(words, " ")
+}
+
+// PrettyKeys formats a slice of keys.
+func PrettyKeys(keys []string) []string {
+	out := make([]string, len(keys))
+	for i, k := range keys {
+		out[i] = PrettyKey(k)
+	}
+	return out
+}

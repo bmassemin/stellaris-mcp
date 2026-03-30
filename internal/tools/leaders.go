@@ -63,7 +63,7 @@ func leaderSummary(gs *gamestate.GameState, countryID int, c *gamestate.Country)
 
 	for _, e := range leaders {
 		assignment := resolveAssignment(gs, e.l)
-		traits := strings.Join(e.l.Traits, ", ")
+		traits := strings.Join(gamestate.PrettyKeys(e.l.Traits), ", ")
 		if traits == "" {
 			traits = "-"
 		}
@@ -99,7 +99,7 @@ func leaderDetail(gs *gamestate.GameState, leaderID int) (*mcp.CallToolResult, e
 	fmt.Fprintf(&b, "Experience: %.1f\n", l.Experience)
 	fmt.Fprintf(&b, "Age: %d\n", l.Age)
 	fmt.Fprintf(&b, "Gender: %s\n", l.Gender)
-	fmt.Fprintf(&b, "Ethic: %s\n", l.Ethic)
+	fmt.Fprintf(&b, "Ethic: %s\n", gamestate.PrettyKey(l.Ethic))
 	fmt.Fprintf(&b, "Job: %s\n", l.Job)
 	fmt.Fprintf(&b, "Recruited: %s\n", l.RecruitmentDate)
 
@@ -118,7 +118,7 @@ func leaderDetail(gs *gamestate.GameState, leaderID int) (*mcp.CallToolResult, e
 		fmt.Fprintf(&b, "  (none)\n")
 	}
 	for _, t := range l.Traits {
-		fmt.Fprintf(&b, "  - %s\n", t)
+		fmt.Fprintf(&b, "  - %s\n", gamestate.PrettyKey(t))
 	}
 
 	return mcp.NewToolResultText(b.String()), nil

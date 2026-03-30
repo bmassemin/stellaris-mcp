@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/bmassemin/stellaris-mcp/internal/gamestate"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 )
@@ -50,10 +51,10 @@ func handleEmpireOverview(_ context.Context, req mcp.CallToolRequest) (*mcp.Call
 	fmt.Fprintf(&b, "=== Empire Overview (%s) ===\n", gs.Date)
 	fmt.Fprintf(&b, "Game: %s (version %s)\n\n", gs.Name, gs.Version)
 	fmt.Fprintf(&b, "Name: %s\n", c.Adjective.Display())
-	fmt.Fprintf(&b, "Government: %s (%s)\n", c.Government.Type, c.Government.Authority)
-	fmt.Fprintf(&b, "Origin: %s\n", c.Government.Origin)
-	fmt.Fprintf(&b, "Ethics: %s\n", strings.Join(c.Ethos.Ethic, ", "))
-	fmt.Fprintf(&b, "Civics: %s\n", strings.Join(c.Government.Civics, ", "))
+	fmt.Fprintf(&b, "Government: %s (%s)\n", gamestate.PrettyKey(c.Government.Type), gamestate.PrettyKey(c.Government.Authority))
+	fmt.Fprintf(&b, "Origin: %s\n", gamestate.PrettyKey(c.Government.Origin))
+	fmt.Fprintf(&b, "Ethics: %s\n", strings.Join(gamestate.PrettyKeys(c.Ethos.Ethic), ", "))
+	fmt.Fprintf(&b, "Civics: %s\n", strings.Join(gamestate.PrettyKeys(c.Government.Civics), ", "))
 	fmt.Fprintf(&b, "\nPower Ratings:\n")
 	fmt.Fprintf(&b, "  Military: %.1f\n", c.MilitaryPower)
 	fmt.Fprintf(&b, "  Economy:  %.1f\n", c.EconomyPower)

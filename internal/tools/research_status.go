@@ -46,7 +46,7 @@ func handleResearchStatus(_ context.Context, req mcp.CallToolRequest) (*mcp.Call
 
 	fmt.Fprintf(&b, "\nCompleted Technologies (%d):\n", len(ts.Technology))
 	for _, t := range ts.Technology {
-		fmt.Fprintf(&b, "  - %s\n", t)
+		fmt.Fprintf(&b, "  - %s\n", gamestate.PrettyKey(t))
 	}
 
 	return mcp.NewToolResultText(b.String()), nil
@@ -58,7 +58,7 @@ func writeQueue(b *strings.Builder, label string, queue []gamestate.ResearchItem
 		return
 	}
 	for _, r := range queue {
-		fmt.Fprintf(b, "  %s: %s (progress: %.1f)\n", label, r.Technology, r.Progress)
+		fmt.Fprintf(b, "  %s: %s (progress: %.1f)\n", label, gamestate.PrettyKey(r.Technology), r.Progress)
 	}
 }
 
@@ -67,5 +67,5 @@ func writeAlternatives(b *strings.Builder, label string, alts []string) {
 		fmt.Fprintf(b, "  %s: (none)\n", label)
 		return
 	}
-	fmt.Fprintf(b, "  %s: %s\n", label, strings.Join(alts, ", "))
+	fmt.Fprintf(b, "  %s: %s\n", label, strings.Join(gamestate.PrettyKeys(alts), ", "))
 }
