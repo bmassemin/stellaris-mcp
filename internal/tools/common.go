@@ -9,10 +9,23 @@ import (
 	"github.com/mark3labs/mcp-go/mcp"
 )
 
-var saveDir string
+var (
+	saveDir string
+	loc     *gamestate.Localizer
+)
 
 func loadLatestSave() (*gamestate.GameState, error) {
 	return gamestate.LoadFromDir(saveDir)
+}
+
+// l resolves a game key to its localized display name.
+func l(key string) string {
+	return loc.Resolve(key)
+}
+
+// ll resolves a slice of game keys.
+func ll(keys []string) []string {
+	return loc.ResolveAll(keys)
 }
 
 func getCountry(gs *gamestate.GameState, req mcp.CallToolRequest) (int, *gamestate.Country, error) {

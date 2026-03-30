@@ -66,7 +66,7 @@ func planetSummary(gs *gamestate.GameState, countryID int, c *gamestate.Country)
 		fmt.Fprintf(&b, "%-6d %-25s %-16s %4d %5d %5.0f %-12s %s\n",
 			e.id,
 			truncate(e.p.Name.Display(), 25),
-			gamestate.PrettyKey(e.p.PlanetClass),
+			l(e.p.PlanetClass),
 			e.p.PlanetSize,
 			e.p.NumPops,
 			e.p.Stability,
@@ -90,8 +90,8 @@ func planetDetail(gs *gamestate.GameState, planetID int) (*mcp.CallToolResult, e
 
 	var b strings.Builder
 	fmt.Fprintf(&b, "=== Planet %d: %s ===\n", planetID, p.Name.Display())
-	fmt.Fprintf(&b, "Class: %s, Size: %d\n", gamestate.PrettyKey(p.PlanetClass), p.PlanetSize)
-	fmt.Fprintf(&b, "Designation: %s\n", gamestate.PrettyKey(p.FinalDesignation))
+	fmt.Fprintf(&b, "Class: %s, Size: %d\n", l(p.PlanetClass), p.PlanetSize)
+	fmt.Fprintf(&b, "Designation: %s\n", l(p.FinalDesignation))
 	fmt.Fprintf(&b, "Owner: %d, Controller: %d\n", p.Owner, p.Controller)
 	fmt.Fprintf(&b, "\nPopulation: %d pops\n", p.NumPops)
 	fmt.Fprintf(&b, "Stability: %.1f\n", p.Stability)
@@ -107,7 +107,7 @@ func planetDetail(gs *gamestate.GameState, planetID int) (*mcp.CallToolResult, e
 	}
 	fmt.Fprintf(&b, "\nDistrict Slots: %d / %d used\n", totalUsed, p.PlanetSize)
 	for dtype, n := range counts {
-		fmt.Fprintf(&b, "  %s: %d\n", gamestate.PrettyKey(dtype), n)
+		fmt.Fprintf(&b, "  %s: %d\n", l(dtype), n)
 	}
 
 	if len(p.Districts) > 0 {
@@ -125,13 +125,13 @@ func planetDetail(gs *gamestate.GameState, planetID int) (*mcp.CallToolResult, e
 			var specs []string
 			for _, zid := range d.Zones {
 				if z, ok := gs.Zones[zid]; ok && z.Type != "zone_default" {
-					specs = append(specs, gamestate.PrettyKey(z.Type))
+					specs = append(specs, l(z.Type))
 				}
 			}
 			if len(specs) > 0 {
-				fmt.Fprintf(&b, "  %s%s — slots: %s\n", gamestate.PrettyKey(d.Type), lvl, strings.Join(specs, ", "))
+				fmt.Fprintf(&b, "  %s%s — slots: %s\n", l(d.Type), lvl, strings.Join(specs, ", "))
 			} else {
-				fmt.Fprintf(&b, "  %s%s\n", gamestate.PrettyKey(d.Type), lvl)
+				fmt.Fprintf(&b, "  %s%s\n", l(d.Type), lvl)
 			}
 			// Buildings inside this district's zones
 			for _, zid := range d.Zones {
@@ -141,7 +141,7 @@ func planetDetail(gs *gamestate.GameState, planetID int) (*mcp.CallToolResult, e
 				}
 				for _, bid := range z.Buildings {
 					if bld, ok := gs.Buildings[bid]; ok {
-						fmt.Fprintf(&b, "    [%s] %s\n", gamestate.PrettyKey(z.Type), gamestate.PrettyKey(bld.Type))
+						fmt.Fprintf(&b, "    [%s] %s\n", l(z.Type), l(bld.Type))
 					}
 				}
 			}
@@ -157,13 +157,13 @@ func planetDetail(gs *gamestate.GameState, planetID int) (*mcp.CallToolResult, e
 				continue
 			}
 			if isBlocker(dep.Type) {
-				label := gamestate.PrettyKey(dep.Type)
+				label := l(dep.Type)
 				if dep.SwapType != "" {
-					label += " -> " + gamestate.PrettyKey(dep.SwapType)
+					label += " -> " + l(dep.SwapType)
 				}
 				blockers = append(blockers, label)
 			} else {
-				features = append(features, gamestate.PrettyKey(dep.Type))
+				features = append(features, l(dep.Type))
 			}
 		}
 		if len(features) > 0 {
@@ -185,9 +185,9 @@ func planetDetail(gs *gamestate.GameState, planetID int) (*mcp.CallToolResult, e
 		fmt.Fprintf(&b, "\nModifiers:\n")
 		for _, m := range p.TimedModifier.Items {
 			if m.Days < 0 {
-				fmt.Fprintf(&b, "  - %s (permanent)\n", gamestate.PrettyKey(m.Modifier))
+				fmt.Fprintf(&b, "  - %s (permanent)\n", l(m.Modifier))
 			} else {
-				fmt.Fprintf(&b, "  - %s (%d days remaining)\n", gamestate.PrettyKey(m.Modifier), m.Days)
+				fmt.Fprintf(&b, "  - %s (%d days remaining)\n", l(m.Modifier), m.Days)
 			}
 		}
 	}
@@ -226,7 +226,7 @@ func districtSummary(gs *gamestate.GameState, p gamestate.Planet) string {
 	}
 	parts := make([]string, 0, len(counts))
 	for dtype, n := range counts {
-		parts = append(parts, fmt.Sprintf("%s:%d", gamestate.PrettyKey(dtype), n))
+		parts = append(parts, fmt.Sprintf("%s:%d", l(dtype), n))
 	}
 	sort.Strings(parts)
 	return fmt.Sprintf("%d/%d [%s]", totalUsed, p.PlanetSize, strings.Join(parts, " "))
@@ -285,7 +285,7 @@ func planetAvailable(gs *gamestate.GameState, countryID int, c *gamestate.Countr
 		fmt.Fprintf(&b, "%-6d %-25s %-18s %4d %8s %d\n",
 			e.id,
 			truncate(e.p.Name.Display(), 25),
-			gamestate.PrettyKey(e.p.PlanetClass),
+			l(e.p.PlanetClass),
 			e.p.PlanetSize,
 			surv,
 			nDeposits,
