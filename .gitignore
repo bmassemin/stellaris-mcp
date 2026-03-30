@@ -1,4 +1,3 @@
 bin/
 *.exe
 internal/clausewitz/testdata/gamestate
-data/*/
