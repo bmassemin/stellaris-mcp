@@ -37,7 +37,7 @@ func handleTraditionsAscension(_ context.Context, req mcp.CallToolRequest) (*mcp
 		fmt.Fprintf(&b, "  (none adopted)\n")
 	} else {
 		for _, t := range c.Traditions {
-			fmt.Fprintf(&b, "  - %s\n", t)
+			fmt.Fprintf(&b, "  - %s\n", l(t))
 		}
 	}
 
@@ -46,7 +46,7 @@ func handleTraditionsAscension(_ context.Context, req mcp.CallToolRequest) (*mcp
 		fmt.Fprintf(&b, "  (none adopted)\n")
 	} else {
 		for _, p := range c.AscensionPerks {
-			fmt.Fprintf(&b, "  - %s\n", p)
+			fmt.Fprintf(&b, "  - %s\n", l(p))
 		}
 	}
 

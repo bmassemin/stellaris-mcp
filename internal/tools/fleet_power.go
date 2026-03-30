@@ -133,7 +133,7 @@ func fleetDetail(gs *gamestate.GameState, fleetID int) (*mcp.CallToolResult, err
 		if len(ship.Section.Weapon) > 0 {
 			fmt.Fprintf(&b, "  Weapons:\n")
 			for _, w := range ship.Section.Weapon {
-				fmt.Fprintf(&b, "    - %s [%s]\n", l(w.Template), w.ComponentSlot)
+				fmt.Fprintf(&b, "    - %s\n", l(w.Template))
 			}
 		}
 	}

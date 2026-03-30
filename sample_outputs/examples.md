@@ -16,9 +16,9 @@ Game: mp_Bebakian League 2 (version Cetus v4.3.2)
 
 Name: SPEC_Bebaki
 Government: Science Directorate (Oligarchic)
-Origin: Prosperous Unification
+Origin: Default
 Ethics: Authoritarian, Fanatic Materialist
-Civics: Technocracy, Masterful Crafters
+Civics: Technocracy, Crafters
 
 Power Ratings:
   Military: 5371.6
@@ -33,7 +33,7 @@ Empire Stats:
   Empire Size: 197
 
 Monthly Net Balance:
-  Alloys: 42.9, Astral Threads: 3.0, Consumer Goods: -33.0, Energy Credits: -43.1, Engineering Research: 95.3, Exotic Gases: 9.6, Food: -17.0, Influence: 5.5, Minerals: 73.7, Minor Artifacts: 6.0, Physics Research: 71.6, Society Research: 85.0, Trade: 17.7, Unity: 40.5, Volatile Motes: 3.0
+  Alloys: 42.9, Astral Threads: 3.0, Consumer Goods: -33.0, Energy: -43.1, Engineering Research: 95.3, Exotic Gases: 9.6, Food: -17.0, Influence: 5.5, Minerals: 73.7, Minor Artifacts: 6.0, Physics Research: 71.6, Society Research: 85.0, Trade: 17.7, Unity: 40.5, Volatile Motes: 3.0
 ```
 
 ## get_research_status
@@ -42,133 +42,133 @@ Monthly Net Balance:
 === Research Status (SPEC_Bebaki) ===
 
 Current Research:
-  Physics: Advanced Reactor Boosters (progress: 7111.6)
-  Society: Doctrine: Interstellar Warfare (progress: 5431.1)
-  Engineering: Antimatter Missiles (progress: 0.0)
+  Physics: Reactor Boosters 3 (progress: 7111.6)
+  Society: Doctrine Fleet Size 3 (progress: 5431.1)
+  Engineering: Missiles 3 (progress: 0.0)
 
 Available Research Options:
-  Physics: Volatile Material Plants, Unified Field Theory, Interplanetary Research Initiative, Hyperlane Breach Points, Shields, Advanced Reactor Boosters
-  Society: Food Processing, Effective Bureaucracy, Interstellar Fleet Traditions, Doctrine: Interstellar Warfare, Galactic Archivism, Xenology
-  Engineering: Starhold, Antimatter Missiles, Autocannons, Improved Destroyer Hulls, Weather Control Systems, Rare Crystal Mining, Mineral Cutting Beams
+  Physics: Volatile Motes, Physics 2, Global Research Initiative, Hyper Drive 2, Shields 3, Reactor Boosters 3
+  Society: Food Processing 1, Effective Bureaucracy, Interstellar Fleet Traditions, Doctrine Fleet Size 3, Galactic Archivism, Alien Life Studies
+  Engineering: Starbase 3, Missiles 3, Autocannons 1, Destroyer Hull 1, Housing 1, Mine Rare Crystals, Space Mining 3
 
 Completed Technologies (117):
-  - Orbital Energy Conversion
+  - Solar Panel Network
   - Space Exploration
   - Corvettes
-  - Starbase Construction
-  - Starport
-  - Interplanetary Expeditionary Forces
-  - Nanocomposite Materials
-  - Chemical Thrusters
-  - Deep Space Defenses
-  - Industrial Base
+  - Starbase 1
+  - Starbase 2
+  - Assault Armies
+  - Ship Armor 1
+  - Thrusters 1
+  - Space Defense Station 1
+  - Basic Industry
   - Mechanized Mining
-  - Offworld Construction
-  - Mass Drivers
-  - Flak Battery
-  - Nuclear Missiles
-  - Scientific Method
+  - Space Construction
+  - Mass Drivers 1
+  - Flak Batteries 1
+  - Missiles 1
+  - Basic Science Lab 1
   - Fission Power
-  - Reactor Boosters
-  - Deflectors
-  - High-Energy Capacitors
-  - Hyperspace Travel
-  - Red Lasers
-  - Active Countermeasures
+  - Reactor Boosters 1
+  - Shields 1
+  - Power Plant 1
+  - Hyper Drive 1
+  - Lasers 1
+  - Pd Tracking 1
   - Planetary Defenses
   - Interplanetary Commerce
-  - Industrial Agriculture
-  - Hydroponics Farming
-  - New Worlds Protocol
-  - Medical Care
+  - Industrial Farming
+  - Hydroponics
+  - Colonization 1
+  - Basic Health
   - Planetary Government
-  - Holo-Entertainment
+  - Holo Entertainment
   - Planetary Unification
-  - Administrative AI
-  - Ceramo-Metal Materials
+  - Administrative Ai
+  - Ship Armor 2
   - Adaptive Bureaucracy
-  - Automated Exploration Protocols
-  - Zero-G Refineries
-  - Blue Lasers
-  - Doctrine: Fleet Support
+  - Automated Exploration
+  - Space Mining 1
+  - Lasers 2
+  - Doctrine Navy Size 1
   - Powered Exoskeletons
   - Fusion Power
-  - Sociocultural History
-  - Artificial Workforce
-  - Improved Reactor Boosters
-  - Zero-G Laboratories
-  - Xenobiology
-  - Machine Template System
-  - Bio-Reactor
-  - Space Torpedoes
-  - Xeno-Linguistics
+  - Cultural Heritage
+  - Robotic Workers
+  - Reactor Boosters 2
+  - Space Science 1
+  - Society 1
+  - Robomodding
+  - Bio Reactor
+  - Torpedoes 1
+  - Xeno Linguistics
   - Cold Fusion Power
-  - Nanomechanics
-  - Crystal-Infused Plating
+  - Engineering 1
+  - Crystal Armor 1
   - Terrestrial Sculpting
-  - Self-Evolving Logic
-  - Selective Defoliants
+  - Self Aware Logic
+  - Dense Jungle
   - Destroyers
-  - Improved Deflectors
-  - Afterburners
-  - Specialized Combat Computers
+  - Shields 2
+  - Afterburners 1
+  - Combat Computers 1
   - Artificial Moral Codes
-  - Carrier Operations
-  - Frequency Tuning
-  - Geothermal Fracking
-  - Gravitic Sensors
-  - Improved Corvette Hulls
-  - Field Modulation
+  - Strike Craft 1
+  - Space Whale Weapon 1
+  - Mining 1
+  - Sensors 2
+  - Corvette Hull 1
+  - Power Plant 2
   - Colonial Centralization
-  - Mote Stabilization
-  - Assembly Patterns
-  - Auxiliary Fire-control
-  - Heritage Sites
-  - Exotic Gas Refining
-  - Miniature Containment Fields
-  - Coilguns
-  - Quantum Computing
-  - Dangerous Wildlife Removal
-  - Exotic Materials Labs
+  - Mine Volatile Motes
+  - Assembly Pattern
+  - Auxiliary Fire Control
+  - Heritage Site
+  - Exotic Gases
+  - Space Science 2
+  - Mass Drivers 2
+  - Physics 1
+  - Dangerous Wildlife
+  - Basic Science Lab 2
   - Integrated Cybernetics
-  - FTL Inhibition
-  - Artificial Specialists
-  - Global Energy Management
-  - Ancient Cavitation Collapser
-  - Automated Colony Ships
-  - Doctrine: Space Combat
+  - Ftl Inhibitor
+  - Droid Workers
+  - Power Hub 1
+  - Archaeo Lasers
+  - Cryostasis 1
+  - Doctrine Fleet Size 1
   - Eco Simulation
-  - UV Lasers
-  - Armored Torpedoes
-  - Rare Crystal Manufacturing
+  - Lasers 3
+  - Torpedoes 2
+  - Rare Crystals
   - Detection Array
-  - Ceramo-Metal Infrastructure
-  - Atmospheric Filtering
-  - Cross-Model Standardization
-  - X-Ray Lasers
-  - Quantum Probes
-  - Plasteel Materials
+  - Planetary Infrastructure 1
+  - Colonization 2
+  - Robomodding Points 1
+  - Lasers 4
+  - Space Science 3
+  - Ship Armor 3
   - Cruisers
   - Antimatter Power
   - Galactic Administration
-  - Exotic Gas Extraction
-  - Plasma Throwers
-  - Doctrine: Reactive Formations
-  - Standardized Destroyer Patterns
+  - Mine Exotic Gases
+  - Plasma 1
+  - Doctrine Fleet Size 2
+  - Destroyer Build Speed
   - Astral Harvesting
-  - Doctrine: Support Vessels
-  - Railguns
-  - Standardized Corvette Patterns
-  - Basic Cloaking Fields
-  - Stellar Expansion
-  - Disruptors
-  - Standardized Cruiser Patterns
+  - Doctrine Navy Size 2
+  - Mass Drivers 3
+  - Corvette Build Speed
+  - Cloaking 1
+  - Galactic Ambitions
+  - Disruptors 1
+  - Cruiser Build Speed
   - Voidworm Immunity
-  - Fusion Missiles
-  - Extended Combat Algorithms
-  - Hostile Environment Adaptation
-  - Durasteel Materials
-  - Mineral Purification
+  - Missiles 2
+  - Combat Computers 2
+  - Colonization 3
+  - Ship Armor 4
+  - Mineral Purification 1
 ```
 
 ## get_economy_breakdown
@@ -177,73 +177,73 @@ Completed Technologies (117):
 === Economy Breakdown (SPEC_Bebaki) ===
 
 --- INCOME ---
-  Base: Alloys: 5.0, Consumer Goods: 15.0, Energy Credits: 20.0, Engineering Research: 10.0, Food: 20.0, Influence: 3.0, Minerals: 20.0, Physics Research: 7.5, Society Research: 10.0, Unity: 12.2
-  Governing Ethic: Influence: 0.5
-  Power Projection: Influence: 2.0
-  Mining Deposits: Alloys: 2.6, Energy Credits: 110.5, Minerals: 196.0, Trade: 18.2, Volatile Motes: 3.9
-  Research Deposits: Astral Threads: 3.0, Engineering Research: 30.0, Minor Artifacts: 6.0, Physics Research: 20.0, Society Research: 24.0
-  Artisan Jobs: Consumer Goods: 94.1, Exotic Gases: 0.0, Trade: 28.1
-  $job_biologist$ Jobs: Physics Research: 3.2, Society Research: 36.0
-  $job_engineer$ Jobs: Engineering Research: 40.9, Society Research: 4.1
-  Entertainer Jobs: Unity: 5.7
-  Farming Jobs: Food: 59.3
-  Jobs: Food: 0.2
-  Metallurgist Jobs: Alloys: 78.4, Exotic Gases: 0.0
-  Mining Jobs: Minerals: 52.7
-  $job_physicist$ Jobs: Engineering Research: 3.6, Physics Research: 31.5
-  Politician Jobs: Engineering Research: 10.8, Physics Research: 9.4, Society Research: 10.8, Unity: 54.7
-  Refinery Jobs: Exotic Gases: 15.0
-  Technician Jobs: Energy Credits: 260.0
-  Trader Jobs: Trade: 24.1
-  $pop_cat_ruler$ Living Standards: Trade: 4.5
-  $pop_cat_specialist$ Living Standards: Trade: 24.6
-  $pop_cat_worker$ Living Standards: Trade: 1.3
-  Factions: Unity: 23.9
-  Starbase Modules: Energy Credits: 6.0
-  Trade Policy: Energy Credits: 17.7, Trade: 17.7
-  TOTAL: Alloys: 86.0, Astral Threads: 3.0, Consumer Goods: 109.1, Energy Credits: 414.2, Engineering Research: 95.3, Exotic Gases: 15.0, Food: 79.5, Influence: 5.5, Minerals: 268.7, Minor Artifacts: 6.0, Physics Research: 71.6, Society Research: 85.0, Trade: 118.4, Unity: 96.5, Volatile Motes: 3.9
+  Country Base: Alloys: 5.0, Consumer Goods: 15.0, Energy: 20.0, Engineering Research: 10.0, Food: 20.0, Influence: 3.0, Minerals: 20.0, Physics Research: 7.5, Society Research: 10.0, Unity: 12.2
+  Country Ethic: Influence: 0.5
+  Country Power Projection: Influence: 2.0
+  Orbital Mining Deposits: Alloys: 2.6, Energy: 110.5, Minerals: 196.0, Trade: 18.2, Volatile Motes: 3.9
+  Orbital Research Deposits: Astral Threads: 3.0, Engineering Research: 30.0, Minor Artifacts: 6.0, Physics Research: 20.0, Society Research: 24.0
+  Planet Artisans: Consumer Goods: 94.1, Exotic Gases: 0.0, Trade: 28.1
+  Planet Biologists: Physics Research: 3.2, Society Research: 36.0
+  Planet Engineers: Engineering Research: 40.9, Society Research: 4.1
+  Planet Entertainers: Unity: 5.7
+  Planet Farmers: Food: 59.3
+  Planet Jobs: Food: 0.2
+  Planet Metallurgists: Alloys: 78.4, Exotic Gases: 0.0
+  Planet Miners: Minerals: 52.7
+  Planet Physicists: Engineering Research: 3.6, Physics Research: 31.5
+  Planet Politicians: Engineering Research: 10.8, Physics Research: 9.4, Society Research: 10.8, Unity: 54.7
+  Planet Refiners: Exotic Gases: 15.0
+  Planet Technician: Energy: 260.0
+  Planet Traders: Trade: 24.1
+  Pop Category Rulers: Trade: 4.5
+  Pop Category Specialists: Trade: 24.6
+  Pop Category Workers: Trade: 1.3
+  Pop Factions: Unity: 23.9
+  Starbase Modules: Energy: 6.0
+  Trade Policy: Energy: 17.7, Trade: 17.7
+  TOTAL: Alloys: 86.0, Astral Threads: 3.0, Consumer Goods: 109.1, Energy: 414.2, Engineering Research: 95.3, Exotic Gases: 15.0, Food: 79.5, Influence: 5.5, Minerals: 268.7, Minor Artifacts: 6.0, Physics Research: 71.6, Society Research: 85.0, Trade: 118.4, Unity: 96.5, Volatile Motes: 3.9
 
 --- EXPENSES ---
-  Commanders: Unity: 26.0
-  Officials: Unity: 14.0
-  Scientists: Unity: 16.0
-  Artisan Jobs: Minerals: 68.8
-  Automated Workforce: Energy Credits: 33.0
-  $job_biologist$ Jobs: Consumer Goods: 18.0
-  Buildings: Energy Credits: 126.0, Exotic Gases: 5.4, Volatile Motes: 0.9
-  City Districts: Energy Credits: 10.8
-  Agriculture District: Energy Credits: 3.6
-  Generator District: Energy Credits: 14.4
-  Mining District: Energy Credits: 22.5
-  $job_engineer$ Jobs: Consumer Goods: 20.4
-  Entertainer Jobs: Consumer Goods: 7.8
-  Metallurgist Jobs: Minerals: 88.7
-  $job_physicist$ Jobs: Consumer Goods: 18.0
-  Politician Jobs: Consumer Goods: 27.9
-  Pop Assemblers: Alloys: 5.9
-  Pops: Energy Credits: 29.0, Food: 96.5
-  Refinery Jobs: Minerals: 37.4
-  Planetary Deficits: Trade: 48.8
-  Soldier Jobs: Alloys: 7.1
-  Trader Jobs: Consumer Goods: 2.5
-  $pop_cat_ruler$ Living Standards: Consumer Goods: 8.9
-  $pop_cat_specialist$ Living Standards: Consumer Goods: 37.2
-  $pop_cat_worker$ Living Standards: Consumer Goods: 1.3
-  Components: Alloys: 15.5, Energy Credits: 82.8
-  Ships: Alloys: 14.5, Energy Credits: 31.7, Trade: 16.5
-  Starbase Buildings: Energy Credits: 6.2
-  Starbase Modules: Energy Credits: 6.2
-  Starbases: Energy Credits: 27.3
-  Mining Stations: Energy Credits: 40.0
-  Research Stations: Energy Credits: 24.0
+  Leader Commanders: Unity: 26.0
+  Leader Officials: Unity: 14.0
+  Leader Scientists: Unity: 16.0
+  Planet Artisans: Minerals: 68.8
+  Planet Automated Jobs: Energy: 33.0
+  Planet Biologists: Consumer Goods: 18.0
+  Planet Buildings: Energy: 126.0, Exotic Gases: 5.4, Volatile Motes: 0.9
+  Planet Districts Cities: Energy: 10.8
+  Planet Districts Farming: Energy: 3.6
+  Planet Districts Generator: Energy: 14.4
+  Planet Districts Mining: Energy: 22.5
+  Planet Engineers: Consumer Goods: 20.4
+  Planet Entertainers: Consumer Goods: 7.8
+  Planet Metallurgists: Minerals: 88.7
+  Planet Physicists: Consumer Goods: 18.0
+  Planet Politicians: Consumer Goods: 27.9
+  Planet Pop Assemblers: Alloys: 5.9
+  Planet Pops: Energy: 29.0, Food: 96.5
+  Planet Refiners: Minerals: 37.4
+  Planet Resource Deficit: Trade: 48.8
+  Planet Soldiers: Alloys: 7.1
+  Planet Traders: Consumer Goods: 2.5
+  Pop Category Rulers: Consumer Goods: 8.9
+  Pop Category Specialists: Consumer Goods: 37.2
+  Pop Category Workers: Consumer Goods: 1.3
+  Ship Components: Alloys: 15.5, Energy: 82.8
+  Ships: Alloys: 14.5, Energy: 31.7, Trade: 16.5
+  Starbase Buildings: Energy: 6.2
+  Starbase Modules: Energy: 6.2
+  Starbases: Energy: 27.3
+  Station Gatherers: Energy: 40.0
+  Station Researchers: Energy: 24.0
   Trade Policy: Trade: 35.4
-  TOTAL: Alloys: 43.1, Consumer Goods: 142.1, Energy Credits: 457.4, Exotic Gases: 5.4, Food: 96.5, Minerals: 194.9, Trade: 100.7, Unity: 56.0, Volatile Motes: 0.9
+  TOTAL: Alloys: 43.1, Consumer Goods: 142.1, Energy: 457.4, Exotic Gases: 5.4, Food: 96.5, Minerals: 194.9, Trade: 100.7, Unity: 56.0, Volatile Motes: 0.9
 
 --- NET BALANCE ---
   Alloys: +42.9
   Astral Threads: +3.0
   Consumer Goods: -33.0
-  Energy Credits: -43.1
+  Energy: -43.1
   Engineering Research: +95.3
   Exotic Gases: +9.6
   Food: -17.0
@@ -397,8 +397,8 @@ ID       Name                           Class                        Power Ships
 --------------------------------------------------------------------------------
 0        SPEC_Bebaki_system             Starbase (station)          1167.6     1
 1        HUM1_SHIP_MendracktheCunning   Science Ship (civilian)        0.0     1
-2        HUM1_SHIP_JesslurtheSteadfast  Construction Ship (civilian)      0.0     1
-3        HUM1_FLEET_GalathorsArmada     Military Ship               5371.6    14
+2        HUM1_SHIP_JesslurtheSteadfast  Constructor (civilian)         0.0     1
+3        HUM1_FLEET_GalathorsArmada     Military                    5371.6    14
 260      SPEC_Bebaki_system             Mining Station (station)       0.0     1
 261      HUM1_PLANET_YltarsBulwark      Mining Station (station)       0.0     1
 262      HUM1_PLANET_OdrankasHolding    Mining Station (station)       0.0     1
@@ -554,7 +554,7 @@ Comparison with Known Empires:
 
 ```
 === Fleet 3: HUM1_FLEET_GalathorsArmada ===
-Class: Military Ship
+Class: Military
 Military Power: 5371.6
 Ships: 14
 
@@ -563,150 +563,150 @@ Ships: 14
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
+  Section: DESTROYER BOW M1S2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Small Railgun [SMALL_GUN_01]
-    - Fusion Missiles [SMALL_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 3129: HUM1_SHIP_TakkramtheLawgiver ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
+  Section: DESTROYER BOW M1S2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Small Railgun [SMALL_GUN_01]
-    - Fusion Missiles [SMALL_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 33556074: HUM1_SHIP_OthanatheBenign ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
+  Section: DESTROYER BOW M1S2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Small Railgun [SMALL_GUN_01]
-    - Fusion Missiles [SMALL_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 16780210: HUM1_SHIP_JolkegtheAgile ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
+  Section: DESTROYER BOW M1S2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Small Railgun [SMALL_GUN_01]
-    - Fusion Missiles [SMALL_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 16779346: HUM1_SHIP_DorlantheTyrant ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
+  Section: DESTROYER BOW M1S2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Small Railgun [SMALL_GUN_01]
-    - Fusion Missiles [SMALL_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 16780487: HUM1_SHIP_BathartheAmicable ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
+  Section: DESTROYER BOW M1S2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Small Railgun [SMALL_GUN_01]
-    - Fusion Missiles [SMALL_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 33557745: HUM1_SHIP_LahvontheImpudent ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
+  Section: DESTROYER BOW M1S2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Small Railgun [SMALL_GUN_01]
-    - Fusion Missiles [SMALL_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 33557525: HUM1_SHIP_OssanatheFounder ---
   Design: HUM1_CLASS_Salaas (Corvette)
   Hull:   230 / 230
   Shield: 250 / 250
   Armor:  205 / 205
-  Section: Interceptor
+  Section: CORVETTE MID S3
   Weapons:
-    - Small Railgun [SMALL_GUN_01]
-    - Small Railgun [SMALL_GUN_02]
-    - Fusion Missiles [SMALL_GUN_03]
+    - SMALL MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 50334702: HUM1_SHIP_KhebbtheFierce ---
   Design: HUM1_CLASS_Salaas (Corvette)
   Hull:   230 / 230
   Shield: 250 / 250
   Armor:  205 / 205
-  Section: Interceptor
+  Section: CORVETTE MID S3
   Weapons:
-    - Small Railgun [SMALL_GUN_01]
-    - Small Railgun [SMALL_GUN_02]
-    - Fusion Missiles [SMALL_GUN_03]
+    - SMALL MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 33557513: HUM1_SHIP_BoroktheAffable ---
   Design: HUM1_CLASS_Salaas (Corvette)
   Hull:   230 / 230
   Shield: 250 / 250
   Armor:  205 / 205
-  Section: Interceptor
+  Section: CORVETTE MID S3
   Weapons:
-    - Small Railgun [SMALL_GUN_01]
-    - Small Railgun [SMALL_GUN_02]
-    - Fusion Missiles [SMALL_GUN_03]
+    - SMALL MASS DRIVER 3
+    - SMALL MASS DRIVER 3
+    - MISSILE 2
 
   --- Ship 33557062: HUM1_SHIP_LethamtheDecisive ---
   Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: Broadside Bow
+  Section: CRUISER BOW M2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Medium Railgun [MEDIUM_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - MEDIUM MASS DRIVER 3
 
   --- Ship 33557763: HUM1_SHIP_MuntattheYellow ---
   Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: Broadside Bow
+  Section: CRUISER BOW M2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Medium Railgun [MEDIUM_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - MEDIUM MASS DRIVER 3
 
   --- Ship 67112198: HUM1_SHIP_GorontheShining ---
   Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: Broadside Bow
+  Section: CRUISER BOW M2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Medium Railgun [MEDIUM_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - MEDIUM MASS DRIVER 3
 
   --- Ship 67109428: HUM1_SHIP_GaraltheLiberator ---
   Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: Broadside Bow
+  Section: CRUISER BOW M2
   Weapons:
-    - Medium Railgun [MEDIUM_GUN_01]
-    - Medium Railgun [MEDIUM_GUN_02]
+    - MEDIUM MASS DRIVER 3
+    - MEDIUM MASS DRIVER 3
 ```
 
 ## get_planets (summary)
@@ -717,18 +717,18 @@ Use get_planets with planet_id for details.
 
 ID     Name                      Class            Size  Pops  Stab Design.      Districts
 --------------------------------------------------------------------------------------------------------------
-4      SPEC_Bebaki_planet        Continental World   18  6613    74 col_capital  4/18 [Agriculture District:1 City District:1 Generator District:1 Mining District:1]
-123    Mius                      Continental World   17  2021    66 col_mining   3/17 [City District:1 Generator District:1 Mining District:1]
-172    Zabeen                    Continental World   12  4142    64 col_industrial 4/12 [Agriculture District:1 City District:1 Generator District:1 Mining District:1]
-232    Satrinias                 Continental World   19   290    70 col_foundry  2/19 [City District:1 Generator District:1]
+4      SPEC_Bebaki_planet        Continental        18  6613    74 col_capital  4/18 [City:1 Farming:1 Generator:1 Mining:1]
+123    Mius                      Continental        17  2021    66 col_mining   3/17 [City:1 Generator:1 Mining:1]
+172    Zabeen                    Continental        12  4142    64 col_industrial 4/12 [City:1 Farming:1 Generator:1 Mining:1]
+232    Satrinias                 Continental        19   290    70 col_foundry  2/19 [City:1 Generator:1]
 ```
 
 ## get_planets (detail: planet_id=4)
 
 ```
 === Planet 4: SPEC_Bebaki_planet ===
-Class: Continental World, Size: 18
-Designation: Empire Capital
+Class: Continental, Size: 18
+Designation: Capital
 Owner: 0, Controller: 0
 
 Population: 6613 pops
@@ -738,38 +738,38 @@ Amenities: 7214 (used: 7106, free: 108)
 Housing: 7800 (used: 6606, free: 1194)
 
 District Slots: 4 / 18 used
-  City District: 1
-  Generator District: 1
-  Mining District: 1
-  Agriculture District: 1
+  City: 1
+  Generator: 1
+  Mining: 1
+  Farming: 1
 
 Districts Detail (4):
-  City District (lvl 3) — slots: Research Enclave, Research Enclave
-    [Government Zone] System Capital-Complex
-    [Government Zone] Hall of Judgment
-    [Government Zone] Civilian Industries
-    [Government Zone] Civilian Industries
-    [Government Zone] Holo-Theatres
-    [Government Zone] Robot Assembly Plants
-    [Research Enclave] Research Complexes
-    [Research Enclave] Research Complexes
-    [Research Enclave] Research Complexes
-    [Research Enclave] Research Complexes
-    [Research Enclave] Research Complexes
-    [Research Enclave] Research Complexes
-  Generator District (lvl 4) — slots: Energy Generation
-    [Energy Generation] $building_automation_1$: $job_technician$
-    [Energy Generation] Energy Grid
-  Mining District (lvl 8)
-  Agriculture District (lvl 3)
+  City (lvl 3) — slots: Research, Research
+    [Default] System Capital
+    [Default] Hall Judgment
+    [Default] Factory 1
+    [Default] Factory 1
+    [Default] Holo Theatres
+    [Default] Robot Assembly Plant
+    [Research] Research Lab 2
+    [Research] Research Lab 2
+    [Research] Research Lab 2
+    [Research] Research Lab 2
+    [Research] Research Lab 2
+    [Research] Research Lab 2
+  Generator (lvl 4) — slots: Energy
+    [Energy] Automation Technician 1
+    [Energy] Energy Grid
+  Mining (lvl 8)
+  Farming (lvl 3)
 
 Planetary Features (12):
   - Prosperous Mesa
   - Fertile Lands
   - Hot Springs
   - Rushing Waterfalls
-  - Tempestuous Mountain
-  - Ore-Veined Cliffs
+  - Tempestous Mountain
+  - Veiny Cliffs
   - Prosperous Mesa
   - Rich Mountain
   - Rugged Woods
@@ -778,11 +778,11 @@ Planetary Features (12):
   - Black Soil
 
 Monthly Production:
-  Consumer Goods: 30.7, Energy Credits: 95.7, Engineering Research: 49.7, Food: 44.5, Minerals: 9.7, Physics Research: 39.2, Society Research: 45.4, Trade: 41.4, Unity: 26.4
+  Consumer Goods: 30.7, Energy: 95.7, Engineering Research: 49.7, Food: 44.5, Minerals: 9.7, Physics Research: 39.2, Society Research: 45.4, Trade: 41.4, Unity: 26.4
 Monthly Upkeep:
-  Alloys: 9.1, Consumer Goods: 102.7, Energy Credits: 87.7, Exotic Gases: 5.4, Food: 66.0, Minerals: 24.5, Volatile Motes: 0.9
+  Alloys: 9.1, Consumer Goods: 102.7, Energy: 87.7, Exotic Gases: 5.4, Food: 66.0, Minerals: 24.5, Volatile Motes: 0.9
 Monthly Profit:
-  Alloys: -9.1, Consumer Goods: -71.9, Energy Credits: 8.1, Engineering Research: 49.7, Exotic Gases: -5.4, Food: -21.6, Minerals: -14.8, Physics Research: 39.2, Society Research: 45.4, Trade: 41.4, Unity: 26.4, Volatile Motes: -0.9
+  Alloys: -9.1, Consumer Goods: -71.9, Energy: 8.1, Engineering Research: 49.7, Exotic Gases: -5.4, Food: -21.6, Minerals: -14.8, Physics Research: 39.2, Society Research: 45.4, Trade: 41.4, Unity: 26.4, Volatile Motes: -0.9
 ```
 
 ## get_planets (available=true)
@@ -793,22 +793,22 @@ Use get_planets with planet_id for details.
 
 ID     Name                      Class              Size Surveyed Deposits
 -------------------------------------------------------------------------------------
-3579   Zedran III                Continental World    22      yes 11
-673    Pothria III               Continental World    20      yes 12
-671    Pothria II                Arctic World         16      yes 14
-2684   Mardom III                Tundra World         16      yes 12
-4027   Atausnyria III            Alpine World         16      yes 15
-836    Dearum I                  Savanna World        14      yes 10
-1641   Rakaron III a             Desert World         14      yes 12
-1014   Itraben I                 Gaia World           14      yes 9
-4086   Pozuno II                 Gaia World           13      yes 11
-3603   Hadriccus III a           Tundra World         10      yes 9
-2647   Daranma III               Ocean World          22       no 13
-3867   NAME_Parvus III           Desert World         22       no 13
-2207   Vijimar II                Ocean World          19       no 15
-1967   Riggott III               Tundra World         14       no 9
-819    Sanach IV a               Alpine World         14       no 13
-2609   NAME_UbogleeltD b         Gaia World            6       no 5
+3579   Zedran III                Continental          22      yes 11
+673    Pothria III               Continental          20      yes 12
+2684   Mardom III                Tundra               16      yes 12
+4027   Atausnyria III            Alpine               16      yes 15
+671    Pothria II                Arctic               16      yes 14
+1014   Itraben I                 Gaia                 14      yes 9
+1641   Rakaron III a             Desert               14      yes 12
+836    Dearum I                  Savannah             14      yes 10
+4086   Pozuno II                 Gaia                 13      yes 11
+3603   Hadriccus III a           Tundra               10      yes 9
+2647   Daranma III               Ocean                22       no 13
+3867   NAME_Parvus III           Desert               22       no 13
+2207   Vijimar II                Ocean                19       no 15
+819    Sanach IV a               Alpine               14       no 13
+1967   Riggott III               Tundra               14       no 9
+2609   NAME_UbogleeltD b         Gaia                  6       no 5
 ```
 
 ## get_leaders (summary)
@@ -819,27 +819,27 @@ Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
-33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
-16777808     HUM1_CHR_Monnobak         commander      1   0 ship_logistics_offi… Trickster, Resilient, Arrested Development
-16777511     HUM1_CHR_Limathar         commander      4   0 Council #20          Strategist, $trait_ruler_warlike$ II, Defense Engineer
+184549931    INF1_CHA_Kaaftoza         commander      4   0 captain              Subclass Commander General, Iron Fist 2, Butcher
 16777806     HUM1_CHR_Thalotha         commander      1   0 chief_navigator      Butcher, Resilient, Destructive
-184549931    INF1_CHA_Kaaftoza         commander      4   0 captain              General, $leader_trait_iron_fist$ II, Butcher
+33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Subclass Commander Admiral, Ruler Warlike, Adaptable, Enlister
 16777807     HUM1_CHR_Darmug           commander      1   0 principal_pilot      Aggressive
+16777511     HUM1_CHR_Limathar         commander      4   0 Council #20          Subclass Commander Councilor, Ruler Warlike 2, Defence Engineer
 16777805     HUM1_CHR_Corrona          commander      1   0 special_operations_… Butcher, Resilient, Arrested Development
-150995515    HUM1_CHR_Linntyla         commander      5   0 principal_pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
+150995515    HUM1_CHR_Linntyla         commander      5   0 principal_pilot      Subclass Commander Councilor, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
+16777808     HUM1_CHR_Monnobak         commander      1   0 ship_logistics_offi… Trickster, Resilient, Arrested Development
 805306371    HUM1_CHR_Monnobaki        envoy          1  37 enforcer             -
 805306372    HUM1_CHR_Campramara       envoy          1  40 foundry              -
-33554486     HUM1_CHR_Mikaba           official       2   0 miner                Adaptable
 16777401     HUM1_CHR_Cognati          official       1   0 politician           Resilient
-33555010     HUM1_CHR_Tirrana          official       1   0 politician           Resilient
-33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Industrialist, Psychic, $leader_trait_forge_focus$ II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
+33554486     HUM1_CHR_Mikaba           official       2   0 miner                Adaptable
 301990461    HUM1_CHR_Monnobak         official       1   0 politician           Adaptable
-100663871    HUM1_CHR_Khebb            scientist      4   0 Council #45          Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
-50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
-16777803     HUM1_CHR_Esthonir         scientist      2   0 technician           Expertise: Propulsion, Spark of Genius
-16777801     HUM1_CHR_Sebakhir         scientist      2   0 roboticist           Expertise: Field Manipulation, Adaptable
-16777802     HUM1_CHR_Tirran           scientist      2   0 foundry              Expertise: Industry, Adaptable
-16777804     HUM1_CHR_Listhima         scientist      2   0 technician           Expertise: Military Theory, Roamer
+33555010     HUM1_CHR_Tirrana          official       1   0 politician           Resilient
+33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Subclass Official Governor, Psionic, Forge Focus 2, Space Miner, Shroudwalker, Bureaucrat, Righteous, Irenic
+16777802     HUM1_CHR_Tirran           scientist      2   0 foundry              Expertise Industry, Adaptable
+50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Subclass Scientist Councilor, Expertise Particles, Politician, Resilient, Custom AI Assistant
+100663871    HUM1_CHR_Khebb            scientist      4   0 Council #45          Subclass Scientist Scholar, Expertise Computing, Resilient, Archaeologist, Custom AI Assistant
+16777801     HUM1_CHR_Sebakhir         scientist      2   0 roboticist           Expertise Field Manipulation, Adaptable
+16777803     HUM1_CHR_Esthonir         scientist      2   0 technician           Expertise Propulsion, Spark Of Genius
+16777804     HUM1_CHR_Listhima         scientist      2   0 technician           Expertise Military Theory, Roamer
 ```
 
 ## get_leaders (detail: leader_id=150995515)
@@ -859,7 +859,7 @@ Recruited: 2274.02.07
 Assignment: principal_pilot
 
 Traits:
-  - Strategist
+  - Subclass Commander Councilor
   - Armada Logistician
   - Fleet Organizer
   - Adaptable
