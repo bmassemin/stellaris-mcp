@@ -55,7 +55,7 @@ func fleetSummary(gs *gamestate.GameState, c *gamestate.Country) (*mcp.CallToolR
 		if !ok {
 			continue
 		}
-		role := fleet.ShipClass
+		role := l(fleet.ShipClass)
 		if fleet.Station {
 			role += " (station)"
 		}
@@ -98,7 +98,7 @@ func fleetDetail(gs *gamestate.GameState, fleetID int) (*mcp.CallToolResult, err
 
 	var b strings.Builder
 	fmt.Fprintf(&b, "=== Fleet %d: %s ===\n", fleetID, fleet.Name.Display())
-	fmt.Fprintf(&b, "Class: %s\n", fleet.ShipClass)
+	fmt.Fprintf(&b, "Class: %s\n", l(fleet.ShipClass))
 	fmt.Fprintf(&b, "Military Power: %.1f\n", fleet.MilitaryPower)
 	fmt.Fprintf(&b, "Ships: %d\n", len(fleet.Ships))
 	if fleet.Station {
@@ -124,16 +124,16 @@ func fleetDetail(gs *gamestate.GameState, fleetID int) (*mcp.CallToolResult, err
 		}
 
 		fmt.Fprintf(&b, "\n  --- Ship %d: %s ---\n", sid, ship.Name.Display())
-		fmt.Fprintf(&b, "  Design: %s (%s)\n", designName, shipSize)
+		fmt.Fprintf(&b, "  Design: %s (%s)\n", designName, l(shipSize))
 		fmt.Fprintf(&b, "  Hull:   %.0f / %.0f\n", ship.Hitpoints, ship.MaxHitpoints)
 		fmt.Fprintf(&b, "  Shield: %.0f / %.0f\n", ship.ShieldHitpoints, ship.MaxShieldHitpoints)
 		fmt.Fprintf(&b, "  Armor:  %.0f / %.0f\n", ship.ArmorHitpoints, ship.MaxArmorHitpoints)
-		fmt.Fprintf(&b, "  Section: %s\n", ship.Section.Design)
+		fmt.Fprintf(&b, "  Section: %s\n", l(ship.Section.Design))
 
 		if len(ship.Section.Weapon) > 0 {
 			fmt.Fprintf(&b, "  Weapons:\n")
 			for _, w := range ship.Section.Weapon {
-				fmt.Fprintf(&b, "    - %s [%s]\n", w.Template, w.ComponentSlot)
+				fmt.Fprintf(&b, "    - %s [%s]\n", l(w.Template), w.ComponentSlot)
 			}
 		}
 	}
