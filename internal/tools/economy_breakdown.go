@@ -65,7 +65,7 @@ func handleEconomyBreakdown(_ context.Context, req mcp.CallToolRequest) (*mcp.Ca
 		if net[k] < 0 {
 			sign = ""
 		}
-		fmt.Fprintf(&b, "  %s: %s%.1f\n", k, sign, net[k])
+		fmt.Fprintf(&b, "  %s: %s%.1f\n", l(k), sign, net[k])
 	}
 
 	return mcp.NewToolResultText(b.String()), nil
@@ -79,7 +79,7 @@ func writeBudgetSection(b *strings.Builder, categories map[string]map[string]flo
 	sort.Strings(keys)
 	for _, cat := range keys {
 		resources := categories[cat]
-		fmt.Fprintf(b, "  %s: %s\n", cat, formatResources(resources))
+		fmt.Fprintf(b, "  %s: %s\n", l(cat), formatResources(resources))
 		for k, v := range resources {
 			totals[k] += v
 		}

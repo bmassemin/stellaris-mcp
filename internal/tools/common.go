@@ -55,7 +55,7 @@ func formatResources(r map[string]float64) string {
 	sort.Strings(keys)
 	parts := make([]string, 0, len(keys))
 	for _, k := range keys {
-		parts = append(parts, fmt.Sprintf("%s: %.1f", k, r[k]))
+		parts = append(parts, fmt.Sprintf("%s: %.1f", l(k), r[k]))
 	}
 	return strings.Join(parts, ", ")
 }

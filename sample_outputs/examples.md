@@ -1,6 +1,6 @@
 # Sample Outputs
 
-Generated from a real Stellaris save (Cetus v4.3.2, mid-game 2293.01.01).
+Generated from a real Stellaris save (Cetus v4.3.2, mid-game 2293.01.01) with English localization.
 
 ## ping
 
@@ -33,7 +33,7 @@ Empire Stats:
   Empire Size: 197
 
 Monthly Net Balance:
-  alloys: 42.9, astral_threads: 3.0, consumer_goods: -33.0, energy: -43.1, engineering_research: 95.3, exotic_gases: 9.6, food: -17.0, influence: 5.5, minerals: 73.7, minor_artifacts: 6.0, physics_research: 71.6, society_research: 85.0, trade: 17.7, unity: 40.5, volatile_motes: 3.0
+  Alloys: 42.9, Astral Threads: 3.0, Consumer Goods: -33.0, Energy Credits: -43.1, Engineering Research: 95.3, Exotic Gases: 9.6, Food: -17.0, Influence: 5.5, Minerals: 73.7, Minor Artifacts: 6.0, Physics Research: 71.6, Society Research: 85.0, Trade: 17.7, Unity: 40.5, Volatile Motes: 3.0
 ```
 
 ## get_research_status
@@ -99,7 +99,7 @@ Completed Technologies (117):
   - Zero-G Laboratories
   - Xenobiology
   - Machine Template System
-  - $building_bio_reactor$
+  - Bio-Reactor
   - Space Torpedoes
   - Xeno-Linguistics
   - Cold Fusion Power
@@ -177,84 +177,84 @@ Completed Technologies (117):
 === Economy Breakdown (SPEC_Bebaki) ===
 
 --- INCOME ---
-  country_base: alloys: 5.0, consumer_goods: 15.0, energy: 20.0, engineering_research: 10.0, food: 20.0, influence: 3.0, minerals: 20.0, physics_research: 7.5, society_research: 10.0, unity: 12.2
-  country_ethic: influence: 0.5
-  country_power_projection: influence: 2.0
-  orbital_mining_deposits: alloys: 2.6, energy: 110.5, minerals: 196.0, trade: 18.2, volatile_motes: 3.9
-  orbital_research_deposits: astral_threads: 3.0, engineering_research: 30.0, minor_artifacts: 6.0, physics_research: 20.0, society_research: 24.0
-  planet_artisans: consumer_goods: 94.1, exotic_gases: 0.0, trade: 28.1
-  planet_biologists: physics_research: 3.2, society_research: 36.0
-  planet_engineers: engineering_research: 40.9, society_research: 4.1
-  planet_entertainers: unity: 5.7
-  planet_farmers: food: 59.3
-  planet_jobs: food: 0.2
-  planet_metallurgists: alloys: 78.4, exotic_gases: 0.0
-  planet_miners: minerals: 52.7
-  planet_physicists: engineering_research: 3.6, physics_research: 31.5
-  planet_politicians: engineering_research: 10.8, physics_research: 9.4, society_research: 10.8, unity: 54.7
-  planet_refiners: exotic_gases: 15.0
-  planet_technician: energy: 260.0
-  planet_traders: trade: 24.1
-  pop_category_rulers: trade: 4.5
-  pop_category_specialists: trade: 24.6
-  pop_category_workers: trade: 1.3
-  pop_factions: unity: 23.9
-  starbase_modules: energy: 6.0
-  trade_policy: energy: 17.7, trade: 17.7
-  TOTAL: alloys: 86.0, astral_threads: 3.0, consumer_goods: 109.1, energy: 414.2, engineering_research: 95.3, exotic_gases: 15.0, food: 79.5, influence: 5.5, minerals: 268.7, minor_artifacts: 6.0, physics_research: 71.6, society_research: 85.0, trade: 118.4, unity: 96.5, volatile_motes: 3.9
+  Base: Alloys: 5.0, Consumer Goods: 15.0, Energy Credits: 20.0, Engineering Research: 10.0, Food: 20.0, Influence: 3.0, Minerals: 20.0, Physics Research: 7.5, Society Research: 10.0, Unity: 12.2
+  Governing Ethic: Influence: 0.5
+  Power Projection: Influence: 2.0
+  Mining Deposits: Alloys: 2.6, Energy Credits: 110.5, Minerals: 196.0, Trade: 18.2, Volatile Motes: 3.9
+  Research Deposits: Astral Threads: 3.0, Engineering Research: 30.0, Minor Artifacts: 6.0, Physics Research: 20.0, Society Research: 24.0
+  Artisan Jobs: Consumer Goods: 94.1, Exotic Gases: 0.0, Trade: 28.1
+  $job_biologist$ Jobs: Physics Research: 3.2, Society Research: 36.0
+  $job_engineer$ Jobs: Engineering Research: 40.9, Society Research: 4.1
+  Entertainer Jobs: Unity: 5.7
+  Farming Jobs: Food: 59.3
+  Jobs: Food: 0.2
+  Metallurgist Jobs: Alloys: 78.4, Exotic Gases: 0.0
+  Mining Jobs: Minerals: 52.7
+  $job_physicist$ Jobs: Engineering Research: 3.6, Physics Research: 31.5
+  Politician Jobs: Engineering Research: 10.8, Physics Research: 9.4, Society Research: 10.8, Unity: 54.7
+  Refinery Jobs: Exotic Gases: 15.0
+  Technician Jobs: Energy Credits: 260.0
+  Trader Jobs: Trade: 24.1
+  $pop_cat_ruler$ Living Standards: Trade: 4.5
+  $pop_cat_specialist$ Living Standards: Trade: 24.6
+  $pop_cat_worker$ Living Standards: Trade: 1.3
+  Factions: Unity: 23.9
+  Starbase Modules: Energy Credits: 6.0
+  Trade Policy: Energy Credits: 17.7, Trade: 17.7
+  TOTAL: Alloys: 86.0, Astral Threads: 3.0, Consumer Goods: 109.1, Energy Credits: 414.2, Engineering Research: 95.3, Exotic Gases: 15.0, Food: 79.5, Influence: 5.5, Minerals: 268.7, Minor Artifacts: 6.0, Physics Research: 71.6, Society Research: 85.0, Trade: 118.4, Unity: 96.5, Volatile Motes: 3.9
 
 --- EXPENSES ---
-  leader_commanders: unity: 26.0
-  leader_officials: unity: 14.0
-  leader_scientists: unity: 16.0
-  planet_artisans: minerals: 68.8
-  planet_automated_jobs: energy: 33.0
-  planet_biologists: consumer_goods: 18.0
-  planet_buildings: energy: 126.0, exotic_gases: 5.4, volatile_motes: 0.9
-  planet_districts_cities: energy: 10.8
-  planet_districts_farming: energy: 3.6
-  planet_districts_generator: energy: 14.4
-  planet_districts_mining: energy: 22.5
-  planet_engineers: consumer_goods: 20.4
-  planet_entertainers: consumer_goods: 7.8
-  planet_metallurgists: minerals: 88.7
-  planet_physicists: consumer_goods: 18.0
-  planet_politicians: consumer_goods: 27.9
-  planet_pop_assemblers: alloys: 5.9
-  planet_pops: energy: 29.0, food: 96.5
-  planet_refiners: minerals: 37.4
-  planet_resource_deficit: trade: 48.8
-  planet_soldiers: alloys: 7.1
-  planet_traders: consumer_goods: 2.5
-  pop_category_rulers: consumer_goods: 8.9
-  pop_category_specialists: consumer_goods: 37.2
-  pop_category_workers: consumer_goods: 1.3
-  ship_components: alloys: 15.5, energy: 82.8
-  ships: alloys: 14.5, energy: 31.7, trade: 16.5
-  starbase_buildings: energy: 6.2
-  starbase_modules: energy: 6.2
-  starbases: energy: 27.3
-  station_gatherers: energy: 40.0
-  station_researchers: energy: 24.0
-  trade_policy: trade: 35.4
-  TOTAL: alloys: 43.1, consumer_goods: 142.1, energy: 457.4, exotic_gases: 5.4, food: 96.5, minerals: 194.9, trade: 100.7, unity: 56.0, volatile_motes: 0.9
+  Commanders: Unity: 26.0
+  Officials: Unity: 14.0
+  Scientists: Unity: 16.0
+  Artisan Jobs: Minerals: 68.8
+  Automated Workforce: Energy Credits: 33.0
+  $job_biologist$ Jobs: Consumer Goods: 18.0
+  Buildings: Energy Credits: 126.0, Exotic Gases: 5.4, Volatile Motes: 0.9
+  City Districts: Energy Credits: 10.8
+  Agriculture District: Energy Credits: 3.6
+  Generator District: Energy Credits: 14.4
+  Mining District: Energy Credits: 22.5
+  $job_engineer$ Jobs: Consumer Goods: 20.4
+  Entertainer Jobs: Consumer Goods: 7.8
+  Metallurgist Jobs: Minerals: 88.7
+  $job_physicist$ Jobs: Consumer Goods: 18.0
+  Politician Jobs: Consumer Goods: 27.9
+  Pop Assemblers: Alloys: 5.9
+  Pops: Energy Credits: 29.0, Food: 96.5
+  Refinery Jobs: Minerals: 37.4
+  Planetary Deficits: Trade: 48.8
+  Soldier Jobs: Alloys: 7.1
+  Trader Jobs: Consumer Goods: 2.5
+  $pop_cat_ruler$ Living Standards: Consumer Goods: 8.9
+  $pop_cat_specialist$ Living Standards: Consumer Goods: 37.2
+  $pop_cat_worker$ Living Standards: Consumer Goods: 1.3
+  Components: Alloys: 15.5, Energy Credits: 82.8
+  Ships: Alloys: 14.5, Energy Credits: 31.7, Trade: 16.5
+  Starbase Buildings: Energy Credits: 6.2
+  Starbase Modules: Energy Credits: 6.2
+  Starbases: Energy Credits: 27.3
+  Mining Stations: Energy Credits: 40.0
+  Research Stations: Energy Credits: 24.0
+  Trade Policy: Trade: 35.4
+  TOTAL: Alloys: 43.1, Consumer Goods: 142.1, Energy Credits: 457.4, Exotic Gases: 5.4, Food: 96.5, Minerals: 194.9, Trade: 100.7, Unity: 56.0, Volatile Motes: 0.9
 
 --- NET BALANCE ---
-  alloys: +42.9
-  astral_threads: +3.0
-  consumer_goods: -33.0
-  energy: -43.1
-  engineering_research: +95.3
-  exotic_gases: +9.6
-  food: -17.0
-  influence: +5.5
-  minerals: +73.7
-  minor_artifacts: +6.0
-  physics_research: +71.6
-  society_research: +85.0
-  trade: +17.7
-  unity: +40.5
-  volatile_motes: +3.0
+  Alloys: +42.9
+  Astral Threads: +3.0
+  Consumer Goods: -33.0
+  Energy Credits: -43.1
+  Engineering Research: +95.3
+  Exotic Gases: +9.6
+  Food: -17.0
+  Influence: +5.5
+  Minerals: +73.7
+  Minor Artifacts: +6.0
+  Physics Research: +71.6
+  Society Research: +85.0
+  Trade: +17.7
+  Unity: +40.5
+  Volatile Motes: +3.0
 ```
 
 ## get_neighbors
@@ -738,10 +738,10 @@ Amenities: 7214 (used: 7106, free: 108)
 Housing: 7800 (used: 6606, free: 1194)
 
 District Slots: 4 / 18 used
+  Agriculture District: 1
   City District: 1
   Generator District: 1
   Mining District: 1
-  Agriculture District: 1
 
 Districts Detail (4):
   City District (lvl 3) — slots: Research Enclave, Research Enclave
@@ -778,11 +778,11 @@ Planetary Features (12):
   - Black Soil
 
 Monthly Production:
-  consumer_goods: 30.7, energy: 95.7, engineering_research: 49.7, food: 44.5, minerals: 9.7, physics_research: 39.2, society_research: 45.4, trade: 41.4, unity: 26.4
+  Consumer Goods: 30.7, Energy Credits: 95.7, Engineering Research: 49.7, Food: 44.5, Minerals: 9.7, Physics Research: 39.2, Society Research: 45.4, Trade: 41.4, Unity: 26.4
 Monthly Upkeep:
-  alloys: 9.1, consumer_goods: 102.7, energy: 87.7, exotic_gases: 5.4, food: 66.0, minerals: 24.5, volatile_motes: 0.9
+  Alloys: 9.1, Consumer Goods: 102.7, Energy Credits: 87.7, Exotic Gases: 5.4, Food: 66.0, Minerals: 24.5, Volatile Motes: 0.9
 Monthly Profit:
-  alloys: -9.1, consumer_goods: -71.9, energy: 8.1, engineering_research: 49.7, exotic_gases: -5.4, food: -21.6, minerals: -14.8, physics_research: 39.2, society_research: 45.4, trade: 41.4, unity: 26.4, volatile_motes: -0.9
+  Alloys: -9.1, Consumer Goods: -71.9, Energy Credits: 8.1, Engineering Research: 49.7, Exotic Gases: -5.4, Food: -21.6, Minerals: -14.8, Physics Research: 39.2, Society Research: 45.4, Trade: 41.4, Unity: 26.4, Volatile Motes: -0.9
 ```
 
 ## get_planets (available=true)
@@ -795,12 +795,12 @@ ID     Name                      Class              Size Surveyed Deposits
 -------------------------------------------------------------------------------------
 3579   Zedran III                Continental World    22      yes 11
 673    Pothria III               Continental World    20      yes 12
+2684   Mardom III                Tundra World         16      yes 12
 671    Pothria II                Arctic World         16      yes 14
 4027   Atausnyria III            Alpine World         16      yes 15
-2684   Mardom III                Tundra World         16      yes 12
 1014   Itraben I                 Gaia World           14      yes 9
-1641   Rakaron III a             Desert World         14      yes 12
 836    Dearum I                  Savanna World        14      yes 10
+1641   Rakaron III a             Desert World         14      yes 12
 4086   Pozuno II                 Gaia World           13      yes 11
 3603   Hadriccus III a           Tundra World         10      yes 9
 2647   Daranma III               Ocean World          22       no 13
@@ -819,27 +819,27 @@ Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
-16777806     HUM1_CHR_Thalotha         commander      1   0 chief_navigator      Butcher, Resilient, Destructive
-184549931    INF1_CHA_Kaaftoza         commander      4   0 captain              General, $leader_trait_iron_fist$ II, Butcher
-16777807     HUM1_CHR_Darmug           commander      1   0 principal_pilot      Aggressive
-33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
-16777805     HUM1_CHR_Corrona          commander      1   0 special_operations_… Butcher, Resilient, Arrested Development
-16777511     HUM1_CHR_Limathar         commander      4   0 Council #20          Strategist, $trait_ruler_warlike$ II, Defense Engineer
 150995515    HUM1_CHR_Linntyla         commander      5   0 principal_pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
+16777805     HUM1_CHR_Corrona          commander      1   0 special_operations_… Butcher, Resilient, Arrested Development
+184549931    INF1_CHA_Kaaftoza         commander      4   0 captain              General, $leader_trait_iron_fist$ II, Butcher
+33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
+16777511     HUM1_CHR_Limathar         commander      4   0 Council #20          Strategist, $trait_ruler_warlike$ II, Defense Engineer
+16777806     HUM1_CHR_Thalotha         commander      1   0 chief_navigator      Butcher, Resilient, Destructive
+16777807     HUM1_CHR_Darmug           commander      1   0 principal_pilot      Aggressive
 16777808     HUM1_CHR_Monnobak         commander      1   0 ship_logistics_offi… Trickster, Resilient, Arrested Development
 805306372    HUM1_CHR_Campramara       envoy          1  40 foundry              -
 805306371    HUM1_CHR_Monnobaki        envoy          1  37 enforcer             -
-33555010     HUM1_CHR_Tirrana          official       1   0 politician           Resilient
-301990461    HUM1_CHR_Monnobak         official       1   0 politician           Adaptable
+33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Industrialist, Psychic, $leader_trait_forge_focus$ II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
 16777401     HUM1_CHR_Cognati          official       1   0 politician           Resilient
 33554486     HUM1_CHR_Mikaba           official       2   0 miner                Adaptable
-33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Industrialist, Psychic, $leader_trait_forge_focus$ II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
-16777802     HUM1_CHR_Tirran           scientist      2   0 foundry              Expertise: Industry, Adaptable
-16777804     HUM1_CHR_Listhima         scientist      2   0 technician           Expertise: Military Theory, Roamer
+301990461    HUM1_CHR_Monnobak         official       1   0 politician           Adaptable
+33555010     HUM1_CHR_Tirrana          official       1   0 politician           Resilient
+50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
 16777801     HUM1_CHR_Sebakhir         scientist      2   0 roboticist           Expertise: Field Manipulation, Adaptable
 100663871    HUM1_CHR_Khebb            scientist      4   0 Council #45          Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
-50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
+16777804     HUM1_CHR_Listhima         scientist      2   0 technician           Expertise: Military Theory, Roamer
 16777803     HUM1_CHR_Esthonir         scientist      2   0 technician           Expertise: Propulsion, Spark of Genius
+16777802     HUM1_CHR_Tirran           scientist      2   0 foundry              Expertise: Industry, Adaptable
 ```
 
 ## get_leaders (detail: leader_id=150995515)
