@@ -1,14 +1,15 @@
 package gamestate
 
 import (
-	"os"
 	"testing"
+
+	"github.com/bmassemin/stellaris-mcp/internal/testutil"
 )
 
 func TestLocalizer(t *testing.T) {
-	dir := "../../data/english"
-	if _, err := os.Stat(dir); err != nil {
-		t.Skip("data/english not found, skipping localization test")
+	dir := testutil.LoadEnv("STELLARIS_LOC_DIR")
+	if dir == "" {
+		t.Skip("STELLARIS_LOC_DIR not set in .env, skipping localization test")
 	}
 
 	loc := NewLocalizer(dir)

@@ -94,6 +94,18 @@ Copy a `gamestate` file (extracted from a `.sav`) into `internal/clausewitz/test
 
 ```bash
 cp ~/gamestate internal/clausewitz/testdata/gamestate
+```
+
+To run localization tests and generate sample outputs with real game names, create a `.env` file at the project root (see `.env.example`):
+
+```bash
+cp .env.example .env
+# Edit .env with your Stellaris localisation/english path
+```
+
+Then run:
+
+```bash
 go test ./...
 ```
 
