@@ -45,10 +45,14 @@ func leaderSummary(gs *gamestate.GameState, countryID int, c *gamestate.Country)
 		id int
 		l  gamestate.Leader
 	}
+	owned := make(map[int]bool, len(c.OwnedLeaders))
+	for _, id := range c.OwnedLeaders {
+		owned[id] = true
+	}
 	var leaders []entry
-	for id, l := range gs.Leaders {
-		if l.Country == countryID {
-			leaders = append(leaders, entry{id, l})
+	for id, ldr := range gs.Leaders {
+		if owned[id] {
+			leaders = append(leaders, entry{id, ldr})
 		}
 	}
 	sort.Slice(leaders, func(i, j int) bool { return leaders[i].l.Class < leaders[j].l.Class })
@@ -100,7 +104,7 @@ func leaderDetail(gs *gamestate.GameState, leaderID int) (*mcp.CallToolResult, e
 	fmt.Fprintf(&b, "Age: %d\n", ldr.Age)
 	fmt.Fprintf(&b, "Gender: %s\n", ldr.Gender)
 	fmt.Fprintf(&b, "Ethic: %s\n", l(ldr.Ethic))
-	fmt.Fprintf(&b, "Job: %s\n", ldr.Job)
+	fmt.Fprintf(&b, "Job: %s\n", l(ldr.Job))
 	fmt.Fprintf(&b, "Recruited: %s\n", ldr.RecruitmentDate)
 
 	fmt.Fprintf(&b, "\nAssignment: %s\n", resolveAssignment(gs, ldr))
@@ -143,7 +147,7 @@ func resolveAssignment(gs *gamestate.GameState, ldr gamestate.Leader) string {
 		}
 	}
 	if ldr.Job != "" {
-		return ldr.Job
+		return l(ldr.Job)
 	}
 	return "Unassigned"
 }

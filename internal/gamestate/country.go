@@ -18,6 +18,7 @@ type Country struct {
 	EmpireSize       int              `clausewitz:"empire_size"`
 	VictoryRank      int              `clausewitz:"victory_rank"`
 	OwnedPlanets     []int            `clausewitz:"owned_planets"`
+	OwnedLeaders     []int            `clausewitz:"owned_leaders"`
 	Traditions       []string         `clausewitz:"traditions"`
 	AscensionPerks   []string         `clausewitz:"ascension_perks"`
 }

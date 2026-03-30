@@ -798,47 +798,34 @@ ID     Name                      Class              Size Surveyed Deposits
 671    Pothria II                Arctic World         16      yes 14
 4027   Atausnyria III            Alpine World         16      yes 15
 2684   Mardom III                Tundra World         16      yes 12
-1641   Rakaron III a             Desert World         14      yes 12
-1014   Itraben I                 Gaia World           14      yes 9
 836    Dearum I                  Savanna World        14      yes 10
+1014   Itraben I                 Gaia World           14      yes 9
+1641   Rakaron III a             Desert World         14      yes 12
 4086   Pozuno II                 Gaia World           13      yes 11
 3603   Hadriccus III a           Tundra World         10      yes 9
-3867   NAME_Parvus III           Desert World         22       no 13
 2647   Daranma III               Ocean World          22       no 13
+3867   NAME_Parvus III           Desert World         22       no 13
 2207   Vijimar II                Ocean World          19       no 15
-819    Sanach IV a               Alpine World         14       no 13
 1967   Riggott III               Tundra World         14       no 9
+819    Sanach IV a               Alpine World         14       no 13
 2609   NAME_UbogleeltD b         Gaia World            6       no 5
 ```
 
 ## get_leaders (summary)
 
 ```
-=== Leaders (SPEC_Bebaki) — 21 leaders ===
+=== Leaders (SPEC_Bebaki) — 8 leaders ===
 Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
 33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
-184549931    INF1_CHA_Kaaftoza         commander      4   0 captain              General, Iron Fist II, Butcher
-16777808     HUM1_CHR_Monnobak         commander      1   0 ship_logistics_offi… Trickster, Resilient, Arrested Development
-16777805     HUM1_CHR_Corrona          commander      1   0 special_operations_… Butcher, Resilient, Arrested Development
-16777806     HUM1_CHR_Thalotha         commander      1   0 chief_navigator      Butcher, Resilient, Destructive
+150995515    HUM1_CHR_Linntyla         commander      5   0 Principal Pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
 16777511     HUM1_CHR_Limathar         commander      4   0 Council #20          Strategist, Warlike II, Defense Engineer
-150995515    HUM1_CHR_Linntyla         commander      5   0 principal_pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
-16777807     HUM1_CHR_Darmug           commander      1   0 principal_pilot      Aggressive
-805306372    HUM1_CHR_Campramara       envoy          1  40 foundry              -
-805306371    HUM1_CHR_Monnobaki        envoy          1  37 enforcer             -
-33555010     HUM1_CHR_Tirrana          official       1   0 politician           Resilient
-16777401     HUM1_CHR_Cognati          official       1   0 politician           Resilient
-301990461    HUM1_CHR_Monnobak         official       1   0 politician           Adaptable
+805306371    HUM1_CHR_Monnobaki        envoy          1  37 Enforcer             -
+805306372    HUM1_CHR_Campramara       envoy          1  40 Foundry              -
 33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Industrialist, Psychic, Forge Focused II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
-33554486     HUM1_CHR_Mikaba           official       2   0 miner                Adaptable
-16777801     HUM1_CHR_Sebakhir         scientist      2   0 roboticist           Expertise: Field Manipulation, Adaptable
-16777804     HUM1_CHR_Listhima         scientist      2   0 technician           Expertise: Military Theory, Roamer
-16777802     HUM1_CHR_Tirran           scientist      2   0 foundry              Expertise: Industry, Adaptable
 50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
-16777803     HUM1_CHR_Esthonir         scientist      2   0 technician           Expertise: Propulsion, Spark of Genius
 100663871    HUM1_CHR_Khebb            scientist      4   0 Council #45          Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
 ```
 
@@ -853,10 +840,10 @@ Experience: 198.8
 Age: 0
 Gender: female
 Ethic: Materialist
-Job: principal_pilot
+Job: Principal Pilot
 Recruited: 2274.02.07
 
-Assignment: principal_pilot
+Assignment: Principal Pilot
 
 Traits:
   - Strategist
