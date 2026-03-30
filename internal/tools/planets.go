@@ -70,7 +70,7 @@ func planetSummary(gs *gamestate.GameState, countryID int, c *gamestate.Country)
 			e.p.PlanetSize,
 			e.p.NumPops,
 			e.p.Stability,
-			e.p.FinalDesignation,
+			l(e.p.FinalDesignation),
 			districtSummary(gs, e.p),
 		)
 	}
