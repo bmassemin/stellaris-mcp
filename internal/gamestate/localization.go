@@ -27,21 +27,40 @@ func NewLocalizer(dir string) *Localizer {
 }
 
 // Resolve returns the localized display name for a key.
-// Follows $reference$ chains (e.g. energy -> "$concept_energy$" -> "Energy Credits").
+// Replaces all $reference$ in the value with their resolved entries.
 // Falls back to PrettyKey if not found.
 func (l *Localizer) Resolve(key string) string {
 	v, ok := l.entries[key]
 	if !ok {
 		return PrettyKey(key)
 	}
-	// Follow $reference$ if the value is a single reference
-	if len(v) > 2 && v[0] == '$' && v[len(v)-1] == '$' && strings.Count(v, "$") == 2 {
-		ref := v[1 : len(v)-1]
-		if resolved, ok := l.entries[ref]; ok {
-			return resolved
-		}
+	if strings.Contains(v, "$") {
+		v = l.resolveRefs(v)
 	}
 	return v
+}
+
+// resolveRefs replaces all $key$ references in a string.
+func (l *Localizer) resolveRefs(s string) string {
+	for i := 0; i < 5; i++ { // max depth to avoid infinite loops
+		start := strings.Index(s, "$")
+		if start < 0 {
+			break
+		}
+		end := strings.Index(s[start+1:], "$")
+		if end < 0 {
+			break
+		}
+		end += start + 1
+		ref := s[start+1 : end]
+		if resolved, ok := l.entries[ref]; ok {
+			s = s[:start] + resolved + s[end+1:]
+		} else {
+			// Skip unresolvable ref — replace $ to avoid infinite loop
+			s = s[:start] + ref + s[end+1:]
+		}
+	}
+	return s
 }
 
 // ResolveAll resolves a slice of keys.
