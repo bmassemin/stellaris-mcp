@@ -17,8 +17,8 @@ type Country struct {
 	NumPops          int              `clausewitz:"num_sapient_pops"`
 	EmpireSize       int              `clausewitz:"empire_size"`
 	VictoryRank      int              `clausewitz:"victory_rank"`
-	OwnedPlanets     []int            `clausewitz:"owned_planets"`
-	OwnedLeaders     []int            `clausewitz:"owned_leaders"`
+	OwnedPlanets       []int            `clausewitz:"owned_planets"`
+	OwnedLeaders       []int            `clausewitz:"owned_leaders"`
 	Traditions       []string         `clausewitz:"traditions"`
 	AscensionPerks   []string         `clausewitz:"ascension_perks"`
 }
@@ -28,10 +28,12 @@ type Ethos struct {
 }
 
 type Government struct {
-	Type      string   `clausewitz:"type"`
-	Authority string   `clausewitz:"authority"`
-	Civics    []string `clausewitz:"civics"`
-	Origin    string   `clausewitz:"origin"`
+	Type               string   `clausewitz:"type"`
+	Authority          string   `clausewitz:"authority"`
+	Civics             []string `clausewitz:"civics"`
+	Origin             string   `clausewitz:"origin"`
+	CouncilPositions   []int    `clausewitz:"council_positions"`
+	PickedCouncilTypes []string `clausewitz:"picked_council_types"`
 }
 
 type TechStatus struct {

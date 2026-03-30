@@ -738,10 +738,10 @@ Amenities: 7214 (used: 7106, free: 108)
 Housing: 7800 (used: 6606, free: 1194)
 
 District Slots: 4 / 18 used
-  City District: 1
   Generator District: 1
   Mining District: 1
   Agriculture District: 1
+  City District: 1
 
 Districts Detail (4):
   City District (lvl 3) — slots: Research Enclave, Research Enclave
@@ -795,16 +795,16 @@ ID     Name                      Class              Size Surveyed Deposits
 -------------------------------------------------------------------------------------
 3579   Zedran III                Continental World    22      yes 11
 673    Pothria III               Continental World    20      yes 12
-671    Pothria II                Arctic World         16      yes 14
-4027   Atausnyria III            Alpine World         16      yes 15
 2684   Mardom III                Tundra World         16      yes 12
-836    Dearum I                  Savanna World        14      yes 10
-1014   Itraben I                 Gaia World           14      yes 9
+4027   Atausnyria III            Alpine World         16      yes 15
+671    Pothria II                Arctic World         16      yes 14
 1641   Rakaron III a             Desert World         14      yes 12
+1014   Itraben I                 Gaia World           14      yes 9
+836    Dearum I                  Savanna World        14      yes 10
 4086   Pozuno II                 Gaia World           13      yes 11
 3603   Hadriccus III a           Tundra World         10      yes 9
-2647   Daranma III               Ocean World          22       no 13
 3867   NAME_Parvus III           Desert World         22       no 13
+2647   Daranma III               Ocean World          22       no 13
 2207   Vijimar II                Ocean World          19       no 15
 1967   Riggott III               Tundra World         14       no 9
 819    Sanach IV a               Alpine World         14       no 13
@@ -820,13 +820,13 @@ Use get_leaders with leader_id for full detail.
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
 33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
+16777511     HUM1_CHR_Limathar         commander      4   0 Minister of Defense  Strategist, Warlike II, Defense Engineer
 150995515    HUM1_CHR_Linntyla         commander      5   0 Principal Pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
-16777511     HUM1_CHR_Limathar         commander      4   0 Council #20          Strategist, Warlike II, Defense Engineer
 805306371    HUM1_CHR_Monnobaki        envoy          1  37 Enforcer             -
 805306372    HUM1_CHR_Campramara       envoy          1  40 Foundry              -
-33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Industrialist, Psychic, Forge Focused II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
-50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
-100663871    HUM1_CHR_Khebb            scientist      4   0 Council #45          Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
+33554989     NECROID1_CHR_Gufella      official       7  44 Minister of State    Industrialist, Psychic, Forge Focused II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
+100663871    HUM1_CHR_Khebb            scientist      4   0 Senior Science Dire… Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
+50332170     HUM1_CHR_Yndana           scientist      4   0 Head of Research     Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
 ```
 
 ## get_leaders (detail: leader_id=150995515)

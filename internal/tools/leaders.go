@@ -66,7 +66,7 @@ func leaderSummary(gs *gamestate.GameState, countryID int, c *gamestate.Country)
 	fmt.Fprintf(&b, "%s\n", strings.Repeat("-", 110))
 
 	for _, e := range leaders {
-		assignment := resolveAssignment(gs, e.l)
+		assignment := resolveAssignment(gs, c, e.l)
 		traits := strings.Join(ll(e.l.Traits), ", ")
 		if traits == "" {
 			traits = "-"
@@ -107,7 +107,11 @@ func leaderDetail(gs *gamestate.GameState, leaderID int) (*mcp.CallToolResult, e
 	fmt.Fprintf(&b, "Job: %s\n", l(ldr.Job))
 	fmt.Fprintf(&b, "Recruited: %s\n", ldr.RecruitmentDate)
 
-	fmt.Fprintf(&b, "\nAssignment: %s\n", resolveAssignment(gs, ldr))
+	var c *gamestate.Country
+	if country, ok := gs.Country[ldr.Country]; ok {
+		c = &country
+	}
+	fmt.Fprintf(&b, "\nAssignment: %s\n", resolveAssignment(gs, c, ldr))
 
 	if ldr.Location.Type != "" {
 		fmt.Fprintf(&b, "Location: %s (id=%d)\n", ldr.Location.Type, ldr.Location.ID)
@@ -128,10 +132,18 @@ func leaderDetail(gs *gamestate.GameState, leaderID int) (*mcp.CallToolResult, e
 	return mcp.NewToolResultText(b.String()), nil
 }
 
-func resolveAssignment(gs *gamestate.GameState, ldr gamestate.Leader) string {
-	// Council position
+func resolveAssignment(gs *gamestate.GameState, c *gamestate.Country, ldr gamestate.Leader) string {
+	// Council position — resolve to council type name
 	if ldr.CouncilLocation.Type == "council_position" {
-		return fmt.Sprintf("Council #%d", ldr.CouncilLocation.ID)
+		posID := ldr.CouncilLocation.ID
+		if c != nil {
+			for i, id := range c.Government.CouncilPositions {
+				if id == posID && i < len(c.Government.PickedCouncilTypes) {
+					return l(c.Government.PickedCouncilTypes[i])
+				}
+			}
+		}
+		return fmt.Sprintf("Council #%d", posID)
 	}
 	// Fleet/ship assignment
 	if ldr.Location.Type == "ship" {
