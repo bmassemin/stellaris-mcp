@@ -5,7 +5,8 @@ Generated from a real Stellaris save (Cetus v4.3.2, mid-game 2293.01.01).
 ## ping
 
 ```
-pong```
+pong
+```
 
 ## get_empire_overview
 

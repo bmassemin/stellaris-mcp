@@ -17,5 +17,5 @@ func registerPing(s *server.MCPServer) {
 }
 
 func handlePing(_ context.Context, _ mcp.CallToolRequest) (*mcp.CallToolResult, error) {
-	return mcp.NewToolResultText("pong"), nil
+	return mcp.NewToolResultText("pong\n"), nil
 }
