@@ -98,7 +98,6 @@ func leaderDetail(gs *gamestate.GameState, leaderID int) (*mcp.CallToolResult, e
 	var b strings.Builder
 	fmt.Fprintf(&b, "=== Leader %d: %s ===\n", leaderID, ldr.Name.FullNames.Display())
 	fmt.Fprintf(&b, "Class: %s\n", ldr.Class)
-	fmt.Fprintf(&b, "Tier: %s\n", ldr.Tier)
 	fmt.Fprintf(&b, "Level: %d (bonus: %d)\n", ldr.Level, ldr.BonusSkillLevel)
 	fmt.Fprintf(&b, "Experience: %.1f\n", ldr.Experience)
 	fmt.Fprintf(&b, "Age: %d\n", ldr.Age)
