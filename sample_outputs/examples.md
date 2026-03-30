@@ -183,21 +183,21 @@ Completed Technologies (117):
   Mining Deposits: Alloys: 2.6, Energy Credits: 110.5, Minerals: 196.0, Trade: 18.2, Volatile Motes: 3.9
   Research Deposits: Astral Threads: 3.0, Engineering Research: 30.0, Minor Artifacts: 6.0, Physics Research: 20.0, Society Research: 24.0
   Artisan Jobs: Consumer Goods: 94.1, Exotic Gases: 0.0, Trade: 28.1
-  $job_biologist$ Jobs: Physics Research: 3.2, Society Research: 36.0
-  $job_engineer$ Jobs: Engineering Research: 40.9, Society Research: 4.1
+  Biologist Jobs: Physics Research: 3.2, Society Research: 36.0
+  Engineer Jobs: Engineering Research: 40.9, Society Research: 4.1
   Entertainer Jobs: Unity: 5.7
   Farming Jobs: Food: 59.3
   Jobs: Food: 0.2
   Metallurgist Jobs: Alloys: 78.4, Exotic Gases: 0.0
   Mining Jobs: Minerals: 52.7
-  $job_physicist$ Jobs: Engineering Research: 3.6, Physics Research: 31.5
+  Physicist Jobs: Engineering Research: 3.6, Physics Research: 31.5
   Politician Jobs: Engineering Research: 10.8, Physics Research: 9.4, Society Research: 10.8, Unity: 54.7
   Refinery Jobs: Exotic Gases: 15.0
   Technician Jobs: Energy Credits: 260.0
   Trader Jobs: Trade: 24.1
-  $pop_cat_ruler$ Living Standards: Trade: 4.5
-  $pop_cat_specialist$ Living Standards: Trade: 24.6
-  $pop_cat_worker$ Living Standards: Trade: 1.3
+  Elite Living Standards: Trade: 4.5
+  Specialist Living Standards: Trade: 24.6
+  Worker Living Standards: Trade: 1.3
   Factions: Unity: 23.9
   Starbase Modules: Energy Credits: 6.0
   Trade Policy: Energy Credits: 17.7, Trade: 17.7
@@ -209,16 +209,16 @@ Completed Technologies (117):
   Scientists: Unity: 16.0
   Artisan Jobs: Minerals: 68.8
   Automated Workforce: Energy Credits: 33.0
-  $job_biologist$ Jobs: Consumer Goods: 18.0
+  Biologist Jobs: Consumer Goods: 18.0
   Buildings: Energy Credits: 126.0, Exotic Gases: 5.4, Volatile Motes: 0.9
   City Districts: Energy Credits: 10.8
   Agriculture District: Energy Credits: 3.6
   Generator District: Energy Credits: 14.4
   Mining District: Energy Credits: 22.5
-  $job_engineer$ Jobs: Consumer Goods: 20.4
+  Engineer Jobs: Consumer Goods: 20.4
   Entertainer Jobs: Consumer Goods: 7.8
   Metallurgist Jobs: Minerals: 88.7
-  $job_physicist$ Jobs: Consumer Goods: 18.0
+  Physicist Jobs: Consumer Goods: 18.0
   Politician Jobs: Consumer Goods: 27.9
   Pop Assemblers: Alloys: 5.9
   Pops: Energy Credits: 29.0, Food: 96.5
@@ -226,9 +226,9 @@ Completed Technologies (117):
   Planetary Deficits: Trade: 48.8
   Soldier Jobs: Alloys: 7.1
   Trader Jobs: Consumer Goods: 2.5
-  $pop_cat_ruler$ Living Standards: Consumer Goods: 8.9
-  $pop_cat_specialist$ Living Standards: Consumer Goods: 37.2
-  $pop_cat_worker$ Living Standards: Consumer Goods: 1.3
+  Elite Living Standards: Consumer Goods: 8.9
+  Specialist Living Standards: Consumer Goods: 37.2
+  Worker Living Standards: Consumer Goods: 1.3
   Components: Alloys: 15.5, Energy Credits: 82.8
   Ships: Alloys: 14.5, Energy Credits: 31.7, Trade: 16.5
   Starbase Buildings: Energy Credits: 6.2
@@ -717,10 +717,10 @@ Use get_planets with planet_id for details.
 
 ID     Name                      Class            Size  Pops  Stab Design.      Districts
 --------------------------------------------------------------------------------------------------------------
-4      SPEC_Bebaki_planet        Continental World   18  6613    74 col_capital  4/18 [Agriculture District:1 City District:1 Generator District:1 Mining District:1]
-123    Mius                      Continental World   17  2021    66 col_mining   3/17 [City District:1 Generator District:1 Mining District:1]
-172    Zabeen                    Continental World   12  4142    64 col_industrial 4/12 [Agriculture District:1 City District:1 Generator District:1 Mining District:1]
-232    Satrinias                 Continental World   19   290    70 col_foundry  2/19 [City District:1 Generator District:1]
+4      SPEC_Bebaki_planet        Continental World   18  6613    74 Empire Capital 4/18 [Agriculture District:1 City District:1 Generator District:1 Mining District:1]
+123    Mius                      Continental World   17  2021    66 Mining World 3/17 [City District:1 Generator District:1 Mining District:1]
+172    Zabeen                    Continental World   12  4142    64 Industrial World 4/12 [Agriculture District:1 City District:1 Generator District:1 Mining District:1]
+232    Satrinias                 Continental World   19   290    70 Forge World  2/19 [City District:1 Generator District:1]
 ```
 
 ## get_planets (detail: planet_id=4)
@@ -738,10 +738,10 @@ Amenities: 7214 (used: 7106, free: 108)
 Housing: 7800 (used: 6606, free: 1194)
 
 District Slots: 4 / 18 used
-  Mining District: 1
-  Agriculture District: 1
   City District: 1
   Generator District: 1
+  Mining District: 1
+  Agriculture District: 1
 
 Districts Detail (4):
   City District (lvl 3) — slots: Research Enclave, Research Enclave
@@ -758,7 +758,7 @@ Districts Detail (4):
     [Research Enclave] Research Complexes
     [Research Enclave] Research Complexes
   Generator District (lvl 4) — slots: Energy Generation
-    [Energy Generation] $building_automation_1$: $job_technician$
+    [Energy Generation] Automation Building: Technician
     [Energy Generation] Energy Grid
   Mining District (lvl 8)
   Agriculture District (lvl 3)
@@ -795,19 +795,19 @@ ID     Name                      Class              Size Surveyed Deposits
 -------------------------------------------------------------------------------------
 3579   Zedran III                Continental World    22      yes 11
 673    Pothria III               Continental World    20      yes 12
-2684   Mardom III                Tundra World         16      yes 12
 671    Pothria II                Arctic World         16      yes 14
 4027   Atausnyria III            Alpine World         16      yes 15
-836    Dearum I                  Savanna World        14      yes 10
+2684   Mardom III                Tundra World         16      yes 12
 1641   Rakaron III a             Desert World         14      yes 12
 1014   Itraben I                 Gaia World           14      yes 9
+836    Dearum I                  Savanna World        14      yes 10
 4086   Pozuno II                 Gaia World           13      yes 11
 3603   Hadriccus III a           Tundra World         10      yes 9
-2647   Daranma III               Ocean World          22       no 13
 3867   NAME_Parvus III           Desert World         22       no 13
+2647   Daranma III               Ocean World          22       no 13
 2207   Vijimar II                Ocean World          19       no 15
-1967   Riggott III               Tundra World         14       no 9
 819    Sanach IV a               Alpine World         14       no 13
+1967   Riggott III               Tundra World         14       no 9
 2609   NAME_UbogleeltD b         Gaia World            6       no 5
 ```
 
@@ -819,27 +819,27 @@ Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
-184549931    INF1_CHA_Kaaftoza         commander      4   0 captain              General, $leader_trait_iron_fist$ II, Butcher
 33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
-150995515    HUM1_CHR_Linntyla         commander      5   0 principal_pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
-16777805     HUM1_CHR_Corrona          commander      1   0 special_operations_… Butcher, Resilient, Arrested Development
+184549931    INF1_CHA_Kaaftoza         commander      4   0 captain              General, Iron Fist II, Butcher
 16777808     HUM1_CHR_Monnobak         commander      1   0 ship_logistics_offi… Trickster, Resilient, Arrested Development
-16777511     HUM1_CHR_Limathar         commander      4   0 Council #20          Strategist, $trait_ruler_warlike$ II, Defense Engineer
+16777805     HUM1_CHR_Corrona          commander      1   0 special_operations_… Butcher, Resilient, Arrested Development
 16777806     HUM1_CHR_Thalotha         commander      1   0 chief_navigator      Butcher, Resilient, Destructive
+16777511     HUM1_CHR_Limathar         commander      4   0 Council #20          Strategist, Warlike II, Defense Engineer
+150995515    HUM1_CHR_Linntyla         commander      5   0 principal_pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
 16777807     HUM1_CHR_Darmug           commander      1   0 principal_pilot      Aggressive
-805306371    HUM1_CHR_Monnobaki        envoy          1  37 enforcer             -
 805306372    HUM1_CHR_Campramara       envoy          1  40 foundry              -
+805306371    HUM1_CHR_Monnobaki        envoy          1  37 enforcer             -
 33555010     HUM1_CHR_Tirrana          official       1   0 politician           Resilient
-33554486     HUM1_CHR_Mikaba           official       2   0 miner                Adaptable
-301990461    HUM1_CHR_Monnobak         official       1   0 politician           Adaptable
 16777401     HUM1_CHR_Cognati          official       1   0 politician           Resilient
-33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Industrialist, Psychic, $leader_trait_forge_focus$ II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
+301990461    HUM1_CHR_Monnobak         official       1   0 politician           Adaptable
+33554989     NECROID1_CHR_Gufella      official       7  44 Council #22          Industrialist, Psychic, Forge Focused II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
+33554486     HUM1_CHR_Mikaba           official       2   0 miner                Adaptable
+16777801     HUM1_CHR_Sebakhir         scientist      2   0 roboticist           Expertise: Field Manipulation, Adaptable
+16777804     HUM1_CHR_Listhima         scientist      2   0 technician           Expertise: Military Theory, Roamer
+16777802     HUM1_CHR_Tirran           scientist      2   0 foundry              Expertise: Industry, Adaptable
+50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
 16777803     HUM1_CHR_Esthonir         scientist      2   0 technician           Expertise: Propulsion, Spark of Genius
 100663871    HUM1_CHR_Khebb            scientist      4   0 Council #45          Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
-16777802     HUM1_CHR_Tirran           scientist      2   0 foundry              Expertise: Industry, Adaptable
-16777804     HUM1_CHR_Listhima         scientist      2   0 technician           Expertise: Military Theory, Roamer
-50332170     HUM1_CHR_Yndana           scientist      4   0 Council #21          Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
-16777801     HUM1_CHR_Sebakhir         scientist      2   0 roboticist           Expertise: Field Manipulation, Adaptable
 ```
 
 ## get_leaders (detail: leader_id=150995515)
