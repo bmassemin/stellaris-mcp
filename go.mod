@@ -1,6 +1,6 @@
 module github.com/bmassemin/stellaris-mcp
 
-go 1.25.5
+go 1.26.1
 
 require github.com/mark3labs/mcp-go v0.46.0
 
