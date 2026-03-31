@@ -21,7 +21,11 @@
 - `SPEC_*` name keys are game localization references not present in save files; they cannot be resolved further
 - Save files are `.sav` ZIPs containing a `gamestate` file; `LoadFromDir` walks subdirs recursively for most recent `.sav`
 - For large responses (planets list), use summary/detail pattern with ID parameter to stay under Claude Desktop 1MB limit
-- Localization YAML format: ` key:version "value"`. Some values are `$concept_X$` references — `Resolve()` follows one level of indirection
+- `get_planets available=true` filters to surveyed-only planets (not the whole galaxy)
+- `pop_jobs` is a top-level section keyed by job ID; filter by `planet` field and use `workforce` for headcount
+- Localization YAML format: ` key:version "value"`. Some values are `$concept_X$` references — `Resolve()` follows `$ref$` chains recursively
+- Localization values may contain Stellaris markup (`£icon£`, `§Xcolor§!`) — `stripMarkup()` converts icons to names and removes color codes
+- `SPEC_*` name keys ARE in the localization files — with loc loaded, they resolve to real names
 - Don't name variables `l` in tool handlers — it shadows the `l()` localization helper
 - After changing any tool output, regenerate `sample_outputs/examples.md` using the sample_test.go generator pattern (write it, run it, delete it)
 
