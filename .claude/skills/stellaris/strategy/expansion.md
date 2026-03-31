@@ -6,14 +6,22 @@
 - Colonize guaranteed habitable worlds first (2 planets near homeworld)
 - Don't wait for "perfect" planets -- pops are your ultimate resource
 - 4.3: Empire size from pops halved, but empire size per colony increased to 20
+- Colony ship costs (4.3): Organic 100 Alloys + 550 Food + 200 CG; Mechanical 200 Alloys + 200 Energy + 200 CG
+- Colonization completes when 100 colonists grow/migrate -- migration pull from capital is critical
 
 ## Planet Evaluation Criteria
 
+### Habitability Thresholds
+Every 1% below 100%: +1% Pop Upkeep/Amenity Usage, -0.5% Job Output/Pop Growth.
+- **Green (70%+)**: Colonize ASAP
+- **Yellow (40-69%)**: Colonize if strategic or no better options
+- **Red (<40%)**: Skip early; use robots, gene-mod, or terraform later
+
 ### Priority Factors (in order)
-1. **Size**: Larger planets = more district slots = more pops. Size 20+ is excellent, 15+ is good.
+1. **Size**: Larger planets = more district slots = more pops. Size 20+ is excellent, 15+ is good. Even size 5-6 planets are worthwhile as single-purpose worlds.
 2. **Habitability**: 60%+ is workable, 80%+ is ideal. Low habitability reduces job output and pop growth.
 3. **Planet class**: Match to species preference. Continental/Tropical/Ocean are common. Gaia worlds have 100% habitability for everyone.
-4. **Planetary features**: Rich deposits (d_rich_mountain, d_lush_jungle) add resources. Rare resource deposits are valuable.
+4. **Planetary features**: In 4.3, special deposits appear at 4x greater frequency. Climate affects deposits: dry planets favor energy/motes, wet favor food/gases, cold favor mining/crystals.
 5. **Blockers**: Fewer is better early game (clearing costs society research + time). Some blockers transform into features when cleared.
 6. **Strategic position**: Chokepoint systems, resource-rich systems, forward bases.
 
@@ -38,6 +46,10 @@
 - Claim and fortify these before expanding further
 - Build defensive starbases at chokepoints, anchorage starbases behind them
 - A single fortified chokepoint can protect an entire sector
+- FTL Inhibitors prevent enemy fleets from leaving except via entry hyperlane
+- Starbase capacity: base 3, +1 per 10 owned systems. Exceeding adds 25% upkeep penalty.
+- Jump drives (late game) bypass chokepoints entirely -- plan accordingly
+- In 4.3, Unyielding tradition and starbase defenses are relatively stronger with smaller fleets
 
 ## Influence Management
 
