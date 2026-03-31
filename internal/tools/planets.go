@@ -258,14 +258,13 @@ func planetAvailable(gs *gamestate.GameState, countryID int, c *gamestate.Countr
 		if p.Owner != 0 {
 			continue
 		}
-		surveyed := p.SurveyedBy == countryID
-		planets = append(planets, entry{id, p, surveyed})
-	}
-	// Surveyed first, then by size descending
-	sort.Slice(planets, func(i, j int) bool {
-		if planets[i].surveyed != planets[j].surveyed {
-			return planets[i].surveyed
+		if p.SurveyedBy != countryID {
+			continue
 		}
+		planets = append(planets, entry{id, p, true})
+	}
+	// Sort by size descending
+	sort.Slice(planets, func(i, j int) bool {
 		return planets[i].p.PlanetSize > planets[j].p.PlanetSize
 	})
 
@@ -273,22 +272,16 @@ func planetAvailable(gs *gamestate.GameState, countryID int, c *gamestate.Countr
 	fmt.Fprintf(&b, "=== Available Habitable Planets (%s) — %d planets ===\n", c.Adjective.Display(), len(planets))
 	fmt.Fprintf(&b, "Use get_planets with planet_id for details.\n\n")
 
-	fmt.Fprintf(&b, "%-6s %-25s %-18s %4s %8s %s\n", "ID", "Name", "Class", "Size", "Surveyed", "Deposits")
-	fmt.Fprintf(&b, "%s\n", strings.Repeat("-", 85))
+	fmt.Fprintf(&b, "%-6s %-25s %-18s %4s %s\n", "ID", "Name", "Class", "Size", "Deposits")
+	fmt.Fprintf(&b, "%s\n", strings.Repeat("-", 70))
 
 	for _, e := range planets {
-		surv := "no"
-		if e.surveyed {
-			surv = "yes"
-		}
-		nDeposits := len(e.p.Deposits)
-		fmt.Fprintf(&b, "%-6d %-25s %-18s %4d %8s %d\n",
+		fmt.Fprintf(&b, "%-6d %-25s %-18s %4d %d\n",
 			e.id,
 			truncate(e.p.Name.Display(), 25),
 			l(e.p.PlanetClass),
 			e.p.PlanetSize,
-			surv,
-			nDeposits,
+			len(e.p.Deposits),
 		)
 	}
 
