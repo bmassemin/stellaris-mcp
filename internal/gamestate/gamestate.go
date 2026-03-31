@@ -72,9 +72,16 @@ type WarParty struct {
 }
 
 type Federation struct {
-	Name    LocalizedName `clausewitz:"name"`
-	Leader  int           `clausewitz:"leader"`
-	Members []int         `clausewitz:"members"`
+	Name                  LocalizedName         `clausewitz:"name"`
+	Leader                int                   `clausewitz:"leader"`
+	Members               []int                 `clausewitz:"members"`
+	FederationProgression FederationProgression `clausewitz:"federation_progression"`
+}
+
+type FederationProgression struct {
+	FederationType string  `clausewitz:"federation_type"`
+	Experience     float64 `clausewitz:"experience"`
+	Cohesion       float64 `clausewitz:"cohesion"`
 }
 
 // LoadFromDir finds the most recent .sav file in dir,

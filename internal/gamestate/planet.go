@@ -16,6 +16,7 @@ type Planet struct {
 	FreeHousing      float64            `clausewitz:"free_housing"`
 	NumPops          int                `clausewitz:"num_sapient_pops"`
 	FinalDesignation string             `clausewitz:"final_designation"`
+	AscensionTier    int                `clausewitz:"ascension_tier"`
 	Districts        []int              `clausewitz:"districts"`
 	BuildingsCache   []int              `clausewitz:"buildings_cache"`
 	SurveyedBy       int                `clausewitz:"surveyed_by"`

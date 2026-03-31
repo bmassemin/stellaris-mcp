@@ -14,6 +14,8 @@ type Country struct {
 	EconomyPower     float64          `clausewitz:"economy_power"`
 	TechPower        float64          `clausewitz:"tech_power"`
 	FleetSize        int              `clausewitz:"fleet_size"`
+	UsedNavalCap     int              `clausewitz:"used_naval_capacity"`
+	StarbaseCap      int              `clausewitz:"starbase_capacity"`
 	NumPops          int              `clausewitz:"num_sapient_pops"`
 	EmpireSize       int              `clausewitz:"empire_size"`
 	VictoryRank      int              `clausewitz:"victory_rank"`

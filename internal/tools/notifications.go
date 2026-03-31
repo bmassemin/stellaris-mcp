@@ -56,8 +56,10 @@ func handleNotifications(_ context.Context, req mcp.CallToolRequest) (*mcp.CallT
 		fmt.Fprintf(&b, "  No federations.\n")
 	}
 	for _, f := range gs.Federation {
-		fmt.Fprintf(&b, "  - %s (leader: %s, %d members)\n",
-			f.Name.Display(), countryName(gs, f.Leader), len(f.Members))
+		fedType := l(f.FederationProgression.FederationType)
+		fmt.Fprintf(&b, "  - %s (%s, leader: %s, %d members, cohesion: %.0f%%)\n",
+			f.Name.Display(), fedType, countryName(gs, f.Leader),
+			len(f.Members), f.FederationProgression.Cohesion)
 	}
 
 	// Known contacts count

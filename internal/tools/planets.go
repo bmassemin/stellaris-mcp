@@ -91,7 +91,7 @@ func planetDetail(gs *gamestate.GameState, planetID int) (*mcp.CallToolResult, e
 	var b strings.Builder
 	fmt.Fprintf(&b, "=== Planet %d: %s ===\n", planetID, p.Name.Display())
 	fmt.Fprintf(&b, "Class: %s, Size: %d\n", l(p.PlanetClass), p.PlanetSize)
-	fmt.Fprintf(&b, "Designation: %s\n", l(p.FinalDesignation))
+	fmt.Fprintf(&b, "Designation: %s (Ascension Tier %d)\n", l(p.FinalDesignation), p.AscensionTier)
 	fmt.Fprintf(&b, "Owner: %d, Controller: %d\n", p.Owner, p.Controller)
 	fmt.Fprintf(&b, "\nPopulation: %d pops\n", p.NumPops)
 	fmt.Fprintf(&b, "Stability: %.1f\n", p.Stability)
