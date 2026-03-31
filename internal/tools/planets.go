@@ -114,7 +114,7 @@ func planetDetail(gs *gamestate.GameState, planetID int) (*mcp.CallToolResult, e
 	for _, n := range counts {
 		totalUsed += n
 	}
-	fmt.Fprintf(&b, "\nDistrict Slots: %d / %d used\n", totalUsed, p.PlanetSize)
+	fmt.Fprintf(&b, "\nDistrict Slots: %d used (planet size %d)\n", totalUsed, p.PlanetSize)
 	for dtype, n := range counts {
 		fmt.Fprintf(&b, "  %s: %d\n", l(dtype), n)
 	}
@@ -218,7 +218,11 @@ func countDistrictTypes(gs *gamestate.GameState, p gamestate.Planet) map[string]
 	counts := make(map[string]int)
 	for _, did := range p.Districts {
 		if d, ok := gs.Districts[did]; ok {
-			counts[d.Type]++
+			level := d.Level
+			if level <= 0 {
+				level = 1
+			}
+			counts[d.Type] += level
 		}
 	}
 	return counts
@@ -238,7 +242,7 @@ func districtSummary(gs *gamestate.GameState, p gamestate.Planet) string {
 		parts = append(parts, fmt.Sprintf("%s:%d", l(dtype), n))
 	}
 	sort.Strings(parts)
-	return fmt.Sprintf("%d/%d [%s]", totalUsed, p.PlanetSize, strings.Join(parts, " "))
+	return fmt.Sprintf("%d [%s]", totalUsed, strings.Join(parts, " "))
 }
 
 type jobCount struct {
