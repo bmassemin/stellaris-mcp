@@ -789,27 +789,21 @@ Monthly Profit:
 ## get_planets (available=true)
 
 ```
-=== Available Habitable Planets (SPEC_Bebaki) — 16 planets ===
+=== Available Habitable Planets (SPEC_Bebaki) — 10 planets ===
 Use get_planets with planet_id for details.
 
-ID     Name                      Class              Size Surveyed Deposits
--------------------------------------------------------------------------------------
-3579   Zedran III                Continental World    22      yes 11
-673    Pothria III               Continental World    20      yes 12
-2684   Mardom III                Tundra World         16      yes 12
-4027   Atausnyria III            Alpine World         16      yes 15
-671    Pothria II                Arctic World         16      yes 14
-1014   Itraben I                 Gaia World           14      yes 9
-1641   Rakaron III a             Desert World         14      yes 12
-836    Dearum I                  Savanna World        14      yes 10
-4086   Pozuno II                 Gaia World           13      yes 11
-3603   Hadriccus III a           Tundra World         10      yes 9
-3867   NAME_Parvus III           Desert World         22       no 13
-2647   Daranma III               Ocean World          22       no 13
-2207   Vijimar II                Ocean World          19       no 15
-1967   Riggott III               Tundra World         14       no 9
-819    Sanach IV a               Alpine World         14       no 13
-2609   NAME_UbogleeltD b         Gaia World            6       no 5
+ID     Name                      Class              Size Features
+------------------------------------------------------------------------------------------
+3579   Zedran III                Continental World    22 Toxic Kelp, Rushing Waterfalls, Rugged Woods, Rugged Woods, Fertile Lands, Ore-Veined Cliffs, Rich Mountain, Dust Desert, Rugged Woods, Rugged Woods, Prosperous Mesa
+673    Pothria III               Continental World    20 Rushing Waterfalls, Bubbling Swamp, Black Soil, Ore-Veined Cliffs, Toxic Kelp, Prosperous Mesa, Rugged Woods, Dangerous Wildlife, Rushing Waterfalls, Toxic Kelp, Hot Springs, Ore-Veined Cliffs
+671    Pothria II                Arctic World         16 Massive Glacier, Frozen Gas Lake, Bubbling Swamp, Lichen Fields, Ore-Veined Cliffs, Frozen Gas Lake, Hot Springs, Lichen Fields, Frozen Gas Lake, Lichen Fields, Fungal Forest, Fungal Caves, Geothermal Vents, Hot Springs
+2684   Mardom III                Tundra World         16 Fungal Caves, Massive Glacier, Hot Springs, Noxious Swamp, Ore-Rich Caverns, Noxious Swamp, Fair Tundra, Bubbling Swamp, Rich Mountain, Mineral Fields, Fair Tundra, Mineral Fields
+4027   Atausnyria III            Alpine World         16 Hot Springs, Rich Mountain, Fungal Caves, Fungal Caves, Fair Tundra, Fair Tundra, Massive Glacier, Massive Glacier, Fair Tundra, Fair Tundra, Fungal Caves, Ore-Veined Cliffs, Rich Mountain, Fungal Forest, Ore-Veined Cliffs
+836    Dearum I                  Savanna World        14 Dust Desert, Arid Highlands, Prosperous Mesa, Dust Desert, Quicksand Basin, Black Soil, Arid Highlands, Black Soil, Mineral Fields, Stardust Dunes
+1014   Itraben I                 Gaia World           14 Prosperous Mesa, Bubbling Swamp, Searing Desert, Prosperous Mesa, Teeming Reef, Dust Caverns, Fertile Lands, Impassable Mountains, Rich Mountain
+1641   Rakaron III a             Desert World         14 Quicksand Basin, Arid Highlands, Mineral Fields, Nutritious Mudlands, Active Volcano, Geothermal Vents, Nutritious Mudlands, Nutritious Mudlands, Tropical Island, Arid Highlands, Tropical Island, Arid Highlands
+4086   Pozuno II                 Gaia World           13 Underwater Vents, Frozen Gas Lake, Fertile Lands, Active Volcano, Dust Desert, Rich Mountain, Searing Desert, Prosperous Mesa, Betharian Fields, Rich Mountain, Natural Farmland
+3603   Hadriccus III a           Tundra World         10 Mineral Fields, Mineral Fields, Mineral Fields, Fair Tundra, Frozen Gas Lake, Frozen Gas Lake, Fair Tundra, Fair Tundra, Noxious Swamp
 ```
 
 ## get_leaders (summary)
@@ -820,14 +814,14 @@ Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
-33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
-16777511     HUM1_CHR_Limathar         commander      4   0 Minister of Defense  Strategist, Warlike II, Defense Engineer
 150995515    HUM1_CHR_Linntyla         commander      5   0 Principal Pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
-805306371    HUM1_CHR_Monnobaki        envoy          1  37 Enforcer             -
+16777511     HUM1_CHR_Limathar         commander      4   0 Minister of Defense  Strategist, Warlike II, Defense Engineer
+33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
 805306372    HUM1_CHR_Campramara       envoy          1  40 Foundry              -
+805306371    HUM1_CHR_Monnobaki        envoy          1  37 Enforcer             -
 33554989     NECROID1_CHR_Gufella      official       7  44 Minister of State    Industrialist, Psychic, Forge Focused II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
-50332170     HUM1_CHR_Yndana           scientist      4   0 Head of Research     Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
 100663871    HUM1_CHR_Khebb            scientist      4   0 Senior Science Dire… Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
+50332170     HUM1_CHR_Yndana           scientist      4   0 Head of Research     Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
 ```
 
 ## get_leaders (detail: leader_id=150995515)

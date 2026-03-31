@@ -1,6 +1,7 @@
 package gamestate
 
 import (
+	"strings"
 	"testing"
 
 	"github.com/bmassemin/stellaris-mcp/internal/testutil"
@@ -45,4 +46,24 @@ func TestLocalizer(t *testing.T) {
 	if got == "some_unknown_key_xyz" {
 		t.Error("unknown key should be pretty-printed, not returned raw")
 	}
+
+	// Deposits with markup should be stripped
+	t.Run("deposit_markup", func(t *testing.T) {
+		got := loc.Resolve("d_energy_5")
+		if strings.Contains(got, "\u00a3") || strings.Contains(got, "\u00a7") {
+			t.Errorf("markup not stripped: %q", got)
+		}
+		if got == "" {
+			t.Error("resolved to empty string")
+		}
+		t.Logf("d_energy_5 -> %q", got)
+	})
+
+	// Deposit features (no markup)
+	t.Run("deposit_feature", func(t *testing.T) {
+		got := loc.Resolve("d_hot_springs")
+		if got != "Hot Springs" {
+			t.Errorf("got %q, want %q", got, "Hot Springs")
+		}
+	})
 }

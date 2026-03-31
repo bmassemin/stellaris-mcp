@@ -37,7 +37,7 @@ func (l *Localizer) Resolve(key string) string {
 	if strings.Contains(v, "$") {
 		v = l.resolveRefs(v)
 	}
-	return v
+	return stripMarkup(v)
 }
 
 // resolveRefs replaces all $key$ references in a string.
@@ -126,4 +126,44 @@ func (l *Localizer) loadFile(path string) {
 
 		l.entries[key] = value
 	}
+}
+
+// stripMarkup cleans Stellaris text markup: £icon£ -> icon name, §X...§! -> remove, \n -> space.
+func stripMarkup(s string) string {
+	// Replace £icon_name£ with the icon name (e.g. £energy£ -> "Energy")
+	for {
+		start := strings.Index(s, "\u00a3")
+		if start < 0 {
+			break
+		}
+		end := strings.Index(s[start+2:], "\u00a3")
+		if end < 0 {
+			break
+		}
+		icon := s[start+2 : start+2+end]
+		// Map known icons to readable names; skip pure formatting icons
+		replacement := ""
+		switch icon {
+		case "blocker", "icon", "trigger_no", "trigger_yes":
+			// Pure formatting icons, just remove
+		default:
+			replacement = titleCase(strings.ReplaceAll(icon, "_", " "))
+		}
+		s = s[:start] + replacement + s[start+2+end+2:]
+	}
+	// Remove §X (color start) and §! (color end)
+	for {
+		idx := strings.Index(s, "\u00a7")
+		if idx < 0 {
+			break
+		}
+		// §! is 2+1 bytes, §X is 2+1 bytes
+		if idx+3 <= len(s) {
+			s = s[:idx] + s[idx+3:]
+		} else {
+			s = s[:idx]
+		}
+	}
+	s = strings.ReplaceAll(s, "\\n", " ")
+	return strings.TrimSpace(s)
 }

@@ -232,6 +232,24 @@ func districtSummary(gs *gamestate.GameState, p gamestate.Planet) string {
 	return fmt.Sprintf("%d/%d [%s]", totalUsed, p.PlanetSize, strings.Join(parts, " "))
 }
 
+func depositSummary(gs *gamestate.GameState, p gamestate.Planet) string {
+	if len(p.Deposits) == 0 {
+		return "-"
+	}
+	var names []string
+	for _, did := range p.Deposits {
+		dep, ok := gs.Deposit[did]
+		if !ok || dep.Type == "" {
+			continue
+		}
+		names = append(names, l(dep.Type))
+	}
+	if len(names) == 0 {
+		return "-"
+	}
+	return strings.Join(names, ", ")
+}
+
 var habitableClasses = map[string]bool{
 	"pc_continental": true, "pc_tropical": true, "pc_arid": true,
 	"pc_desert": true, "pc_ocean": true, "pc_arctic": true,
@@ -272,16 +290,16 @@ func planetAvailable(gs *gamestate.GameState, countryID int, c *gamestate.Countr
 	fmt.Fprintf(&b, "=== Available Habitable Planets (%s) — %d planets ===\n", c.Adjective.Display(), len(planets))
 	fmt.Fprintf(&b, "Use get_planets with planet_id for details.\n\n")
 
-	fmt.Fprintf(&b, "%-6s %-25s %-18s %4s %s\n", "ID", "Name", "Class", "Size", "Deposits")
-	fmt.Fprintf(&b, "%s\n", strings.Repeat("-", 70))
+	fmt.Fprintf(&b, "%-6s %-25s %-18s %4s %s\n", "ID", "Name", "Class", "Size", "Features")
+	fmt.Fprintf(&b, "%s\n", strings.Repeat("-", 90))
 
 	for _, e := range planets {
-		fmt.Fprintf(&b, "%-6d %-25s %-18s %4d %d\n",
+		fmt.Fprintf(&b, "%-6d %-25s %-18s %4d %s\n",
 			e.id,
 			truncate(e.p.Name.Display(), 25),
 			l(e.p.PlanetClass),
 			e.p.PlanetSize,
-			len(e.p.Deposits),
+			depositSummary(gs, e.p),
 		)
 	}
 
