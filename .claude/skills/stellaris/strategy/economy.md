@@ -34,26 +34,7 @@ Always specialize planets -- generalist planets waste designation bonuses.
 **IMPORTANT: Only use designations that actually exist in the game. Do not invent combined designations.**
 
 ### Standard Planet Designations
-| Designation | In-game Name |
-|---|---|
-| `col_capital` | Empire Capital |
-| `col_capital_foundry` | Forge Capital |
-| `col_capital_factory` | Factory Capital |
-| `col_capital_extraction` | Capital Extraction World |
-| `col_capital_trade` | Trade Capital |
-| `col_foundry` | Forge World |
-| `col_factory` | Factory World |
-| `col_industrial` | Industrial World |
-| `col_mining` | Mining World |
-| `col_generator` | Generator World |
-| `col_farming` | Agri-World |
-| `col_research` | Tech-World |
-| `col_city` | Urban World |
-| `col_bureau` | Unification Center |
-| `col_fortress` | Fortress World |
-| `col_resort` | Resort World |
-| `col_penal` | Penal Colony |
-| `col_slave` | Thrall-World |
+Empire Capital, Forge World, Factory World, Industrial World, Mining World, Generator World, Agri-World, Tech-World, Urban World, Unification Center, Fortress World, Resort World, Penal Colony, Thrall-World.
 
 ### Capital Specializations
 The capital can be specialized into: Forge Capital, Factory Capital, Capital Extraction World, or Trade Capital. There is NO "Capital Mining World" or "Capital Research World".
