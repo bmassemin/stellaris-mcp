@@ -29,7 +29,8 @@ Power Ratings:
 Empire Stats:
   Pops: 13057
   Planets: 4
-  Fleet Size: 165
+  Fleet Size: 165 (Naval Cap: 165 used)
+  Starbases: 7 capacity
   Empire Size: 197
 
 Monthly Net Balance:
@@ -390,7 +391,7 @@ NAME_Gardeners (Country 16777271):
 ```
 === Fleet Power (SPEC_Bebaki) ===
 Total Military Power: 5371.6
-Fleet Size: 165
+Fleet Size: 165 (Naval Cap Used: 165)
 Use get_fleet_power with fleet_id for ship details.
 
 ID       Name                           Class                        Power Ships
@@ -728,7 +729,7 @@ ID     Name                      Class            Size  Pops  Stab Design.      
 ```
 === Planet 4: SPEC_Bebaki_planet ===
 Class: Continental World, Size: 18
-Designation: Empire Capital
+Designation: Empire Capital (Ascension Tier 0)
 Owner: 0, Controller: 0
 
 Population: 6613 pops
@@ -738,10 +739,10 @@ Amenities: 7214 (used: 7106, free: 108)
 Housing: 7800 (used: 6606, free: 1194)
 
 District Slots: 4 / 18 used
-  Generator District: 1
   Mining District: 1
   Agriculture District: 1
   City District: 1
+  Generator District: 1
 
 Districts Detail (4):
   City District (lvl 3) — slots: Research Enclave, Research Enclave
@@ -798,8 +799,8 @@ ID     Name                      Class              Size Surveyed Deposits
 2684   Mardom III                Tundra World         16      yes 12
 4027   Atausnyria III            Alpine World         16      yes 15
 671    Pothria II                Arctic World         16      yes 14
-1641   Rakaron III a             Desert World         14      yes 12
 1014   Itraben I                 Gaia World           14      yes 9
+1641   Rakaron III a             Desert World         14      yes 12
 836    Dearum I                  Savanna World        14      yes 10
 4086   Pozuno II                 Gaia World           13      yes 11
 3603   Hadriccus III a           Tundra World         10      yes 9
@@ -825,8 +826,8 @@ ID           Name                      Class        Lvl Age Assignment          
 805306371    HUM1_CHR_Monnobaki        envoy          1  37 Enforcer             -
 805306372    HUM1_CHR_Campramara       envoy          1  40 Foundry              -
 33554989     NECROID1_CHR_Gufella      official       7  44 Minister of State    Industrialist, Psychic, Forge Focused II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
-100663871    HUM1_CHR_Khebb            scientist      4   0 Senior Science Dire… Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
 50332170     HUM1_CHR_Yndana           scientist      4   0 Head of Research     Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
+100663871    HUM1_CHR_Khebb            scientist      4   0 Senior Science Dire… Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
 ```
 
 ## get_leaders (detail: leader_id=150995515)
@@ -834,7 +835,6 @@ ID           Name                      Class        Lvl Age Assignment          
 ```
 === Leader 150995515: HUM1_CHR_Linntyla ===
 Class: commander
-Tier: leader_tier_default
 Level: 5 (bonus: 0)
 Experience: 198.8
 Age: 0
@@ -888,7 +888,7 @@ Active Wars:
   - (unnamed) (started )
 
 Federations:
-  - (unnamed) (leader: SPEC_Bebaki, 0 members)
+  - (unnamed) (, leader: SPEC_Bebaki, 0 members, cohesion: 0%)
 
 Diplomacy:
   Known empires: 24
