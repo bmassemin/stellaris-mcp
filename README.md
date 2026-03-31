@@ -58,11 +58,11 @@ Or download a pre-built binary from [Releases](https://github.com/bmassemin/stel
 ### Usage
 
 ```
-stellaris-mcp <save-games-directory> [localization-directory]
+stellaris-mcp <save-games-directory> <localization-directory>
 ```
 
 - **save-games-directory** (required): root folder containing your Stellaris saves. The server recursively walks all subdirectories and picks the most recently modified `.sav` file.
-- **localization-directory** (optional): path to the `english` localization folder from your Stellaris installation. Enables real in-game names (e.g. "Energy Credits" instead of "energy", "Prosperous Unification" instead of "origin_default"). Without it, the server falls back to formatted key names.
+- **localization-directory** (required): path to the `english` localization folder from your Stellaris installation. Provides real in-game names (e.g. "Energy Credits", "Forge Capital"). The server exits with an error if the path doesn't exist or contains no localization files.
 
 ### Claude Desktop
 

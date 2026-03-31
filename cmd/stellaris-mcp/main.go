@@ -11,18 +11,26 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Fprintln(os.Stderr, "usage: stellaris-mcp <save-games-directory> [localization-directory]")
+		fmt.Fprintln(os.Stderr, "usage: stellaris-mcp <save-games-directory> <localization-directory>")
 		os.Exit(1)
 	}
 	saveDir := os.Args[1]
 
-	loc := gamestate.NewLocalizer("")
-	if len(os.Args) >= 3 {
-		loc = gamestate.NewLocalizer(os.Args[2])
+	if len(os.Args) < 3 {
+		fmt.Fprintln(os.Stderr, "usage: stellaris-mcp <save-games-directory> <localization-directory>")
+		os.Exit(1)
 	}
-	if n := loc.Loaded(); n > 0 {
-		fmt.Fprintf(os.Stderr, "stellaris-mcp: loaded %d localization entries\n", n)
+	locDir := os.Args[2]
+	if _, err := os.Stat(locDir); err != nil {
+		fmt.Fprintf(os.Stderr, "localization directory not found: %s\n", locDir)
+		os.Exit(1)
 	}
+	loc := gamestate.NewLocalizer(locDir)
+	if loc.Loaded() == 0 {
+		fmt.Fprintf(os.Stderr, "no localization entries found in: %s\n", locDir)
+		os.Exit(1)
+	}
+	fmt.Fprintf(os.Stderr, "stellaris-mcp: loaded %d localization entries\n", loc.Loaded())
 
 	s := server.NewMCPServer(
 		"stellaris-mcp",
