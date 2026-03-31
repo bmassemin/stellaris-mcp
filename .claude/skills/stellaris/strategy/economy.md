@@ -29,10 +29,43 @@ Specialization multipliers: Standard x1, Habitat x1.5, Ecumenopolis/Hive/Machine
 
 ## Planet Designation
 
-Always specialize planets -- generalist planets waste designation bonuses:
-- **Forge World**: +10% Metallurgist Efficiency
-- **Tech-World**: +10% Researcher Efficiency
-- **Mining/Generator/Agri World**: +10% respective job efficiency
+Always specialize planets -- generalist planets waste designation bonuses.
+
+**IMPORTANT: Only use designations that actually exist in the game. Do not invent combined designations.**
+
+### Standard Planet Designations
+| Designation | In-game Name |
+|---|---|
+| `col_capital` | Empire Capital |
+| `col_capital_foundry` | Forge Capital |
+| `col_capital_factory` | Factory Capital |
+| `col_capital_extraction` | Capital Extraction World |
+| `col_capital_trade` | Trade Capital |
+| `col_foundry` | Forge World |
+| `col_factory` | Factory World |
+| `col_industrial` | Industrial World |
+| `col_mining` | Mining World |
+| `col_generator` | Generator World |
+| `col_farming` | Agri-World |
+| `col_research` | Tech-World |
+| `col_city` | Urban World |
+| `col_bureau` | Unification Center |
+| `col_fortress` | Fortress World |
+| `col_resort` | Resort World |
+| `col_penal` | Penal Colony |
+| `col_slave` | Thrall-World |
+
+### Capital Specializations
+The capital can be specialized into: Forge Capital, Factory Capital, Capital Extraction World, or Trade Capital. There is NO "Capital Mining World" or "Capital Research World".
+
+### Habitat Designations
+Foundry/Factory/Mining/Research/Trade/Energy/Farming/Fortress Station, plus Refinery Station.
+
+### Ecumenopolis Designations
+Ecumenopolis Foundry, Factory, Industrial, Research.
+
+### Ring World Designations
+Agriculture/Generator/Research/Commercial Ring World.
 
 Planetary Ascension: +10% per tier in 4.3 (was +25%). Pour Unity into highest-value planets first (forge worlds, tech worlds, capital).
 
