@@ -25,6 +25,7 @@ type GameState struct {
 	Districts  map[int]District    `clausewitz:"districts"`
 	Zones      map[int]Zone        `clausewitz:"zones"`
 	Deposit    map[int]Deposit     `clausewitz:"deposit"`
+	PopJobs    map[int]PopJob     `clausewitz:"pop_jobs"`
 	Leaders    map[int]Leader      `clausewitz:"leaders"`
 	War        []War               `clausewitz:"war"`
 	Federation []Federation        `clausewitz:"federation"`
@@ -33,6 +34,12 @@ type GameState struct {
 type Building struct {
 	Type     string `clausewitz:"type"`
 	Position int    `clausewitz:"position"`
+}
+
+type PopJob struct {
+	Type      string `clausewitz:"type"`
+	Planet    int    `clausewitz:"planet"`
+	Workforce int    `clausewitz:"workforce"`
 }
 
 type Deposit struct {

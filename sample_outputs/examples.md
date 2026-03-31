@@ -738,11 +738,26 @@ Crime: 0.0
 Amenities: 7214 (used: 7106, free: 108)
 Housing: 7800 (used: 6606, free: 1194)
 
+Jobs:
+  Technician: 1040
+  Biologist: 900
+  Engineer: 900
+  Physicist: 900
+  Enforcer: 800
+  Soldier: 600
+  Farmer: 432
+  Politician: 400
+  Artisan: 400
+  Entertainer: 200
+  Miner: 141
+  Roboticist: 100
+  Trader: 100
+
 District Slots: 4 / 18 used
-  Mining District: 1
-  Agriculture District: 1
   City District: 1
   Generator District: 1
+  Mining District: 1
+  Agriculture District: 1
 
 Districts Detail (4):
   City District (lvl 3) — slots: Research Enclave, Research Enclave
@@ -799,9 +814,9 @@ ID     Name                      Class              Size Features
 671    Pothria II                Arctic World         16 Massive Glacier, Frozen Gas Lake, Bubbling Swamp, Lichen Fields, Ore-Veined Cliffs, Frozen Gas Lake, Hot Springs, Lichen Fields, Frozen Gas Lake, Lichen Fields, Fungal Forest, Fungal Caves, Geothermal Vents, Hot Springs
 2684   Mardom III                Tundra World         16 Fungal Caves, Massive Glacier, Hot Springs, Noxious Swamp, Ore-Rich Caverns, Noxious Swamp, Fair Tundra, Bubbling Swamp, Rich Mountain, Mineral Fields, Fair Tundra, Mineral Fields
 4027   Atausnyria III            Alpine World         16 Hot Springs, Rich Mountain, Fungal Caves, Fungal Caves, Fair Tundra, Fair Tundra, Massive Glacier, Massive Glacier, Fair Tundra, Fair Tundra, Fungal Caves, Ore-Veined Cliffs, Rich Mountain, Fungal Forest, Ore-Veined Cliffs
-836    Dearum I                  Savanna World        14 Dust Desert, Arid Highlands, Prosperous Mesa, Dust Desert, Quicksand Basin, Black Soil, Arid Highlands, Black Soil, Mineral Fields, Stardust Dunes
 1014   Itraben I                 Gaia World           14 Prosperous Mesa, Bubbling Swamp, Searing Desert, Prosperous Mesa, Teeming Reef, Dust Caverns, Fertile Lands, Impassable Mountains, Rich Mountain
 1641   Rakaron III a             Desert World         14 Quicksand Basin, Arid Highlands, Mineral Fields, Nutritious Mudlands, Active Volcano, Geothermal Vents, Nutritious Mudlands, Nutritious Mudlands, Tropical Island, Arid Highlands, Tropical Island, Arid Highlands
+836    Dearum I                  Savanna World        14 Dust Desert, Arid Highlands, Prosperous Mesa, Dust Desert, Quicksand Basin, Black Soil, Arid Highlands, Black Soil, Mineral Fields, Stardust Dunes
 4086   Pozuno II                 Gaia World           13 Underwater Vents, Frozen Gas Lake, Fertile Lands, Active Volcano, Dust Desert, Rich Mountain, Searing Desert, Prosperous Mesa, Betharian Fields, Rich Mountain, Natural Farmland
 3603   Hadriccus III a           Tundra World         10 Mineral Fields, Mineral Fields, Mineral Fields, Fair Tundra, Frozen Gas Lake, Frozen Gas Lake, Fair Tundra, Fair Tundra, Noxious Swamp
 ```
@@ -814,14 +829,14 @@ Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
-150995515    HUM1_CHR_Linntyla         commander      5   0 Principal Pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
-16777511     HUM1_CHR_Limathar         commander      4   0 Minister of Defense  Strategist, Warlike II, Defense Engineer
 33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
+16777511     HUM1_CHR_Limathar         commander      4   0 Minister of Defense  Strategist, Warlike II, Defense Engineer
+150995515    HUM1_CHR_Linntyla         commander      5   0 Principal Pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
 805306372    HUM1_CHR_Campramara       envoy          1  40 Foundry              -
 805306371    HUM1_CHR_Monnobaki        envoy          1  37 Enforcer             -
 33554989     NECROID1_CHR_Gufella      official       7  44 Minister of State    Industrialist, Psychic, Forge Focused II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
-100663871    HUM1_CHR_Khebb            scientist      4   0 Senior Science Dire… Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
 50332170     HUM1_CHR_Yndana           scientist      4   0 Head of Research     Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
+100663871    HUM1_CHR_Khebb            scientist      4   0 Senior Science Dire… Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
 ```
 
 ## get_leaders (detail: leader_id=150995515)

@@ -99,6 +99,15 @@ func planetDetail(gs *gamestate.GameState, planetID int) (*mcp.CallToolResult, e
 	fmt.Fprintf(&b, "Amenities: %.0f (used: %.0f, free: %.0f)\n", p.Amenities, p.AmenitiesUsage, p.FreeAmenities)
 	fmt.Fprintf(&b, "Housing: %.0f (used: %.0f, free: %.0f)\n", p.TotalHousing, p.HousingUsage, p.FreeHousing)
 
+	// Jobs breakdown
+	jobCounts := jobBreakdown(gs, planetID)
+	if len(jobCounts) > 0 {
+		fmt.Fprintf(&b, "\nJobs:\n")
+		for _, jc := range jobCounts {
+			fmt.Fprintf(&b, "  %s: %d\n", l(jc.jobType), jc.workforce)
+		}
+	}
+
 	// District slot summary
 	counts := countDistrictTypes(gs, p)
 	totalUsed := 0
@@ -230,6 +239,26 @@ func districtSummary(gs *gamestate.GameState, p gamestate.Planet) string {
 	}
 	sort.Strings(parts)
 	return fmt.Sprintf("%d/%d [%s]", totalUsed, p.PlanetSize, strings.Join(parts, " "))
+}
+
+type jobCount struct {
+	jobType   string
+	workforce int
+}
+
+func jobBreakdown(gs *gamestate.GameState, planetID int) []jobCount {
+	counts := make(map[string]int)
+	for _, job := range gs.PopJobs {
+		if job.Planet == planetID && job.Workforce > 0 {
+			counts[job.Type] += job.Workforce
+		}
+	}
+	result := make([]jobCount, 0, len(counts))
+	for t, w := range counts {
+		result = append(result, jobCount{t, w})
+	}
+	sort.Slice(result, func(i, j int) bool { return result[i].workforce > result[j].workforce })
+	return result
 }
 
 func depositSummary(gs *gamestate.GameState, p gamestate.Planet) string {
