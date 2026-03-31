@@ -564,150 +564,129 @@ Ships: 14
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
-  Weapons:
-    - Medium Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Medium Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Durasteel Armor
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 3129: HUM1_SHIP_TakkramtheLawgiver ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
-  Weapons:
-    - Medium Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Medium Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Durasteel Armor
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 33556074: HUM1_SHIP_OthanatheBenign ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
-  Weapons:
-    - Medium Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Medium Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Durasteel Armor
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 16780210: HUM1_SHIP_JolkegtheAgile ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
-  Weapons:
-    - Medium Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Medium Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Durasteel Armor
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 16779346: HUM1_SHIP_DorlantheTyrant ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
-  Weapons:
-    - Medium Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Medium Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Durasteel Armor
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 16780487: HUM1_SHIP_BathartheAmicable ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
-  Weapons:
-    - Medium Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Medium Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Durasteel Armor
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 33557745: HUM1_SHIP_LahvontheImpudent ---
   Design: HUM1_CLASS_Daskall (Destroyer)
   Hull:   1260 / 1260
   Shield: 250 / 250
   Armor:  820 / 820
-  Section: Gunship Bow
-  Weapons:
-    - Medium Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Medium Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors, Small Durasteel Armor, Small Durasteel Armor
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 33557525: HUM1_SHIP_OssanatheFounder ---
   Design: HUM1_CLASS_Salaas (Corvette)
   Hull:   230 / 230
   Shield: 250 / 250
   Armor:  205 / 205
-  Section: Interceptor
-  Weapons:
-    - Small Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Small Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors
+  Aux: Improved Reactor Booster
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 50334702: HUM1_SHIP_KhebbtheFierce ---
   Design: HUM1_CLASS_Salaas (Corvette)
   Hull:   230 / 230
   Shield: 250 / 250
   Armor:  205 / 205
-  Section: Interceptor
-  Weapons:
-    - Small Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Small Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors
+  Aux: Improved Reactor Booster
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 33557513: HUM1_SHIP_BoroktheAffable ---
   Design: HUM1_CLASS_Salaas (Corvette)
   Hull:   230 / 230
   Shield: 250 / 250
   Armor:  205 / 205
-  Section: Interceptor
-  Weapons:
-    - Small Railgun
-    - Small Railgun
-    - Fusion Missiles
+  Weapons: Small Railgun, Small Railgun, Fusion Missiles
+  Utilities: Small Improved Deflectors, Small Durasteel Armor, Small Improved Deflectors
+  Aux: Improved Reactor Booster
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Ship's Computer
 
   --- Ship 33557062: HUM1_SHIP_LethamtheDecisive ---
   Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: Broadside Bow
-  Weapons:
-    - Medium Railgun
-    - Medium Railgun
+  Weapons: Medium Railgun, Medium Railgun
+  Utilities: Medium Durasteel Armor, Medium Improved Deflectors, Medium Durasteel Armor, Medium Improved Deflectors
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Advanced Combat Computer (Line)
 
   --- Ship 33557763: HUM1_SHIP_MuntattheYellow ---
   Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: Broadside Bow
-  Weapons:
-    - Medium Railgun
-    - Medium Railgun
+  Weapons: Medium Railgun, Medium Railgun
+  Utilities: Medium Durasteel Armor, Medium Improved Deflectors, Medium Durasteel Armor, Medium Improved Deflectors
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Advanced Combat Computer (Line)
 
   --- Ship 67112198: HUM1_SHIP_GorontheShining ---
   Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: Broadside Bow
-  Weapons:
-    - Medium Railgun
-    - Medium Railgun
+  Weapons: Medium Railgun, Medium Railgun
+  Utilities: Medium Durasteel Armor, Medium Improved Deflectors, Medium Durasteel Armor, Medium Improved Deflectors
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Advanced Combat Computer (Line)
 
   --- Ship 67109428: HUM1_SHIP_GaraltheLiberator ---
   Design: HUM1_CLASS_Gasna (Cruiser)
   Hull:   2520 / 2520
   Shield: 1500 / 1500
   Armor:  2460 / 2460
-  Section: Broadside Bow
-  Weapons:
-    - Medium Railgun
-    - Medium Railgun
+  Weapons: Medium Railgun, Medium Railgun
+  Utilities: Medium Durasteel Armor, Medium Improved Deflectors, Medium Durasteel Armor, Medium Improved Deflectors
+  Core: Antimatter Reactor, Hyper Drive I, Chemical Thrusters, Gravitic Sensors, Advanced Combat Computer (Line)
 ```
 
 ## get_planets (summary)
@@ -741,8 +720,8 @@ Housing: 7800 (used: 6606, free: 1194)
 Jobs:
   Technician: 1040
   Biologist: 900
-  Physicist: 900
   Engineer: 900
+  Physicist: 900
   Enforcer: 800
   Soldier: 600
   Farmer: 432
@@ -811,11 +790,11 @@ ID     Name                      Class              Size Features
 ------------------------------------------------------------------------------------------
 3579   Zedran III                Continental World    22 Toxic Kelp, Rushing Waterfalls, Rugged Woods, Rugged Woods, Fertile Lands, Ore-Veined Cliffs, Rich Mountain, Dust Desert, Rugged Woods, Rugged Woods, Prosperous Mesa
 673    Pothria III               Continental World    20 Rushing Waterfalls, Bubbling Swamp, Black Soil, Ore-Veined Cliffs, Toxic Kelp, Prosperous Mesa, Rugged Woods, Dangerous Wildlife, Rushing Waterfalls, Toxic Kelp, Hot Springs, Ore-Veined Cliffs
-671    Pothria II                Arctic World         16 Massive Glacier, Frozen Gas Lake, Bubbling Swamp, Lichen Fields, Ore-Veined Cliffs, Frozen Gas Lake, Hot Springs, Lichen Fields, Frozen Gas Lake, Lichen Fields, Fungal Forest, Fungal Caves, Geothermal Vents, Hot Springs
-4027   Atausnyria III            Alpine World         16 Hot Springs, Rich Mountain, Fungal Caves, Fungal Caves, Fair Tundra, Fair Tundra, Massive Glacier, Massive Glacier, Fair Tundra, Fair Tundra, Fungal Caves, Ore-Veined Cliffs, Rich Mountain, Fungal Forest, Ore-Veined Cliffs
 2684   Mardom III                Tundra World         16 Fungal Caves, Massive Glacier, Hot Springs, Noxious Swamp, Ore-Rich Caverns, Noxious Swamp, Fair Tundra, Bubbling Swamp, Rich Mountain, Mineral Fields, Fair Tundra, Mineral Fields
-836    Dearum I                  Savanna World        14 Dust Desert, Arid Highlands, Prosperous Mesa, Dust Desert, Quicksand Basin, Black Soil, Arid Highlands, Black Soil, Mineral Fields, Stardust Dunes
+4027   Atausnyria III            Alpine World         16 Hot Springs, Rich Mountain, Fungal Caves, Fungal Caves, Fair Tundra, Fair Tundra, Massive Glacier, Massive Glacier, Fair Tundra, Fair Tundra, Fungal Caves, Ore-Veined Cliffs, Rich Mountain, Fungal Forest, Ore-Veined Cliffs
+671    Pothria II                Arctic World         16 Massive Glacier, Frozen Gas Lake, Bubbling Swamp, Lichen Fields, Ore-Veined Cliffs, Frozen Gas Lake, Hot Springs, Lichen Fields, Frozen Gas Lake, Lichen Fields, Fungal Forest, Fungal Caves, Geothermal Vents, Hot Springs
 1641   Rakaron III a             Desert World         14 Quicksand Basin, Arid Highlands, Mineral Fields, Nutritious Mudlands, Active Volcano, Geothermal Vents, Nutritious Mudlands, Nutritious Mudlands, Tropical Island, Arid Highlands, Tropical Island, Arid Highlands
+836    Dearum I                  Savanna World        14 Dust Desert, Arid Highlands, Prosperous Mesa, Dust Desert, Quicksand Basin, Black Soil, Arid Highlands, Black Soil, Mineral Fields, Stardust Dunes
 1014   Itraben I                 Gaia World           14 Prosperous Mesa, Bubbling Swamp, Searing Desert, Prosperous Mesa, Teeming Reef, Dust Caverns, Fertile Lands, Impassable Mountains, Rich Mountain
 4086   Pozuno II                 Gaia World           13 Underwater Vents, Frozen Gas Lake, Fertile Lands, Active Volcano, Dust Desert, Rich Mountain, Searing Desert, Prosperous Mesa, Betharian Fields, Rich Mountain, Natural Farmland
 3603   Hadriccus III a           Tundra World         10 Mineral Fields, Mineral Fields, Mineral Fields, Fair Tundra, Frozen Gas Lake, Frozen Gas Lake, Fair Tundra, Fair Tundra, Noxious Swamp
@@ -829,11 +808,11 @@ Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
-16777511     HUM1_CHR_Limathar         commander      4   0 Minister of Defense  Strategist, Warlike II, Defense Engineer
-33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
 150995515    HUM1_CHR_Linntyla         commander      5   0 Principal Pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
-805306371    HUM1_CHR_Monnobaki        envoy          1  37 Enforcer             -
+33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
+16777511     HUM1_CHR_Limathar         commander      4   0 Minister of Defense  Strategist, Warlike II, Defense Engineer
 805306372    HUM1_CHR_Campramara       envoy          1  40 Foundry              -
+805306371    HUM1_CHR_Monnobaki        envoy          1  37 Enforcer             -
 33554989     NECROID1_CHR_Gufella      official       7  44 Minister of State    Industrialist, Psychic, Forge Focused II, Geology Expert, Shroudwalker Teacher, Unifier, Righteous, Amicable
 50332170     HUM1_CHR_Yndana           scientist      4   0 Head of Research     Statistician, Expertise: Particles, Politician, Resilient, Custom AI Assistant
 100663871    HUM1_CHR_Khebb            scientist      4   0 Senior Science Dire… Scholar, Expertise: Computing, Resilient, Archaeologist, Custom AI Assistant
@@ -892,7 +871,7 @@ Ascension Perks:
 Our Spy Networks (21):
   No active spy networks. Assign envoys as spymasters to begin infiltration.
 
-  Inactive networks (21): Sophonts, NAME_Caravaneer_Fleet2, SPEC_Urzo, PRESCRIPTED_adjective_xt489, SPEC_Domanna, NAME_XuraCorp_adj, NAME_VLUUR, NAME_Gardeners, NAME_Enigmatic_Energy, SPEC_Yldar, SPEC_Vailon, NAME_Voidwyrm, NAME_Placid_Leviathans, NAME_Placid_Leviathans, NAME_Artisan_adj, SPEC_Valmennax, NAME_Prism, NAME_Mineral_Extraction_Operation, NAME_Voidworms, NAME_Caravaneer_Fleet1_country, NAME_Caravaneer_Home
+  Inactive networks (21): NAME_Caravaneer_Fleet2, NAME_Enigmatic_Energy, NAME_Gardeners, NAME_Placid_Leviathans, SPEC_Domanna, NAME_Caravaneer_Home, Sophonts, NAME_XuraCorp_adj, NAME_Mineral_Extraction_Operation, SPEC_Urzo, NAME_Placid_Leviathans, SPEC_Yldar, NAME_Voidworms, NAME_Voidwyrm, NAME_Artisan_adj, NAME_Prism, NAME_VLUUR, SPEC_Valmennax, SPEC_Vailon, PRESCRIPTED_adjective_xt489, NAME_Caravaneer_Fleet1_country
 
 Hostile Spy Networks Targeting Us (21):
   No known hostile spy networks.

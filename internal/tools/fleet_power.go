@@ -113,10 +113,12 @@ func fleetDetail(gs *gamestate.GameState, fleetID int) (*mcp.CallToolResult, err
 		if !ok {
 			continue
 		}
-		// Resolve design name and ship size
+		// Resolve design
 		designName := "unknown"
 		shipSize := "unknown"
+		var design *gamestate.ShipDesign
 		if d, ok := gs.ShipDesign[ship.ShipDesignImplementation.Design]; ok {
+			design = &d
 			designName = d.Name.Display()
 			if len(d.GrowthStages) > 0 {
 				shipSize = d.GrowthStages[0].ShipSize
@@ -128,12 +130,38 @@ func fleetDetail(gs *gamestate.GameState, fleetID int) (*mcp.CallToolResult, err
 		fmt.Fprintf(&b, "  Hull:   %.0f / %.0f\n", ship.Hitpoints, ship.MaxHitpoints)
 		fmt.Fprintf(&b, "  Shield: %.0f / %.0f\n", ship.ShieldHitpoints, ship.MaxShieldHitpoints)
 		fmt.Fprintf(&b, "  Armor:  %.0f / %.0f\n", ship.ArmorHitpoints, ship.MaxArmorHitpoints)
-		fmt.Fprintf(&b, "  Section: %s\n", l(ship.Section.Design))
 
-		if len(ship.Section.Weapon) > 0 {
-			fmt.Fprintf(&b, "  Weapons:\n")
-			for _, w := range ship.Section.Weapon {
-				fmt.Fprintf(&b, "    - %s\n", l(w.Template))
+		// Components from design (weapons, utilities, aux, required)
+		if design != nil && len(design.GrowthStages) > 0 {
+			stage := design.GrowthStages[0]
+			var weapons, utilities, aux []string
+			for _, comp := range stage.Section.Component {
+				name := l(comp.Template)
+				switch {
+				case strings.Contains(comp.Slot, "GUN") || strings.Contains(comp.Slot, "TORPEDO") || strings.Contains(comp.Slot, "HANGAR") || strings.Contains(comp.Slot, "STRIKE"):
+					weapons = append(weapons, name)
+				case strings.Contains(comp.Slot, "AUX"):
+					aux = append(aux, name)
+				default:
+					utilities = append(utilities, name)
+				}
+			}
+			var required []string
+			for _, r := range stage.RequiredComponent {
+				required = append(required, l(r))
+			}
+
+			if len(weapons) > 0 {
+				fmt.Fprintf(&b, "  Weapons: %s\n", strings.Join(weapons, ", "))
+			}
+			if len(utilities) > 0 {
+				fmt.Fprintf(&b, "  Utilities: %s\n", strings.Join(utilities, ", "))
+			}
+			if len(aux) > 0 {
+				fmt.Fprintf(&b, "  Aux: %s\n", strings.Join(aux, ", "))
+			}
+			if len(required) > 0 {
+				fmt.Fprintf(&b, "  Core: %s\n", strings.Join(required, ", "))
 			}
 		}
 	}
