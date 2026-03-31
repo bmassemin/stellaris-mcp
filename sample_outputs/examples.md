@@ -740,8 +740,8 @@ Housing: 7800 (used: 6606, free: 1194)
 
 Jobs:
   Technician: 1040
-  Biologist: 900
   Engineer: 900
+  Biologist: 900
   Physicist: 900
   Enforcer: 800
   Soldier: 600
@@ -811,12 +811,12 @@ ID     Name                      Class              Size Features
 ------------------------------------------------------------------------------------------
 3579   Zedran III                Continental World    22 Toxic Kelp, Rushing Waterfalls, Rugged Woods, Rugged Woods, Fertile Lands, Ore-Veined Cliffs, Rich Mountain, Dust Desert, Rugged Woods, Rugged Woods, Prosperous Mesa
 673    Pothria III               Continental World    20 Rushing Waterfalls, Bubbling Swamp, Black Soil, Ore-Veined Cliffs, Toxic Kelp, Prosperous Mesa, Rugged Woods, Dangerous Wildlife, Rushing Waterfalls, Toxic Kelp, Hot Springs, Ore-Veined Cliffs
-671    Pothria II                Arctic World         16 Massive Glacier, Frozen Gas Lake, Bubbling Swamp, Lichen Fields, Ore-Veined Cliffs, Frozen Gas Lake, Hot Springs, Lichen Fields, Frozen Gas Lake, Lichen Fields, Fungal Forest, Fungal Caves, Geothermal Vents, Hot Springs
 2684   Mardom III                Tundra World         16 Fungal Caves, Massive Glacier, Hot Springs, Noxious Swamp, Ore-Rich Caverns, Noxious Swamp, Fair Tundra, Bubbling Swamp, Rich Mountain, Mineral Fields, Fair Tundra, Mineral Fields
 4027   Atausnyria III            Alpine World         16 Hot Springs, Rich Mountain, Fungal Caves, Fungal Caves, Fair Tundra, Fair Tundra, Massive Glacier, Massive Glacier, Fair Tundra, Fair Tundra, Fungal Caves, Ore-Veined Cliffs, Rich Mountain, Fungal Forest, Ore-Veined Cliffs
+671    Pothria II                Arctic World         16 Massive Glacier, Frozen Gas Lake, Bubbling Swamp, Lichen Fields, Ore-Veined Cliffs, Frozen Gas Lake, Hot Springs, Lichen Fields, Frozen Gas Lake, Lichen Fields, Fungal Forest, Fungal Caves, Geothermal Vents, Hot Springs
+836    Dearum I                  Savanna World        14 Dust Desert, Arid Highlands, Prosperous Mesa, Dust Desert, Quicksand Basin, Black Soil, Arid Highlands, Black Soil, Mineral Fields, Stardust Dunes
 1014   Itraben I                 Gaia World           14 Prosperous Mesa, Bubbling Swamp, Searing Desert, Prosperous Mesa, Teeming Reef, Dust Caverns, Fertile Lands, Impassable Mountains, Rich Mountain
 1641   Rakaron III a             Desert World         14 Quicksand Basin, Arid Highlands, Mineral Fields, Nutritious Mudlands, Active Volcano, Geothermal Vents, Nutritious Mudlands, Nutritious Mudlands, Tropical Island, Arid Highlands, Tropical Island, Arid Highlands
-836    Dearum I                  Savanna World        14 Dust Desert, Arid Highlands, Prosperous Mesa, Dust Desert, Quicksand Basin, Black Soil, Arid Highlands, Black Soil, Mineral Fields, Stardust Dunes
 4086   Pozuno II                 Gaia World           13 Underwater Vents, Frozen Gas Lake, Fertile Lands, Active Volcano, Dust Desert, Rich Mountain, Searing Desert, Prosperous Mesa, Betharian Fields, Rich Mountain, Natural Farmland
 3603   Hadriccus III a           Tundra World         10 Mineral Fields, Mineral Fields, Mineral Fields, Fair Tundra, Frozen Gas Lake, Frozen Gas Lake, Fair Tundra, Fair Tundra, Noxious Swamp
 ```
@@ -829,8 +829,8 @@ Use get_leaders with leader_id for full detail.
 
 ID           Name                      Class        Lvl Age Assignment           Traits
 --------------------------------------------------------------------------------------------------------------
-33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
 16777511     HUM1_CHR_Limathar         commander      4   0 Minister of Defense  Strategist, Warlike II, Defense Engineer
+33554519     HUM1_CHR_Cognat           commander      4   0 Governor: SPEC_Beba… Admiral, Warlike, Adaptable, Enlister
 150995515    HUM1_CHR_Linntyla         commander      5   0 Principal Pilot      Strategist, Armada Logistician, Fleet Organizer, Adaptable, Environmental Engineer
 805306372    HUM1_CHR_Campramara       envoy          1  40 Foundry              -
 805306371    HUM1_CHR_Monnobaki        envoy          1  37 Enforcer             -
@@ -882,6 +882,20 @@ Traditions:
 
 Ascension Perks:
   - Technological Ascendancy
+```
+
+## get_espionage
+
+```
+=== Espionage (SPEC_Bebaki) ===
+
+Our Spy Networks (21):
+  No active spy networks. Assign envoys as spymasters to begin infiltration.
+
+  Inactive networks (21): NAME_Caravaneer_Fleet2, NAME_Mineral_Extraction_Operation, SPEC_Urzo, NAME_Placid_Leviathans, PRESCRIPTED_adjective_xt489, Sophonts, NAME_VLUUR, SPEC_Valmennax, NAME_Gardeners, SPEC_Domanna, NAME_Prism, NAME_Voidwyrm, NAME_XuraCorp_adj, NAME_Enigmatic_Energy, SPEC_Yldar, NAME_Artisan_adj, SPEC_Vailon, NAME_Voidworms, NAME_Caravaneer_Fleet1_country, NAME_Placid_Leviathans, NAME_Caravaneer_Home
+
+Hostile Spy Networks Targeting Us (21):
+  No known hostile spy networks.
 ```
 
 ## get_notifications

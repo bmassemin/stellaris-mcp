@@ -18,4 +18,5 @@ func Register(s *server.MCPServer, dir string, localizer *gamestate.Localizer) {
 	registerTraditionsAscension(s)
 	registerNotifications(s)
 	registerLeaders(s)
+	registerEspionage(s)
 }

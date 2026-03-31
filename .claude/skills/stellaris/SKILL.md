@@ -27,6 +27,7 @@ The `stellaris` MCP server provides these tools to read live save game data:
 - **get_research_status**: Current research + progress, available options, all completed techs
 - **get_traditions_ascension**: Adopted traditions and ascension perks
 - **get_notifications**: Wars, federations, players, game date
+- **get_espionage**: Spy networks (our infiltration + hostile networks targeting us), available operations
 
 ### Detail Tools (summary/detail pattern)
 - **get_planets**: Summary of all owned planets. Pass `planet_id=X` for full detail (districts, buildings, features, modifiers, production). Pass `available=true` for uncolonized habitable planets.
