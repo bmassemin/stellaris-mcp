@@ -59,11 +59,11 @@ func planetSummary(gs *gamestate.GameState, countryID int, c *gamestate.Country)
 	var b strings.Builder
 	fmt.Fprintf(&b, "=== Planets (%s) — %d planets ===\n", c.Adjective.Display(), len(owned))
 	fmt.Fprintf(&b, "Use get_planets with planet_id for details.\n\n")
-	fmt.Fprintf(&b, "%-6s %-25s %-16s %4s %5s %5s %-12s %s\n", "ID", "Name", "Class", "Size", "Pops", "Stab", "Design.", "Districts")
-	fmt.Fprintf(&b, "%s\n", strings.Repeat("-", 110))
+	fmt.Fprintf(&b, "%-6s %-25s %-16s %4s %5s %5s %-12s %-20s %-30s %s\n", "ID", "Name", "Class", "Size", "Pops", "Stab", "Design.", "Districts", "Buildings", "Deficit")
+	fmt.Fprintf(&b, "%s\n", strings.Repeat("-", 160))
 
 	for _, e := range owned {
-		fmt.Fprintf(&b, "%-6d %-25s %-16s %4d %5d %5.0f %-12s %s\n",
+		fmt.Fprintf(&b, "%-6d %-25s %-16s %4d %5d %5.0f %-12s %-20s %-30s %s\n",
 			e.id,
 			truncate(e.p.Name.Display(), 25),
 			l(e.p.PlanetClass),
@@ -72,6 +72,8 @@ func planetSummary(gs *gamestate.GameState, countryID int, c *gamestate.Country)
 			e.p.Stability,
 			l(e.p.FinalDesignation),
 			districtSummary(gs, e.p),
+			buildingSummary(gs, e.p),
+			deficitSummary(e.p),
 		)
 	}
 
@@ -254,7 +256,7 @@ func jobBreakdown(gs *gamestate.GameState, planetID int) []jobCount {
 	counts := make(map[string]int)
 	for _, job := range gs.PopJobs {
 		if job.Planet == planetID && job.Workforce > 0 {
-			counts[job.Type] += job.Workforce
+			counts[job.Type] += int(job.Workforce)
 		}
 	}
 	result := make([]jobCount, 0, len(counts))
@@ -292,6 +294,71 @@ var habitableClasses = map[string]bool{
 
 func isColonized(p gamestate.Planet) bool {
 	return p.NumPops > 0 || p.FinalDesignation != ""
+}
+
+func buildingSummary(gs *gamestate.GameState, p gamestate.Planet) string {
+	counts := make(map[string]int)
+	for _, did := range p.Districts {
+		d, ok := gs.Districts[did]
+		if !ok {
+			continue
+		}
+		for _, zid := range d.Zones {
+			z, ok := gs.Zones[zid]
+			if !ok {
+				continue
+			}
+			for _, bid := range z.Buildings {
+				if bld, ok := gs.Buildings[bid]; ok {
+					counts[bld.Type]++
+				}
+			}
+		}
+	}
+	if len(counts) == 0 {
+		return "-"
+	}
+	type bldgCount struct {
+		name  string
+		count int
+	}
+	entries := make([]bldgCount, 0, len(counts))
+	for t, n := range counts {
+		entries = append(entries, bldgCount{l(t), n})
+	}
+	sort.Slice(entries, func(i, j int) bool {
+		if entries[i].count != entries[j].count {
+			return entries[i].count > entries[j].count
+		}
+		return entries[i].name < entries[j].name
+	})
+	top := 3
+	if len(entries) < top {
+		top = len(entries)
+	}
+	parts := make([]string, top)
+	for i := 0; i < top; i++ {
+		parts[i] = fmt.Sprintf("%s x%d", entries[i].name, entries[i].count)
+	}
+	result := strings.Join(parts, ", ")
+	if len(entries) > top {
+		result += fmt.Sprintf(" +%d more", len(entries)-top)
+	}
+	return result
+}
+
+func deficitSummary(p gamestate.Planet) string {
+	var deficits []string
+	for res, val := range p.Profits {
+		if val < -0.1 {
+			deficits = append(deficits, l(res))
+		}
+	}
+	if len(deficits) == 0 {
+		return "-"
+	}
+	sort.Strings(deficits)
+	return strings.Join(deficits, ", ")
 }
 
 func planetAvailable(gs *gamestate.GameState, countryID int, c *gamestate.Country) (*mcp.CallToolResult, error) {

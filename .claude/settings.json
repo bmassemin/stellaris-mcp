@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__stellaris__get_empire_overview",
+      "mcp__stellaris__get_economy_breakdown",
+      "mcp__stellaris__get_research_status",
+      "mcp__stellaris__get_notifications",
+      "mcp__stellaris__get_traditions_ascension",
+      "mcp__stellaris__get_planets",
+      "mcp__stellaris__get_leaders",
+      "mcp__stellaris__get_neighbors",
+      "mcp__stellaris__get_fleet_power"
+    ]
+  }
+}
