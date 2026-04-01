@@ -41,13 +41,18 @@ func handleNotifications(_ context.Context, req mcp.CallToolRequest) (*mcp.CallT
 		fmt.Fprintf(&b, "  - %s (Country %d)\n", p.Name, p.Country)
 	}
 
-	// Wars
+	// Wars (only show wars without an end_date)
 	fmt.Fprintf(&b, "\nActive Wars:\n")
-	if len(gs.War) == 0 {
-		fmt.Fprintf(&b, "  No active wars.\n")
-	}
+	activeWars := 0
 	for _, w := range gs.War {
+		if w.EndDate != "" {
+			continue
+		}
+		activeWars++
 		fmt.Fprintf(&b, "  - %s (started %s)\n", w.Name.Display(), w.StartDate)
+	}
+	if activeWars == 0 {
+		fmt.Fprintf(&b, "  No active wars.\n")
 	}
 
 	// Federations

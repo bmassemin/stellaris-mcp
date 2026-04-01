@@ -82,6 +82,7 @@ type War struct {
 	Attackers  []WarParty    `clausewitz:"attackers"`
 	Defenders  []WarParty    `clausewitz:"defenders"`
 	StartDate  string        `clausewitz:"start_date"`
+	EndDate    string        `clausewitz:"end_date"`
 }
 
 type WarParty struct {
