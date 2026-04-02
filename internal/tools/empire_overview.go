@@ -29,11 +29,10 @@ func handleEmpireOverview(_ context.Context, req mcp.CallToolRequest) (*mcp.Call
 		return toolError(err), nil
 	}
 
-	// Count owned planets (exclude uncolonized — Owner defaults to 0)
-	countryID := int(req.GetFloat("country_id", 0))
+	// Count owned planets using the country's owned_planets list
 	planetCount := 0
-	for _, p := range gs.Planets.Planet {
-		if p.Owner == countryID && (p.NumPops > 0 || p.FinalDesignation != "") {
+	for _, pid := range c.OwnedPlanets {
+		if p, ok := gs.Planets.Planet[pid]; ok && isColonized(p) {
 			planetCount++
 		}
 	}

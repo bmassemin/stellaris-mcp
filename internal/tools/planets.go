@@ -48,9 +48,13 @@ func planetSummary(gs *gamestate.GameState, countryID int, c *gamestate.Country)
 		id int
 		p  gamestate.Planet
 	}
+	ownedSet := make(map[int]bool, len(c.OwnedPlanets))
+	for _, pid := range c.OwnedPlanets {
+		ownedSet[pid] = true
+	}
 	var owned []entry
 	for id, p := range gs.Planets.Planet {
-		if p.Owner == countryID && isColonized(p) {
+		if ownedSet[id] && isColonized(p) {
 			owned = append(owned, entry{id, p})
 		}
 	}
