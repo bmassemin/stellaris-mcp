@@ -62,7 +62,7 @@ func handleEmpireOverview(_ context.Context, req mcp.CallToolRequest) (*mcp.Call
 	fmt.Fprintf(&b, "\nEmpire Stats:\n")
 	fmt.Fprintf(&b, "  Pops: %d\n", c.NumPops)
 	fmt.Fprintf(&b, "  Planets: %d\n", planetCount)
-	fmt.Fprintf(&b, "  Fleet Size: %d (Naval Cap: %d / %d)\n", c.FleetSize, c.UsedNavalCap, c.NavalCap)
+	fmt.Fprintf(&b, "  Fleet Size: %.0f (Naval Cap: %.0f / %.0f)\n", c.FleetSize, c.UsedNavalCap, c.NavalCap)
 	fmt.Fprintf(&b, "  Starbases: %d capacity\n", c.StarbaseCap)
 	fmt.Fprintf(&b, "  Empire Size: %d\n", c.EmpireSize)
 	fmt.Fprintf(&b, "\nMonthly Net Balance:\n  %s\n", formatResources(netBalance))
